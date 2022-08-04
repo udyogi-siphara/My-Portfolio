@@ -47,7 +47,7 @@ body{
     width: 414px;
     height: 55px;
     left: 109px;
-    top: 235px;
+    top: 215px;
 
     font-family: 'Arial';
     font-style: normal;
@@ -62,7 +62,7 @@ body{
     width: 282px;
     height: 17px;
     left: 125px;
-    top: 321px;
+    top: 305px;
 
     font-family: 'Arial';
     font-style: normal;
@@ -78,7 +78,7 @@ body{
     width: 137px;
     height: 35px;
     left: 198px;
-    top: 430px;
+    top: 405px;
     color: #701C7D;
     z-index: 1;
     border-radius: 15px;
@@ -165,6 +165,41 @@ body{
     position: absolute;
     width: 595px;
     height: 538px;
-    left: 98px;
-    top: 673px;
+    left: 30px;
+    top: 645px;
+}
+
+.who{
+    position: absolute;
+    width: 150px;
+    height: 23.23px;
+    left: 730px;
+    top: 770px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.paragraph{
+    position: absolute;
+    width: 614px;
+    height: 161.34px;
+    left: 735px;
+    top: 815px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    text-align: justify;
+
 }
