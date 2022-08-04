@@ -1,10 +1,10 @@
 .WelcomeRectangle{
     position: absolute;
-    width: 200px;
+    width: 160px;
     height: 30px;
     left: 112px;
     top: 168px;
-    fill: blue;
+    fill: white;
     z-index: 1;
 
    /* position: absolute;
@@ -26,15 +26,16 @@
     position: absolute;
     width: 101px;
     height: 20px;
-    left: 153px;
-    top: 146px;
+    left: 139px;
+    top: 142px;
     z-index: 1;
 
     font-family: 'Calibri';
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 20px;
+    color : #701C7D;
 }
 
 body{
@@ -46,12 +47,42 @@ body{
     width: 414px;
     height: 55px;
     left: 109px;
-    top: 266px;
+    top: 235px;
 
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 55px;
-    color: blue;
+    color: white;
+}
+
+#myPost{
+    position: absolute;
+    width: 282px;
+    height: 17px;
+    left: 125px;
+    top: 321px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+
+.btnGetStarted{
+    position: absolute;
+    width: 137px;
+    height: 35px;
+    left: 198px;
+    top: 430px;
+    color: #701C7D;
+    z-index: 1;
+    border-radius: 15px;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    font-weight: bolder;
 }
