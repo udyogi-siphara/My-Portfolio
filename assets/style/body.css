@@ -1,0 +1,57 @@
+.WelcomeRectangle{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 112px;
+    top: 168px;
+    fill: blue;
+    z-index: 1;
+
+   /* position: absolute;
+    width: 180px;
+    height: 40px;
+
+    left: 112px;
+    top: 150px;
+    z-index: 1;
+
+    background: wheat;
+    border-radius: 10px;
+    fill: wheat;
+    opacity: 0.2;*/
+
+}
+
+#welcome{
+    position: absolute;
+    width: 101px;
+    height: 20px;
+    left: 153px;
+    top: 146px;
+    z-index: 1;
+
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+body{
+    background: #701C7D;
+}
+
+#myName{
+    position: absolute;
+    width: 414px;
+    height: 55px;
+    left: 109px;
+    top: 266px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    color: blue;
+}
