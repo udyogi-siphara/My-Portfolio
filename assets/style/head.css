@@ -1,0 +1,68 @@
+.MenuRectangle{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 1440px;
+
+    background: #701C7D;;
+}
+
+.logo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 10px;
+    top: -5px;
+    z-index: 1;
+}
+
+.home{
+    position: absolute;
+    left: 700px;
+    top: 13px;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+    font-family: "Arial";
+}
+
+.about{
+    position: absolute;
+    left: 790px;
+    top: 13px;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+    font-family: "Arial";
+}
+
+.skills{
+    position: absolute;
+    left: 910px;
+    top: 13px;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+    font-family: "Arial";
+}
+
+.project{
+    position: absolute;
+    left: 995px;
+    top: 13px;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+    font-family: "Arial";
+}
+
+.contact{
+    position: absolute;
+    left: 1100px;
+    top: 13px;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+    font-family: "Arial";
+}
