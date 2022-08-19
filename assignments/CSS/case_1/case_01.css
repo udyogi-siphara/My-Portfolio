@@ -1,0 +1,233 @@
+body>section{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+}
+body>section:nth-child(1){
+    left: 0;
+    top: 0;
+    background-color: red;
+}
+body>section:nth-child(2){
+    right: 0;
+    top: 0;
+    background-color: green;
+}
+body>section:nth-child(3){
+    left: 0;
+    bottom: 0;
+    background-color: orange;
+}
+body>section:nth-child(4){
+    right: 0;
+    bottom: 0;
+    background-color: deeppink;
+}
+/*First Section*/
+body>section:nth-child(1)>div{
+    left: 0;
+    top: 0;
+    border-radius: 0 0 100% 0;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+
+body>section:nth-child(1)>div:nth-child(3){
+    left: 85%;
+    top: 0;
+    border-radius: 0 0 0 100%;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+
+body>section>section>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+    width:25%;
+    height: 50%;
+}
+
+body>section>section>div>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35%;
+    height: 35%;
+    background-color: red;
+    position: absolute
+}
+
+/*Second Section*/
+body>section:nth-child(2)>div{
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 100%;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+
+body>section:nth-child(2)>div:nth-child(3){
+    left: 0;
+    top: 0;
+    border-radius: 0 0 100% 0;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+
+body>section:nth-child(2)>section>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+    width:25%;
+    height: 50%;
+}
+
+body>section:nth-child(2)>section>div>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35%;
+    height: 35%;
+    background-color: red;
+    position: absolute
+}
+
+/*Third Section*/
+body>section:nth-child(3)>div{
+    left: 0;
+    bottom: 0;
+    border-radius: 0 100% 0 0;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+
+body>section:nth-child(3)>div:nth-child(3){
+    left: 85%;
+    bottom: 0;
+    border-radius: 100% 0 0 0;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+
+body>section:nth-child(3)>section>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+    width:25%;
+    height: 50%;
+}
+
+body>section:nth-child(3)>section>div>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35%;
+    height: 35%;
+    background-color: red;
+    position: absolute
+}
+
+/*Fourth Section*/
+body>section:nth-child(4)>div{
+    right: 0;
+    bottom: 0;
+    border-radius: 100% 0 0 0;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+body>section:nth-child(4)>div:nth-child(3){
+    left: 0;
+    bottom: 0;
+    border-radius: 0 100% 0 0;
+    background-color: white;
+    position: absolute;
+    width:15%;
+    height: 30%;
+}
+body>section:nth-child(4)>section>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+    width:25%;
+    height: 50%;
+}
+
+body>section:nth-child(4)>section>div>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35%;
+    height: 35%;
+    background-color: red;
+    position: absolute
+}
+
+/*Fifth Section*/
+body>section:nth-child(5){
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+
+body>section:nth-child(5)>div{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 100% 100% 100% 100%;
+    width:50%;
+    height:50%;
+    background-color: red;
+}
+
+
