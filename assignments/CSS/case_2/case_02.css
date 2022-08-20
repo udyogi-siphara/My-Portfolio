@@ -1,6 +1,6 @@
 body>header{
     background-color: #FFFFFF;
-    width:98vw;
+    width:98.73vw;
     height:10vh ;
     box-shadow: 0 2px 3px 0 #470852;
     position: relative;
@@ -44,22 +44,35 @@ body>main>aside>nav>ul>li{
 
 body>main>section>section>div:first-child{
     position: absolute;
-    top: 13%;
-    left: 21%;
+    top: 11%;
+    left: 20.3%;
     border: 2px solid lightseagreen;
 }
 body>main>section>section>div:nth-child(2){
     position: absolute;
-    top: 13%;
-    left: 47%;
+    top: 11%;
+    left: 46.4%;
     border: 2px solid lightseagreen;
 }
 
 body>main>section>section>div:nth-child(3){
     position: absolute;
-    top: 13%;
-    left: 73%;
+    top: 11%;
+    left: 72.5%;
     border: 2px solid lightseagreen;
 
+}
+
+body>footer {
+    position: relative;
+    background-color: gray;
+    height: 50px;
+    width: 98.73vw;
+}
+body>footer>p{
+    position: absolute;
+    left: 47%;
+    color: #FFFFFF;
+    font-size: 15px;
 }
 
