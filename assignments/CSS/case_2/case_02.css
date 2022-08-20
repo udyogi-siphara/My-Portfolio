@@ -1,6 +1,6 @@
 body>header{
     background-color: #FFFFFF;
-    width:99vw;
+    width:98vw;
     height:10vh ;
     box-shadow: 0 2px 3px 0 #470852;
 
@@ -20,4 +20,22 @@ body>header>nav>ul>li{
     position: relative;
     left: 20px;
     top: 5px;
+}
+
+body>main>aside{
+    position: relative;
+    width: 20vw;
+    height: 100vh;
+    background-color: #701C7D;
+    left: 0;
+    bottom: 14px;
+}
+
+body>main>aside>nav>ul>li{
+    position: relative;
+    color: #FFFFFF;
+    font-size: 20px;
+    top: 30px;
+    left: -27px;
+    padding: 8px;
 }
