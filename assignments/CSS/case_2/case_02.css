@@ -13,7 +13,7 @@ body>header>nav>ul>li{
     position: relative;
     left:75%;
     top:-58px;
-    font-family: 'Roboto', sans-serif;
+
 }
 
 #ijse{
@@ -24,16 +24,16 @@ body>header>nav>ul>li{
     top: 5px;
 }
 
-body>main>aside{
-    position: relative;
-    width: 20vw;
-    height: 100vh;
+body>main>nav{
+    position: absolute;
+    width: 270px;
+    height: 100%;
     background-color: #701C7D;
     left: -2px;
-    bottom: 13px;
+    top: 0;
 }
 
-body>main>aside>nav>ul>li{
+body>main>nav>ul>li{
     position: relative;
     color: #FFFFFF;
     font-size: 20px;
@@ -41,28 +41,38 @@ body>main>aside>nav>ul>li{
     left: -27px;
     padding: 8px;
 }
+main{
+    border: 1px solid purple;
+    position: relative;
+    min-height: 100vh;
+}
+
+body>main>section{
+    margin-left: 275px;
+    padding: 10px;
+
+}
 
 body>main>section>section>div:first-child{
     position: absolute;
-    top: 11%;
+    top: 5px;
     left: 20.3%;
     border: 2px solid lightseagreen;
 }
 body>main>section>section>div:nth-child(2){
     position: absolute;
-    top: 11%;
+    top: 5px;
     left: 46.4%;
     border: 2px solid lightseagreen;
 }
 
 body>main>section>section>div:nth-child(3){
     position: absolute;
-    top: 11%;
+    top: 5px;
     left: 72.5%;
     border: 2px solid lightseagreen;
 
 }
-
 body>footer {
     position: relative;
     background-color: gray;
