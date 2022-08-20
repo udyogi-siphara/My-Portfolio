@@ -3,6 +3,7 @@ body>header{
     width:98vw;
     height:10vh ;
     box-shadow: 0 2px 3px 0 #470852;
+    position: relative;
 
 }
 
@@ -11,7 +12,8 @@ body>header>nav>ul>li{
     padding: 10px;
     position: relative;
     left:75%;
-    top:-58px
+    top:-58px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #ijse{
@@ -27,8 +29,8 @@ body>main>aside{
     width: 20vw;
     height: 100vh;
     background-color: #701C7D;
-    left: 0;
-    bottom: 14px;
+    left: -2px;
+    bottom: 13px;
 }
 
 body>main>aside>nav>ul>li{
@@ -42,30 +44,22 @@ body>main>aside>nav>ul>li{
 
 body>main>section>section>div:first-child{
     position: absolute;
-
-    height: 240px;
-    border-bottom-color: lightseagreen;
-    border-left-color: orange;
-    top: 12%;
+    top: 13%;
     left: 21%;
+    border: 2px solid lightseagreen;
 }
 body>main>section>section>div:nth-child(2){
     position: absolute;
-
-    height: 240px;
-    border-bottom-color: lightseagreen;
-    border-left-color: orange;
-    top: 12%;
+    top: 13%;
     left: 47%;
+    border: 2px solid lightseagreen;
 }
 
 body>main>section>section>div:nth-child(3){
     position: absolute;
-    background-size: cover;
-    height: 240px;
-    border-bottom-color: lightseagreen;
-    border-left-color: orange;
-    top: 12%;
-    left: 67%;
+    top: 13%;
+    left: 73%;
+    border: 2px solid lightseagreen;
+
 }
 
