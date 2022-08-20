@@ -39,3 +39,33 @@ body>main>aside>nav>ul>li{
     left: -27px;
     padding: 8px;
 }
+
+body>main>section>section>div:first-child{
+    position: absolute;
+
+    height: 240px;
+    border-bottom-color: lightseagreen;
+    border-left-color: orange;
+    top: 12%;
+    left: 21%;
+}
+body>main>section>section>div:nth-child(2){
+    position: absolute;
+
+    height: 240px;
+    border-bottom-color: lightseagreen;
+    border-left-color: orange;
+    top: 12%;
+    left: 47%;
+}
+
+body>main>section>section>div:nth-child(3){
+    position: absolute;
+    background-size: cover;
+    height: 240px;
+    border-bottom-color: lightseagreen;
+    border-left-color: orange;
+    top: 12%;
+    left: 67%;
+}
+
