@@ -1,6 +1,16 @@
 body>section:first-child{
     background-color: white;
 }
+
+body>section:first-child>h1{
+    top:35%;
+    left: 40%;
+    font-size: 100px;
+    position: absolute;
+    color:black;
+    text-align: center;
+}
+
 body>section:nth-child(2){
     background-color: dodgerblue;
 }
