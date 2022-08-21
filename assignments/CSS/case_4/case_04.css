@@ -51,6 +51,16 @@ body>section:nth-child(2)>div{
     height: 60px;
     background-color: darkblue;
 }
+
+body>section:nth-child(2)>div>h4{
+    top:-20px;
+    left: 15px;
+    font-size: 25px;
+    position: absolute;
+    color:#FFFFFF;;
+
+}
+
 body>section:nth-child(3)>div{
     position: sticky;
     width: 100%;
