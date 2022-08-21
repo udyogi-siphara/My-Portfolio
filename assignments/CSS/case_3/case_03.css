@@ -60,23 +60,24 @@ body>div:nth-child(5){
 }
 
 body>div:nth-child(3)>h4{
-    font-size: 15px;
-    color: black;
-    text-align: center;
+    font-size: 50px;
+    color: white;
+    left: 28%;
+    top: 8%;
     position: absolute;
 }
 
 body>div:nth-child(4)>h4{
     font-size: 15px;
-    color: black;
-    text-align: center;
+    color: white;
+
     position: absolute;
 }
 
 body>div:nth-child(5)>h4{
     font-size: 15px;
-    color: black;
-    text-align: center;
+    color: white;
+
     position: absolute;
 
 }
