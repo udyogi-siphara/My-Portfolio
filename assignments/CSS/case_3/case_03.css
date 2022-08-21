@@ -1,8 +1,3 @@
-body{
-    position: absolute;
-    width: 98vw;
-    height: 1000vh;
-}
 body>div:first-child{
     position: fixed;
     top: 0;
@@ -10,56 +5,38 @@ body>div:first-child{
     bottom: 0;
     left: 0;
     margin: auto;
-    background-color: gray;
+    border: 15px solid gray;
     border-radius: 100%;
     width: 280px;
     height: 280px;
 }
 
-body>div+div:nth-child(2){
+body>div>div{
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    background-color: red;
+    border: 18px solid red;
     border-radius: 100%;
     width: 245px;
     height: 245px;
-}
 
-body>div:nth-child(3){
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+body>section:nth-child(2)>div{
     background-color: purple;
-    width: 245px;
-    height: 245px;
-    border-radius: 100%;
 }
 
-body>div:nth-child(4){
-    position: absolute;
-    top: 0;
-    left: 80%;
+body>section:nth-child(3)>div{
     background-color: cornflowerblue;
-    width: 245px;
-    height: 245px;
-    border-radius: 100%;
 }
 
-body>div:nth-child(5){
-    position: absolute;
-    top: 0;
-    left: 50%;
+body>section:nth-child(4)>div{
     background-color: coral;
-    width: 245px;
-    height: 245px;
-    border-radius: 100%;
 }
 
-body>div:nth-child(3)>h4{
+body>section:nth-child(2)>div>h4{
     font-size: 50px;
     color: white;
     left: 26%;
@@ -67,7 +44,7 @@ body>div:nth-child(3)>h4{
     position: absolute;
 }
 
-body>div:nth-child(4)>h4{
+body>section:nth-child(3)>div>h4{
     font-size: 40px;
     color: white;
     left: 18%;
@@ -75,7 +52,7 @@ body>div:nth-child(4)>h4{
     position: absolute;
 }
 
-body>div:nth-child(5)>h4{
+body>section:nth-child(4)>div>h4{
     font-size: 28px;
     color: white;
     left: 1%;
