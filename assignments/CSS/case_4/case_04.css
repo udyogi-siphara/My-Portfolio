@@ -8,7 +8,6 @@ body>section:first-child>h1{
     font-size: 100px;
     position: absolute;
     color:black;
-    text-align: center;
 }
 
 body>section:nth-child(2){
@@ -27,6 +26,16 @@ body>section>div{
     height: 60px;
     background-color: red;
 }
+
+body>section>div>h4{
+    top:-20px;
+    left: 15px;
+    font-size: 25px;
+    position: absolute;
+    color:#FFFFFF;;
+
+}
+
 body>section:nth-child(2)>div{
     position: sticky;
     width: 100%;
