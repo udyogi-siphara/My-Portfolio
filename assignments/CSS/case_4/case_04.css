@@ -25,6 +25,15 @@ body>section:nth-child(2)>h1{
 body>section:nth-child(3){
     background-color: gray;
 }
+
+body>section:nth-child(3)>h1{
+    top:35%;
+    left: 40%;
+    font-size: 100px;
+    position: absolute;
+    color:black;
+}
+
 body>section:last-child{
     background-color: indianred;
 }
@@ -67,6 +76,16 @@ body>section:nth-child(3)>div{
     height: 60px;
     background-color: black;
 }
+
+body>section:nth-child(3)>div>h4{
+    top:-20px;
+    left: 15px;
+    font-size: 25px;
+    position: absolute;
+    color:#FFFFFF;;
+
+}
+
 body>section:nth-child(4)>div{
     position: sticky;
     width: 100%;
