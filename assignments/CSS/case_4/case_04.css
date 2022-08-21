@@ -13,6 +13,15 @@ body>section:first-child>h1{
 body>section:nth-child(2){
     background-color: dodgerblue;
 }
+
+body>section:nth-child(2)>h1{
+    top:35%;
+    left: 40%;
+    font-size: 100px;
+    position: absolute;
+    color:black;
+}
+
 body>section:nth-child(3){
     background-color: gray;
 }
