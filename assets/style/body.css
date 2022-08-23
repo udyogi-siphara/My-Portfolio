@@ -147,7 +147,7 @@ body{
     width: 349px;
     height: 147px;
     left: 539px;
-    top: 396px;
+    top: 410px;
     z-index: 1;
 
     font-family: 'Arial';
@@ -202,4 +202,33 @@ body{
     color: #FFFFFF;
     text-align: justify;
 
+}
+
+body>main>section:nth-child(4)>div{
+    position: absolute;
+    width: 1440px;
+    height: 200px;
+    left: 0px;
+    top: 190%;
+    background-color: #470852;
+    z-index: 1;
+}
+
+#skills{
+    position: absolute;
+    width: 349px;
+    height: 147px;
+    left: 539px;
+    top: 180%;
+    z-index: 1;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 147px;
+
+    color: #FFFFFF;
+
+    opacity: 0.4;
 }
