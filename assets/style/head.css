@@ -17,6 +17,7 @@
     z-index: 1;
 }
 
+/*
 .home{
     position: absolute;
     left: 700px;
@@ -65,4 +66,14 @@
     font-size: 18px;
     color: white;
     font-family: "Arial";
+}*/
+
+body>header>nav>ul>li{
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    left: 60%;
+    top: -20px;
 }
