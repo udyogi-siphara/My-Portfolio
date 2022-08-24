@@ -378,4 +378,75 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(12){
     z-index: 1;
 }
 
+.imgPara{
+    top: 310%;
+    left: 15%;
+    z-index: 1;
+    position: absolute;
+}
+
+.javaScript{
+    left: 8em;
+    position: absolute;
+}
+
+.css{
+    left: 17.5em;
+    position: absolute;
+}
+
+.html{
+    left:25.5em;
+    position: absolute;
+}
+
+.mysql{
+    left:34em;
+    position: absolute;
+}
+
+.hibernate{
+    left:42em;
+    position: absolute;
+}
+
+.python{
+    left:50em;
+    position: absolute;
+}
+
+.intellij{
+    left: 0em;
+    position: absolute;
+}
+
+.figma{
+    left: 8em;
+    position: absolute;
+}
+
+.slack{
+    left: 17.5em;
+    position: absolute;
+}
+
+.eclipse{
+    left:25.5em;
+    position: absolute;
+}
+
+.Scene{
+    left:34em;
+    position: absolute;
+}
+
+.gitHub{
+    left:42em;
+    position: absolute;
+}
+
+.visual{
+    left:50em;
+    position: absolute;
+}
 
