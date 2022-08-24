@@ -284,7 +284,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     width: 104px;
     height: 31px;
     font-size: 25px;
-    left: 20%;
+    left: 18%;
     top: 255%;
     color: #000000;
     font-family: 'Arial';
@@ -295,7 +295,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
     position: absolute;
     width: 170px;
     height: 0px;
-    left: 16.9em;
+    left: 15.2em;
     top: 100.5em;
     z-index: 1;
     border: 2px solid #000000;
@@ -304,7 +304,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
 .designList{
     list-style: none;
     position: absolute;
-    left: 17%;
+    left: 15%;
     top: 265%;
     font-size: 25px;
     font-family: 'Arial';
@@ -316,7 +316,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
     position: absolute;
     width: 64px;
     height: 31px;
-    left: 45%;
+    left: 40%;
     top: 255%;
     font-family: 'Arial';
     color: black;
@@ -328,7 +328,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(9){
     position: absolute;
     width: 170px;
     height: 0px;
-    left: 38.2em;
+    left: 33.8em;
     top: 100.5em;
     z-index: 1;
     border: 2px solid #000000;
@@ -337,7 +337,40 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(9){
 .webList{
     list-style: none;
     position: absolute;
-    left: 42.5%;
+    left: 37.5%;
+    top: 265%;
+    font-size: 25px;
+    font-family: 'Arial';
+    color: #4A4A4A;
+    z-index: 1;
+}
+
+#software{
+    position: absolute;
+    width: 64px;
+    height: 31px;
+    left: 65%;
+    top: 255%;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+    font-size: 25px;
+}
+
+body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(12){
+    position: absolute;
+    width: 170px;
+    height: 0px;
+    left: 55em;
+    top: 100.5em;
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.softwareList{
+    list-style: none;
+    position: absolute;
+    left: 62%;
     top: 265%;
     font-size: 25px;
     font-family: 'Arial';
