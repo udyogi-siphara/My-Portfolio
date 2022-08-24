@@ -232,3 +232,51 @@ body>main>section:nth-child(4)>div{
 
     opacity: 0.4;
 }
+
+body>main>section:nth-child(4)>section:nth-child(3)>section>div{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    left: 10em;
+    top: 90em;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.smiller1{
+    position: absolute;
+    width: 459px;
+    height: 71px;
+    left: 15%;
+    top: 237%;
+    font-family: 'Arial';
+    font-size: 40px;
+    color: #000000;
+    z-index: 1;
+}
+
+.smiller2{
+    position: absolute;
+    width: 459px;
+    height: 71px;
+    left: 35%;
+    top: 237%;
+    font-family: 'Arial';
+    font-size: 40px;
+    color: #000000;
+    z-index: 1;
+}
+
+#nonSmiller{
+    position: absolute;
+    width: 459px;
+    height: 71px;
+    left: 17%;
+    top: 237%;
+    font-family: 'Arial';
+    font-size: 40px;
+    color: #701C7D;
+    z-index: 1;
+}
+
+
