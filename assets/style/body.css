@@ -295,7 +295,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
     position: absolute;
     width: 170px;
     height: 0px;
-    left: 17em;
+    left: 16.9em;
     top: 100.5em;
     z-index: 1;
     border: 2px solid #000000;
@@ -305,6 +305,39 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
     list-style: none;
     position: absolute;
     left: 17%;
+    top: 265%;
+    font-size: 25px;
+    font-family: 'Arial';
+    color: #4A4A4A;
+    z-index: 1;
+}
+
+#web{
+    position: absolute;
+    width: 64px;
+    height: 31px;
+    left: 45%;
+    top: 255%;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+    font-size: 25px;
+}
+
+body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(9){
+    position: absolute;
+    width: 170px;
+    height: 0px;
+    left: 38.2em;
+    top: 100.5em;
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.webList{
+    list-style: none;
+    position: absolute;
+    left: 42.5%;
     top: 265%;
     font-size: 25px;
     font-family: 'Arial';
