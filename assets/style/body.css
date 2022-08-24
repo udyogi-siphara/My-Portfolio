@@ -279,4 +279,37 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     z-index: 1;
 }
 
+#design{
+    position: absolute;
+    width: 104px;
+    height: 31px;
+    font-size: 25px;
+    left: 20%;
+    top: 255%;
+    color: #000000;
+    font-family: 'Arial';
+    z-index: 1;
+}
+
+body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
+    position: absolute;
+    width: 170px;
+    height: 0px;
+    left: 17em;
+    top: 100.5em;
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.designList{
+    list-style: none;
+    position: absolute;
+    left: 17%;
+    top: 265%;
+    font-size: 25px;
+    font-family: 'Arial';
+    color: #4A4A4A;
+    z-index: 1;
+}
+
 
