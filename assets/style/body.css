@@ -62,7 +62,7 @@ body{
     width: 282px;
     height: 17px;
     left: 125px;
-    top: 45%;
+    top: 268px;
 
     font-family: 'Arial';
     font-style: normal;
@@ -106,6 +106,9 @@ body{
     font-size: 14px;
     height: 150px;
     width: 300px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
 }
 
 .verticalLine{
@@ -132,7 +135,7 @@ body{
     top: 361px;
 }
 
-.aboutRec{
+.aboutRec{/*about*/
     position: relative;
     width: 98.73vw;
     height: 200px;
@@ -193,32 +196,29 @@ body{
 
 }
 
-body>main>section:nth-child(4)>div{
-    position: absolute;
+body>main>section:nth-child(4)>div{/*skills*/
+    position: relative;
     width: 98.73vw;
     height: 200px;
     left: 0px;
-    top: 190%;
+    top: 965px;
     background-color: #470852;
     z-index: 1;
 }
 
 #skills{
-    position: absolute;
+    position: relative;
     width: 349px;
     height: 147px;
     left: 539px;
-    top: 180%;
+    top: 699px;
     z-index: 1;
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 128px;
     line-height: 147px;
-
     color: #FFFFFF;
-
     opacity: 0.4;
 }
 
@@ -226,7 +226,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     position: absolute;
     width: 1000px;
     height: 600px;
-    left: 10em;
+    left: 11em;
     top: 90em;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -440,21 +440,21 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 }
 
 main>section:nth-child(5)>div{
-    position: absolute;
+    position: relative;
     width: 98.73vw;
     height: 200px;
     left: 0px;
-    top: 350%;
+    top: 1390px;
     background-color: #470852;
     z-index: 1;
 }
 
 #projects{
-    position: absolute;
+    position: relative;
     width: 349px;
     height: 147px;
-    left: 475px;
-    top: 340%;
+    left: 472px;
+    top: 1120px;
     z-index: 1;
     font-family: 'Arial';
     font-size: 128px;
@@ -463,11 +463,11 @@ main>section:nth-child(5)>div{
 }
 
 .contactRec{
-    position: absolute;
+    position: relative;
     width: 98.73vw;
     height: 400px;
     left: 0px;
-    top: 600%;
+    top: 2480px;
     z-index: 1;
     fill: white;
 
@@ -478,8 +478,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 287px;
     height: 46px;
-    left: 590px;
-    top: 605%;
+    left: 39.5%;
+    top: 3758px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -491,8 +491,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 600px;
     height: 46px;
-    left: 440px;
-    top: 612%;
+    left: 28%;
+    top: 3805px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -504,8 +504,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 972px;
     height: 29px;
-    left: 251px;
-    top: 623%;
+    left: 13.5%;
+    top: 3895px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -516,8 +516,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 972px;
     height: 29px;
-    left: 251px;
-    top: 629%;
+    left: 13.5%;
+    top: 3925px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -526,8 +526,8 @@ main>section:nth-child(5)>div{
 
 .smallpic{
     position: absolute;
-    left: 615px;
-    top: 642.8%;
+    left: 37%;
+    top: 4005px;
     z-index: 2;
 }
 
@@ -535,8 +535,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 10px;
     height: 10px;
-    left:636.3px;
-    top: 646.3%;
+    left:38.5%;
+    top: 4027px;
     border-radius: 100%;
     background: #00F461;
     z-index: 2;
@@ -546,8 +546,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 615px;
-    top: 642.8%;
+    left: 37%;
+    top: 4005px;
     border-radius: 100%;
     background: white;
     z-index: 1;
@@ -557,8 +557,8 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 255px;
     height: 29px;
-    left: 613px;
-    top: 641.5%;
+    left: 37.5%;
+    top: 3997px;
     font-size: 15px;
     font-family: 'Arial';
     color: black;
@@ -577,17 +577,49 @@ main>section:nth-child(5)>div{
     border: #701C7D;
 }
 
-.number{
+.number {
     position: absolute;
     width: 170px;
     height: 30px;
-    left: 760px;
+    right: 33%;
     top: 255em;
     border-radius: 5px;
     background-color: #3ABB56;
     z-index: 1;
     border: #3ABB56;
+}
 
+#tel{
+    color: #FFFFFF;
+    font-family: Arial;
+}
+
+body>footer{
+    position: relative;
+    width: 98.73vw;
+    height: 400px;
+    left: 0px;
+    bottom:-2408px;
+    background-color: #470852;
+}
+
+#email{
+    color: #FFFFFF;
+    font-family: Arial;
+}
+a{
+    text-decoration:none;
+}
+
+body>footer>section>section{
+    box-sizing: border-box;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 490px;
+    top: 4149px;
+    background: #470852;
+    border: 1px dashed #FFFFFF;
 }
 
 
