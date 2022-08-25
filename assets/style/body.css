@@ -62,7 +62,7 @@ body{
     width: 282px;
     height: 17px;
     left: 125px;
-    top: 305px;
+    top: 45%;
 
     font-family: 'Arial';
     font-style: normal;
@@ -91,14 +91,14 @@ body{
     position: absolute;
     width: 375px;
     height: 358px;
-    left: 814px;
-    top: 125px;
+    right: 14%;
+    top: 147px;
     z-index: 1;
 }
 
 #follow{
     position: absolute;
-    left: 1180px;
+    right: -1%;
     top: 174.5px;
     transform: rotate(90deg);
     color: #FFFFFF;
@@ -112,7 +112,7 @@ body{
     height: 46px;
     border: 1px solid #FFFFFF;
     position: absolute;
-    left: 1395px;
+    right: 5.1%;
     top: 250px;
 }
 
@@ -120,7 +120,7 @@ body{
     position: absolute;
     width: 35px;
     height: 35px;
-    left: 1379.5px;
+    right: 3.8%;
     top: 321px;
 }
 
@@ -128,13 +128,13 @@ body{
     position: absolute;
     width: 35px;
     height: 35px;
-    left: 1379.5px;
+    right: 3.8%;
     top: 361px;
 }
 
 .aboutRec{
-    position: absolute;
-    width: 1440px;
+    position: relative;
+    width: 98.73vw;
     height: 200px;
     left:0px;
     top: 481px;
@@ -147,25 +147,22 @@ body{
     width: 349px;
     height: 147px;
     left: 539px;
-    top: 410px;
+    top: 425px;
     z-index: 1;
-
     font-family: 'Arial';
+    color: #FFFFFF;
+    opacity: 0.4;
     font-style: normal;
     font-weight: 700;
     font-size: 128px;
     line-height: 147px;
-
-    color: #FFFFFF;
-
-    opacity: 0.4;
 }
 
 .aboutImage{
     position: absolute;
     width: 595px;
     height: 538px;
-    left: 30px;
+    lef: 30px;
     top: 645px;
 }
 
@@ -173,16 +170,14 @@ body{
     position: absolute;
     width: 150px;
     height: 23.23px;
-    left: 730px;
+    right: 37%;
     top: 770px;
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     text-decoration-line: underline;
-
     color: #FFFFFF;
 }
 
@@ -190,15 +185,9 @@ body{
     position: absolute;
     width: 614px;
     height: 161.34px;
-    left: 735px;
+    right: 30px;
     top: 815px;
-
     font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-
     color: #FFFFFF;
     text-align: justify;
 
@@ -206,7 +195,7 @@ body{
 
 body>main>section:nth-child(4)>div{
     position: absolute;
-    width: 1440px;
+    width: 98.73vw;
     height: 200px;
     left: 0px;
     top: 190%;
@@ -247,8 +236,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     position: absolute;
     width: 459px;
     height: 71px;
-    left: 15%;
-    top: 237%;
+    left: 5%;
+    top:0;
     font-family: 'Arial';
     font-size: 40px;
     color: #000000;
@@ -259,8 +248,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     position: absolute;
     width: 459px;
     height: 71px;
-    left: 35%;
-    top: 237%;
+    left: 30%;
+    top: 0;
     font-family: 'Arial';
     font-size: 40px;
     color: #000000;
@@ -271,8 +260,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     position: absolute;
     width: 459px;
     height: 71px;
-    left: 17%;
-    top: 237%;
+    left: 7%;
+    top: 0;
     font-family: 'Arial';
     font-size: 40px;
     color: #701C7D;
@@ -284,19 +273,19 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     width: 104px;
     height: 31px;
     font-size: 25px;
-    left: 18%;
-    top: 255%;
+    left: 8%;
+    top: 20%;
     color: #000000;
     font-family: 'Arial';
     z-index: 1;
 }
 
-body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
+body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(5){
     position: absolute;
     width: 170px;
     height: 0px;
-    left: 15.2em;
-    top: 100.5em;
+    left: 5em;
+    top: 11em;
     z-index: 1;
     border: 2px solid #000000;
 }
@@ -304,8 +293,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
 .designList{
     list-style: none;
     position: absolute;
-    left: 15%;
-    top: 265%;
+    left:4%;
+    top: 30%;
     font-size: 25px;
     font-family: 'Arial';
     color: #4A4A4A;
@@ -316,20 +305,20 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(6){
     position: absolute;
     width: 64px;
     height: 31px;
-    left: 40%;
-    top: 255%;
+    left: 41%;
+    top: 20%;
     font-family: 'Arial';
     color: black;
     z-index: 1;
     font-size: 25px;
 }
 
-body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(9){
+body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(8){
     position: absolute;
     width: 170px;
     height: 0px;
-    left: 33.8em;
-    top: 100.5em;
+    left: 25.9em;
+    top: 11em;
     z-index: 1;
     border: 2px solid #000000;
 }
@@ -338,7 +327,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(9){
     list-style: none;
     position: absolute;
     left: 37.5%;
-    top: 265%;
+    top: 30%;
     font-size: 25px;
     font-family: 'Arial';
     color: #4A4A4A;
@@ -349,20 +338,20 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(9){
     position: absolute;
     width: 64px;
     height: 31px;
-    left: 65%;
-    top: 255%;
+    left: 74%;
+    top: 20%;
     font-family: 'Arial';
     color: black;
     z-index: 1;
     font-size: 25px;
 }
 
-body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(12){
+body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11){
     position: absolute;
     width: 170px;
     height: 0px;
-    left: 55em;
-    top: 100.5em;
+    left: 46.4em;
+    top: 11em;
     z-index: 1;
     border: 2px solid #000000;
 }
@@ -370,8 +359,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(12){
 .softwareList{
     list-style: none;
     position: absolute;
-    left: 62%;
-    top: 265%;
+    left: 70.5%;
+    top: 30%;
     font-size: 25px;
     font-family: 'Arial';
     color: #4A4A4A;
@@ -379,8 +368,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(12){
 }
 
 .imgPara{
-    top: 310%;
-    left: 15%;
+    top: 75%;
+    left: 8%;
     z-index: 1;
     position: absolute;
 }
@@ -452,7 +441,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div:nth-child(12){
 
 main>section:nth-child(5)>div{
     position: absolute;
-    width: 1440px;
+    width: 98.73vw;
     height: 200px;
     left: 0px;
     top: 350%;
@@ -464,7 +453,7 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 349px;
     height: 147px;
-    left: 539px;
+    left: 475px;
     top: 340%;
     z-index: 1;
     font-family: 'Arial';
@@ -475,7 +464,7 @@ main>section:nth-child(5)>div{
 
 .contactRec{
     position: absolute;
-    width: 1440px;
+    width: 98.73vw;
     height: 400px;
     left: 0px;
     top: 600%;
@@ -484,4 +473,121 @@ main>section:nth-child(5)>div{
 
 
 }
+
+#get{
+    position: absolute;
+    width: 287px;
+    height: 46px;
+    left: 590px;
+    top: 605%;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#let{
+    position: absolute;
+    width: 600px;
+    height: 46px;
+    left: 440px;
+    top: 612%;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+    font-size: 35px;
+
+}
+
+.first{
+    position: absolute;
+    width: 972px;
+    height: 29px;
+    left: 251px;
+    top: 623%;
+    font-family: 'Arial';
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+
+.second{
+    position: absolute;
+    width: 972px;
+    height: 29px;
+    left: 251px;
+    top: 629%;
+    font-family: 'Arial';
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+
+.smallpic{
+    position: absolute;
+    left: 615px;
+    top: 642.8%;
+    z-index: 2;
+}
+
+.greenCircle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left:636.3px;
+    top: 646.3%;
+    border-radius: 100%;
+    background: #00F461;
+    z-index: 2;
+}
+
+.Circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 615px;
+    top: 642.8%;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+
+#reply{
+    position: absolute;
+    width: 255px;
+    height: 29px;
+    left: 613px;
+    top: 641.5%;
+    font-size: 15px;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+}
+
+.gmail{
+    position: absolute;
+    width: 237px;
+    height: 30px;
+    left: 450px;
+    top: 255em;
+    border-radius: 5px;
+    background-color: #701C7D;
+    z-index: 1;
+    border: #701C7D;
+}
+
+.number{
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 760px;
+    top: 255em;
+    border-radius: 5px;
+    background-color: #3ABB56;
+    z-index: 1;
+    border: #3ABB56;
+
+}
+
 

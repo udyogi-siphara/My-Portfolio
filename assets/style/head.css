@@ -3,8 +3,7 @@
     left: 0px;
     top: 0px;
     height: 50px;
-    width: 1440px;
-
+    width: 98.73vw;
     background: #701C7D;;
 }
 
@@ -22,7 +21,12 @@ body>header>nav>ul>li{
     color: #FFFFFF;
     font-size: 18px;
     padding: 10px;
-    left: 60%;
-    top: -20px;
+    /*right: -60%;*/
+    top: -15px;
     font-family: 'Doppio One', sans-serif;
+}
+
+body>header>nav>ul{
+    position: absolute;
+    right: 05%;
 }
