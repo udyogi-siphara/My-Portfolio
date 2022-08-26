@@ -96,6 +96,16 @@ body{
     z-index: 1;
 }
 
+body>main>section>section>div:nth-child(3){
+    position: absolute;
+    width: 235px;
+    height: 235px;
+    right: 271px;
+    top: 248px;
+    background: #FDFDFF;
+    border-radius: 100%;
+}
+
 #follow{
     position: absolute;
     right: -1%;
