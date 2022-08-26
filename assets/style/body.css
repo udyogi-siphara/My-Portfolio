@@ -159,7 +159,7 @@ body>main>section>section>div:nth-child(4){
 
 .aboutRec{/*about*/
     position: relative;
-    width: 98.73vw;
+    width: 98.5vw;
     height: 200px;
     left:0px;
     top: 481px;
@@ -230,7 +230,7 @@ body>main>section>section>div:nth-child(4){
 
 body>main>section:nth-child(4)>div{/*skills*/
     position: relative;
-    width: 98.73vw;
+    width: 98.5vw;
     height: 200px;
     left: 0px;
     top: 965px;
@@ -473,7 +473,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 
 main>section:nth-child(5)>div{
     position: relative;
-    width: 98.73vw;
+    width: 98.5vw;
     height: 200px;
     left: 0px;
     top: 1390px;
@@ -496,7 +496,7 @@ main>section:nth-child(5)>div{
 
 .contactRec{
     position: relative;
-    width: 98.73vw;
+    width: 98.5vw;
     height: 400px;
     left: 0px;
     top: 2480px;
@@ -628,7 +628,7 @@ main>section:nth-child(5)>div{
 
 body>footer{
     position: relative;
-    width: 98.73vw;
+    width: 98.5vw;
     height: 450px;
     left: 0px;
     bottom:-2408px;
@@ -702,7 +702,7 @@ a {
 
 body>footer>section>section:nth-child(2)>hr{
     position: absolute;
-    width: 98.73vw;
+    width: 98.5vw;
     height: 0px;
     left: 0px;
     bottom: 70px;
