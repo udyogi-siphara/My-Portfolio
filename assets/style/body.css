@@ -542,7 +542,29 @@ main>section:nth-child(5)>div{
     border-radius: unset;
     opacity: 0.8;
 }
-#fourth>section:nth-child(3)>div:nth-child(2)
+#fourth>section:nth-child(3)>div:nth-child(2)>figure{
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    left: -17px;
+    top: 8px;
+    z-index: 7;
+}
+#fourth>section:nth-child(3)>div:nth-child(2)>figure>figcaption{
+    position: absolute;
+    width: 285px;
+    height: 31.58px;
+    left: -60px;
+    top: -25px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    z-index: 7;
+}
 
 #fourth>section:nth-child(3)>div:nth-child(3){
     position: absolute;
