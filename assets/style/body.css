@@ -541,9 +541,36 @@ main>section:nth-child(5)>div{
     position: absolute;
     width: 260px;
     height: 210px;
-    right: -4px;
-    top: 20px;
+    right: -10px;
+    top: 15px;
     z-index: 5;
+}
+#fourth>section:nth-child(3)>div:nth-child(2)>figure>figcaption{
+    position: absolute;
+    width: 300px;
+    height: 31.58px;
+    right: -50px;
+    top: -28px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    z-index: 5;
+}
+
+#fourth>section:nth-child(3)>div:nth-child(3){
+    position: absolute;
+    width: 204px;
+    height: 154px;
+    right: 145px;
+    top: 2550px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+    background-color: #B6A3BC;
+    border-radius: unset;
 }
 
 .contactRec{
