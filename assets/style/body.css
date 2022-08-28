@@ -114,7 +114,7 @@ body>main>section>section>div:nth-child(4){
     top: 155px;
     border-radius: 100%;
     background: rgba(255, 255, 255, 0.4);
-    border: 1px dashed #FFFFFF;
+    border: 2px dashed #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -159,7 +159,7 @@ body>main>section>section>div:nth-child(4){
 
 .aboutRec{/*about*/
     position: relative;
-    width: 98.5vw;
+    width: 98.73vw;
     height: 200px;
     left:0px;
     top: 481px;
@@ -230,7 +230,7 @@ body>main>section>section>div:nth-child(4){
 
 body>main>section:nth-child(4)>div{/*skills*/
     position: relative;
-    width: 98.5vw;
+    width: 98.73vw;
     height: 200px;
     left: 0px;
     top: 965px;
@@ -473,7 +473,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 
 main>section:nth-child(5)>div{
     position: relative;
-    width: 98.5vw;
+    width: 98.73vw;
     height: 200px;
     left: 0px;
     top: 1390px;
@@ -493,10 +493,62 @@ main>section:nth-child(5)>div{
     color: #FFFFFF;
     opacity: 0.4;
 }
+#fourth>section:nth-child(3)>div:nth-child(1){
+    position: absolute;
+    width: 330px;
+    height: 250px;
+    right: 500px;
+    top: 2500px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    background-color: #B6A3BC;
+}
+#fourth>section:nth-child(3)>div:nth-child(1)>figure{
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    right: -4px;
+    top: 20px;
+    z-index: 6;
+}
+#fourth>section:nth-child(3)>div:nth-child(1)>figure>figcaption{
+    position: absolute;
+    width: 300px;
+    height: 31.58px;
+    right: -20px;
+    top: -30px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    z-index: 1;
+}
+
+#fourth>section:nth-child(3)>div:nth-child(2){
+    position: absolute;
+    width: 272px;
+    height: 214px;
+    right: 300px;
+    top: 2520px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+    background-color: #B6A3BC;
+}
+#fourth>section:nth-child(3)>div:nth-child(2)>figure{
+    position: absolute;
+    width: 260px;
+    height: 210px;
+    right: -4px;
+    top: 20px;
+    z-index: 5;
+}
 
 .contactRec{
     position: relative;
-    width: 98.5vw;
+    width: 98.73vw;
     height: 400px;
     left: 0px;
     top: 2480px;
@@ -511,7 +563,7 @@ main>section:nth-child(5)>div{
     width: 287px;
     height: 46px;
     left: 39.5%;
-    top: 3758px;
+    top: 3980px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -524,7 +576,7 @@ main>section:nth-child(5)>div{
     width: 600px;
     height: 46px;
     left: 28%;
-    top: 3805px;
+    top: 4030px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -537,7 +589,7 @@ main>section:nth-child(5)>div{
     width: 972px;
     height: 29px;
     left: 13.5%;
-    top: 3895px;
+    top: 4110px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -549,7 +601,7 @@ main>section:nth-child(5)>div{
     width: 972px;
     height: 29px;
     left: 13.5%;
-    top: 3925px;
+    top: 4140px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -559,7 +611,7 @@ main>section:nth-child(5)>div{
 .smallpic{
     position: absolute;
     left: 37%;
-    top: 4005px;
+    top: 4232px;
     z-index: 2;
 }
 
@@ -568,7 +620,7 @@ main>section:nth-child(5)>div{
     width: 10px;
     height: 10px;
     left:38.5%;
-    top: 4027px;
+    top: 4255px;
     border-radius: 100%;
     background: #00F461;
     z-index: 2;
@@ -579,7 +631,7 @@ main>section:nth-child(5)>div{
     width: 30px;
     height: 30px;
     left: 37%;
-    top: 4005px;
+    top: 4232px;
     border-radius: 100%;
     background: white;
     z-index: 1;
@@ -590,7 +642,7 @@ main>section:nth-child(5)>div{
     width: 255px;
     height: 29px;
     left: 37.5%;
-    top: 3997px;
+    top: 4225px;
     font-size: 15px;
     font-family: 'Arial';
     color: black;
@@ -602,7 +654,7 @@ main>section:nth-child(5)>div{
     width: 237px;
     height: 30px;
     left: 450px;
-    top: 255em;
+    top: 269.5em;
     border-radius: 5px;
     background-color: #701C7D;
     z-index: 1;
@@ -614,7 +666,7 @@ main>section:nth-child(5)>div{
     width: 170px;
     height: 30px;
     right: 33%;
-    top: 255em;
+    top: 269.5em;
     border-radius: 5px;
     background-color: #3ABB56;
     z-index: 1;
@@ -628,7 +680,7 @@ main>section:nth-child(5)>div{
 
 body>footer{
     position: relative;
-    width: 98.5vw;
+    width: 98.73vw;
     height: 450px;
     left: 0px;
     bottom:-2408px;
@@ -702,7 +754,7 @@ a {
 
 body>footer>section>section:nth-child(2)>hr{
     position: absolute;
-    width: 98.5vw;
+    width: 98.6vw;
     height: 0px;
     left: 0px;
     bottom: 70px;
@@ -721,7 +773,8 @@ body>footer>section>section:nth-child(2)>p{
     /*font-size: 10px;*/
     line-height: 14px;
     color: #FFFFFF;
-
 }
+
+
 
 
