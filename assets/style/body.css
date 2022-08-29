@@ -719,13 +719,21 @@ main>section:nth-child(5)>div{
     background: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
 }
+#fourth>div:nth-child(9){
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    left: 800px;
+    top: 2790px;
+    background: rgba(255, 255, 255, 0.75);
+}
 
 .contactRec{
     position: relative;
     width: 98.73vw;
     height: 400px;
     left: 0px;
-    top: 2480px;
+    top: 1700px;
     z-index: 1;
     fill: white;
 
@@ -737,7 +745,7 @@ main>section:nth-child(5)>div{
     width: 287px;
     height: 46px;
     left: 39.5%;
-    top: 3980px;
+    top: 2970px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -750,7 +758,7 @@ main>section:nth-child(5)>div{
     width: 600px;
     height: 46px;
     left: 28%;
-    top: 4030px;
+    top: 3010px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -763,7 +771,7 @@ main>section:nth-child(5)>div{
     width: 972px;
     height: 29px;
     left: 13.5%;
-    top: 4110px;
+    top: 3100px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -775,7 +783,7 @@ main>section:nth-child(5)>div{
     width: 972px;
     height: 29px;
     left: 13.5%;
-    top: 4140px;
+    top: 3130px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -785,7 +793,7 @@ main>section:nth-child(5)>div{
 .smallpic{
     position: absolute;
     left: 37%;
-    top: 4232px;
+    top: 3213px;
     z-index: 2;
 }
 
@@ -794,7 +802,7 @@ main>section:nth-child(5)>div{
     width: 10px;
     height: 10px;
     left:38.5%;
-    top: 4255px;
+    top: 3237px;
     border-radius: 100%;
     background: #00F461;
     z-index: 2;
@@ -805,7 +813,7 @@ main>section:nth-child(5)>div{
     width: 30px;
     height: 30px;
     left: 37%;
-    top: 4232px;
+    top: 3213px;
     border-radius: 100%;
     background: white;
     z-index: 1;
@@ -816,7 +824,7 @@ main>section:nth-child(5)>div{
     width: 255px;
     height: 29px;
     left: 37.5%;
-    top: 4225px;
+    top: 3205px;
     font-size: 15px;
     font-family: 'Arial';
     color: black;
@@ -828,7 +836,7 @@ main>section:nth-child(5)>div{
     width: 237px;
     height: 30px;
     left: 450px;
-    top: 269.5em;
+    top: 206em;
     border-radius: 5px;
     background-color: #701C7D;
     z-index: 1;
@@ -840,7 +848,7 @@ main>section:nth-child(5)>div{
     width: 170px;
     height: 30px;
     right: 33%;
-    top: 269.5em;
+    top: 206em;
     border-radius: 5px;
     background-color: #3ABB56;
     z-index: 1;
@@ -857,7 +865,7 @@ body>footer{
     width: 98.73vw;
     height: 450px;
     left: 0px;
-    bottom:-2408px;
+    bottom:-1628px;
     background-color: #470852;
 }
 
