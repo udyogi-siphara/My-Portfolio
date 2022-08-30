@@ -719,13 +719,31 @@ main>section:nth-child(5)>div{
     background: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
 }
-#fourth>div:nth-child(9){
+
+.arrow{
     position: absolute;
     width: 40px;
     height: 4px;
     left: 800px;
     top: 2790px;
     background: rgba(255, 255, 255, 0.75);
+}
+.arrow::after, .arrow::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    right: -3px;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+.arrow::after{
+    top: -10px;
+    transform: rotate(55deg);
+}
+.arrow::before{
+    top: 10px;
+    transform: rotate(-55deg);
 }
 
 .contactRec{
