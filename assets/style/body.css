@@ -1,3 +1,4 @@
+/*Home Page*/
 .WelcomeRectangle{
     position: absolute;
     width: 160px;
@@ -157,6 +158,7 @@ body>main>section>section>div:nth-child(4){
     top: 361px;
 }
 
+/*Second Page*/
 .aboutRec{/*about*/
     position: relative;
     width: 98.73vw;
@@ -228,6 +230,7 @@ body>main>section>section>div:nth-child(4){
 
 }
 
+/*Third Page*/
 body>main>section:nth-child(4)>div{/*skills*/
     position: relative;
     width: 98.73vw;
@@ -470,6 +473,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
     left:50em;
     position: absolute;
 }
+
+/*Fourth Page*/
 
 main>section:nth-child(5)>div{
     position: relative;
@@ -746,6 +751,8 @@ main>section:nth-child(5)>div{
     transform: rotate(-55deg);
 }
 
+/*Fifth Page*/
+
 .contactRec{
     position: relative;
     width: 98.73vw;
@@ -878,6 +885,7 @@ main>section:nth-child(5)>div{
     font-family: Arial;
 }
 
+/*Footer*/
 body>footer{
     position: relative;
     width: 98.73vw;
