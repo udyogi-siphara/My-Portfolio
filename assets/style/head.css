@@ -1,3 +1,10 @@
+header{
+    position: fixed;
+    z-index: 5;
+    height: 50px;
+    width: 98.73vw;
+}
+
 .MenuRectangle{
     position: absolute;
     left: 0px;
