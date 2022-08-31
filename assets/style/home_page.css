@@ -161,12 +161,12 @@ body>main>section>section>div:nth-child(4){
 @media all and (width: 320px) {
     .WelcomeRectangle{
         position: absolute;
-        width: 160px;
+        width: 125px;
         height: 30px;
-        left: 10px;
-        top: 168px;
+        left: 28px;
+        top: 88px;
         fill: white;
-        z-index: 1;
+        z-index: 1
 
         /* position: absolute;
          width: 180px;
@@ -187,16 +187,15 @@ body>main>section>section>div:nth-child(4){
         position: absolute;
         width: 101px;
         height: 20px;
-        left: 139px;
-        top: 142px;
+        left: 42px;
+        top: 63px;
         z-index: 1;
-
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 20px;
-        color : #701C7D;
+        color: #701C7D;
     }
 
     body{
@@ -207,13 +206,12 @@ body>main>section>section>div:nth-child(4){
         position: absolute;
         width: 414px;
         height: 55px;
-        left: 109px;
-        top: 215px;
-
+        left: 30px;
+        top: 121px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 48px;
+        font-size: 29px;
         line-height: 55px;
         color: white;
     }
@@ -222,13 +220,13 @@ body>main>section>section>div:nth-child(4){
         position: absolute;
         width: 282px;
         height: 17px;
-        left: 125px;
-        top: 268px;
+        left: 37px;
+        top: 157px;
 
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 11px;
         line-height: 17px;
 
         color: #FFFFFF;
@@ -236,10 +234,10 @@ body>main>section>section>div:nth-child(4){
 
     .btnGetStarted{
         position: absolute;
-        width: 137px;
-        height: 35px;
-        left: 198px;
-        top: 405px;
+        width: 96px;
+        height: 29px;
+        left: 94px;
+        top: 251px;
         color: #701C7D;
         z-index: 1;
         border-radius: 15px;
