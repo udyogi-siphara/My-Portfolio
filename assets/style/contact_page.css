@@ -1,0 +1,133 @@
+/*Fifth Page*/
+
+.contactRec{
+    position: relative;
+    width: 98.73vw;
+    height: 400px;
+    left: 0px;
+    top: 1700px;
+    z-index: 1;
+    fill: white;
+
+
+}
+
+#get{
+    position: absolute;
+    width: 287px;
+    height: 46px;
+    left: 39.5%;
+    top: 2970px;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#let{
+    position: absolute;
+    width: 600px;
+    height: 46px;
+    left: 28%;
+    top: 3010px;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+    font-size: 35px;
+
+}
+
+.first{
+    position: absolute;
+    width: 972px;
+    height: 29px;
+    left: 13.5%;
+    top: 3100px;
+    font-family: 'Arial';
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+
+.second{
+    position: absolute;
+    width: 972px;
+    height: 29px;
+    left: 13.5%;
+    top: 3130px;
+    font-family: 'Arial';
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+
+.smallpic{
+    position: absolute;
+    left: 37%;
+    top: 3213px;
+    z-index: 2;
+}
+
+.greenCircle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left:38.5%;
+    top: 3237px;
+    border-radius: 100%;
+    background: #00F461;
+    z-index: 2;
+}
+
+.Circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 37%;
+    top: 3213px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+
+#reply{
+    position: absolute;
+    width: 255px;
+    height: 29px;
+    left: 37.5%;
+    top: 3205px;
+    font-size: 15px;
+    font-family: 'Arial';
+    color: black;
+    z-index: 1;
+}
+
+.gmail{
+    position: absolute;
+    width: 237px;
+    height: 30px;
+    left: 450px;
+    top: 206em;
+    border-radius: 5px;
+    background-color: #701C7D;
+    z-index: 1;
+    border: #701C7D;
+}
+
+.number {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    right: 33%;
+    top: 206em;
+    border-radius: 5px;
+    background-color: #3ABB56;
+    z-index: 1;
+    border: #3ABB56;
+}
+
+#tel{
+    color: #FFFFFF;
+    font-family: Arial;
+}
