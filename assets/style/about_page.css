@@ -109,38 +109,37 @@
         position: absolute;
         width: 150px;
         height: 23.23px;
-        right: 37%;
-        top: 770px;
+        right: 48%;
+        top: 850px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 18px;
         text-decoration-line: underline;
         color: #FFFFFF;
-        display: none;
     }
 
     .div1{
         position: absolute;
-        width: 15px;
-        height: 15px;
-        right: 636px;
-        top: 832px;
+        width: 9px;
+        height: 9px;
+        right: 280px;
+        top: 871px;
         border-radius: 100%;
         border: 3px solid white;
-        display: none;
     }
 
     .paragraph{
         position: absolute;
         width: 614px;
-        height: 161.34px;
-        right: 30px;
-        top: 815px;
+        height: 135.34px;
+        right: -328px;
+        top: 859px;
         font-family: 'Arial';
         color: #FFFFFF;
         text-align: justify;
-        display: none;
+        font-size: 11px;
     }
+
 }
