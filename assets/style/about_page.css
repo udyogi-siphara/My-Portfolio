@@ -99,11 +99,10 @@
 
     .aboutImage{
         position: absolute;
-        width: 595px;
-        height: 538px;
-        lef: 30px;
-        top: 645px;
-        display: none;
+        width: 262px;
+        height: 262px;
+        left: 27px;
+        top: 603px;
     }
 
     .who{
