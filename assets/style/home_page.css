@@ -248,23 +248,21 @@ body>main>section>section>div:nth-child(4){
 
     .myProfile{
         position: absolute;
-        width: 375px;
-        height: 358px;
-        right: 14%;
-        top: 147px;
+        width: 218px;
+        height: 201px;
+        right: 12%;
+        top: 352px;
         z-index: 1;
-
     }
 
     body>main>section>section>div:nth-child(3){
         position: absolute;
-        width: 235px;
-        height: 235px;
-        right: 271px;
-        top: 248px;
+        width: 132px;
+        height: 132px;
+        right: 89px;
+        top: 407px;
         background: #FDFDFF;
         border-radius: 100%;
-        display: none;
     }
 
     body>main>section>section>div:nth-child(4){
