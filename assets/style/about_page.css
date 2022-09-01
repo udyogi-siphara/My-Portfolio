@@ -69,3 +69,80 @@
     text-align: justify;
 
 }
+
+@media all and (width: 320px){
+    .aboutRec{/*about*/
+        position: relative;
+        width: 100vw;
+        height: 70px;
+        left: 0px;
+        top: 533px;
+        fill: #470852;
+        z-index: 1;
+    }
+
+    #aboutTopic{
+        position: absolute;
+        width: 349px;
+        height: 147px;
+        left: 539px;
+        top: 425px;
+        z-index: 1;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        opacity: 0.4;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 147px;
+        display: none;
+    }
+
+    .aboutImage{
+        position: absolute;
+        width: 595px;
+        height: 538px;
+        lef: 30px;
+        top: 645px;
+        display: none;
+    }
+
+    .who{
+        position: absolute;
+        width: 150px;
+        height: 23.23px;
+        right: 37%;
+        top: 770px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        display: none;
+    }
+
+    .div1{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 636px;
+        top: 832px;
+        border-radius: 100%;
+        border: 3px solid white;
+        display: none;
+    }
+
+    .paragraph{
+        position: absolute;
+        width: 614px;
+        height: 161.34px;
+        right: 30px;
+        top: 815px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        display: none;
+    }
+}
