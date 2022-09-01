@@ -85,17 +85,16 @@
         position: absolute;
         width: 349px;
         height: 147px;
-        left: 539px;
-        top: 425px;
+        left: 95px;
+        top: 478px;
         z-index: 1;
         font-family: 'Arial';
         color: #FFFFFF;
         opacity: 0.4;
         font-style: normal;
         font-weight: 700;
-        font-size: 128px;
+        font-size: 48px;
         line-height: 147px;
-        display: none;
     }
 
     .aboutImage{
