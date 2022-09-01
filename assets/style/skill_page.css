@@ -241,3 +241,275 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
     left:50em;
     position: absolute;
 }
+
+@media all and (width: 320px) {
+    body>main>section:nth-child(4)>div{/*skills*/
+        position: relative;
+        width: 100vw;
+        height: 70px;
+        left: 0px;
+        top: 1000px;
+        background-color: #470852;
+        z-index: 1;
+    }
+
+    #skills{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 539px;
+        top: 699px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div{
+        position: absolute;
+        width: 1000px;
+        height: 600px;
+        left: 11em;
+        top: 90em;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        display: none;
+    }
+
+    .smiller1{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 5%;
+        top:0;
+        font-family: 'Arial';
+        font-size: 40px;
+        color: #000000;
+        z-index: 1;
+        display: none;
+    }
+
+    .smiller2{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 30%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 40px;
+        color: #000000;
+        z-index: 1;
+        display: none;
+    }
+
+    #nonSmiller{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 7%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 40px;
+        color: #701C7D;
+        z-index: 1;
+        display: none;
+    }
+
+    #design{
+        position: absolute;
+        width: 104px;
+        height: 31px;
+        font-size: 25px;
+        left: 8%;
+        top: 20%;
+        color: #000000;
+        font-family: 'Arial';
+        z-index: 1;
+        display: none;
+    }
+
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(5){
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 5em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+        display: none;
+    }
+
+    .designList{
+        list-style: none;
+        position: absolute;
+        left:4%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+        display: none;
+    }
+
+    #web{
+        position: absolute;
+        width: 64px;
+        height: 31px;
+        left: 41%;
+        top: 20%;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        display: none;
+    }
+
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(8){
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 25.9em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+        display: none;
+    }
+
+    .webList{
+        list-style: none;
+        position: absolute;
+        left: 37.5%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+        display: none;
+    }
+
+    #software{
+        position: absolute;
+        width: 64px;
+        height: 31px;
+        left: 74%;
+        top: 20%;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        display: none;
+    }
+
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11){
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 46.4em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+        display: none;
+    }
+
+    .softwareList{
+        list-style: none;
+        position: absolute;
+        left: 70.5%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+        display: none;
+    }
+
+    .imgPara{
+        top: 75%;
+        left: 8%;
+        z-index: 1;
+        position: absolute;
+        display: none;
+    }
+
+    .javaScript{
+        left: 8em;
+        position: absolute;
+        display: none;
+    }
+
+    .css{
+        left: 17.5em;
+        position: absolute;
+        display: none;
+    }
+
+    .html{
+        left:25.5em;
+        position: absolute;
+        display: none;
+    }
+
+    .mysql{
+        left:34em;
+        position: absolute;
+        display: none;
+    }
+
+    .hibernate{
+        left:42em;
+        position: absolute;
+        display: none;
+    }
+
+    .python{
+        left:50em;
+        position: absolute;
+        display: none;
+    }
+
+    .intellij{
+        left: 0em;
+        position: absolute;
+        display: none;
+    }
+
+    .figma{
+        left: 8em;
+        position: absolute;
+        display: none;
+    }
+
+    .slack{
+        left: 17.5em;
+        position: absolute;
+        display: none;
+    }
+
+    .eclipse{
+        left:25.5em;
+        position: absolute;
+        display: none;
+    }
+
+    .Scene{
+        left:34em;
+        position: absolute;
+        display: none;
+    }
+
+    .gitHub{
+        left:42em;
+        position: absolute;
+        display: none;
+    }
+
+    .visual{
+        left:50em;
+        position: absolute;
+        display: none;
+    }
+}
