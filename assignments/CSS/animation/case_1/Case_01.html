@@ -13,25 +13,29 @@
             animation-name: my-animation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
         @keyframes my-animation {
             0%{
                 background: yellow;
-                
+                margin: 0px 0px 0px 0px;/*top,right,bottom,left*/
             }
             25%{
                 background: blue;
-
+                margin:0px 0px 0px 1210px;
             }
             50%{
                 background: orangered;
+                margin:550px 0px 0px 1210px;
             }
             75%{
                 background: red;
+                margin:550px 0px 0px 0px;
             }
             100%{
                 background: deeppink;
+                margin:0px 0px 0px 0px;
             }
         }
     </style>
