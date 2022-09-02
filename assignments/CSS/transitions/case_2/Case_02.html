@@ -6,8 +6,8 @@
   <link href="../../../../assets/style/normalize.css" rel="stylesheet">
   <style>
     section{
-      width: 1200px;
-      height: 600px;
+      width: 98.6vw;
+      height: 100%;
       border: 1px solid blue;
       background-color: blue;
       top: 0;
@@ -17,11 +17,45 @@
       margin: auto;
       position: absolute;
     }
+
+    div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 100%;
+      border: 10px solid white;
+      background-color: gray;
+      width: 250px;
+      height: 250px;
+    }
+    section>div>h1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: max-content;
+      font-size: 30px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    div:hover{
+      cursor: pointer;
+      
+    }
+    h1:hover{
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 <section>
-  <div></div>
+  <div><h1>RWAD</h1></div>
 </section>
 </body>
 </html>
