@@ -3,14 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Case_01</title>
+    <link href="../../../../assets/style/normalize.css" rel="stylesheet">
+    <style>
+
+        section{
+            width: 1000px;
+            height: 500px;
+        }
+
+        section>div{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: rebeccapurple;
+            transition-duration: 2s;
+            transition-property:  all;
+            padding-top: 20px;
+            top:120px;
+        }
+        h1{
+            position: absolute;
+            width: 200px;
+            color: white;
+            font-size: 14px;
+            left: 10px;
+            top: 15px;
+        }
+
+        section>div>i{
+            position: absolute;
+            background-color: white;
+            top: 15px;
+            left: 20px;
+        }
+
+        div:hover{
+            background-color: rebeccapurple;
+            width: 200px;
+            transition-duration: 2s;
+            transition-property:  width,background-color;
+        }
+    </style>
 </head>
 <body>
 <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div><i class="fa-solid fa-address-book"></i><h1>Menu One</h1></div>
+    <br>
+    <div><i class="fa-solid fa-truck-medical"></i></div>
+    <br>
+    <div><i class="fa-brands fa-cc-amazon-pay"></i></div>
+    <br>
+    <div><i class="fa-solid fa-layer-group"></i></div>
+    <br>
+    <div><i class="fa-solid fa-cart-shopping"></i></div>
 </section>
 </body>
 </html>
