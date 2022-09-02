@@ -30,6 +30,7 @@
       background-color: gray;
       width: 250px;
       height: 250px;
+      border-top: 10px solid crimson;
     }
     div>h1{
       position: absolute;
@@ -45,12 +46,14 @@
     }
 
     div:hover{
-      cursor: pointer;
+      transform: rotate(360deg);
+      transition: all 2s;
+    }
+    div:hover>h1{
+      transform: rotate(-360deg);
+      transition: all 2s;
+    }
 
-    }
-    h1:hover{
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
