@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>Case_01</title>
     <link href="../../../../assets/style/normalize.css" rel="stylesheet">
+    <link href="../../../../assets/fonts/css/all.min.css" rel="stylesheet">
     <style>
 
         section{
             width: 1000px;
             height: 500px;
+            position: relative;
+            right:10px;
         }
 
         section>div{
@@ -26,15 +29,21 @@
             width: 200px;
             color: white;
             font-size: 14px;
-            left: 10px;
-            top: 15px;
+            top: 0;
+            bottom: 0;
+            height: max-content;
+            margin: auto;
         }
 
-        section>div>i{
+        section > div > i {
             position: absolute;
-            background-color: white;
-            top: 15px;
-            left: 20px;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            height: max-content;
+            margin: auto;
+            font-size: 25px;
+            color: #FFFFFF;
         }
 
         div:hover{
@@ -49,13 +58,13 @@
 <section>
     <div><i class="fa-solid fa-address-book"></i><h1>Menu One</h1></div>
     <br>
-    <div><i class="fa-solid fa-truck-medical"></i></div>
+    <div><i class="fa-solid fa-truck-medical"></i><h1>Menu Two</h1></div>
     <br>
-    <div><i class="fa-brands fa-cc-amazon-pay"></i></div>
+    <div><i class="fa-brands fa-cc-amazon-pay"></i><h1>Menu Three</h1></div>
     <br>
-    <div><i class="fa-solid fa-layer-group"></i></div>
+    <div><i class="fa-solid fa-layer-group"></i><h1>Menu Four</h1></div>
     <br>
-    <div><i class="fa-solid fa-cart-shopping"></i></div>
+    <div><i class="fa-solid fa-cart-shopping"></i><h1>Menu Five</h1></div>
 </section>
 </body>
 </html>
