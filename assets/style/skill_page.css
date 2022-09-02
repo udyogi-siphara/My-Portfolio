@@ -271,13 +271,12 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 
     body>main>section:nth-child(4)>section:nth-child(3)>section>div{
         position: absolute;
-        width: 1000px;
-        height: 600px;
-        left: 11em;
-        top: 90em;
+        width: 281px;
+        height: 369px;
+        left: 1em;
+        top: 73em;
         background-color: #FFFFFF;
-        border-radius: 30px;
-        display: none;
+        border-radius: 15px;
     }
 
     .smiller1{
