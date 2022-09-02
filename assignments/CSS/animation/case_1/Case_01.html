@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Case_01</title>
+    <link href="../../../../assets/style/normalize.css" rel="stylesheet">
+    <style>
+        div{
+            width: 150px;
+            height: 70px;
+            border-radius: 15px;
+            /*border: 2px solid black;*/
+            animation-name: my-animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes my-animation {
+            0%{
+                background: yellow;
+                
+            }
+            25%{
+                background: blue;
+
+            }
+            50%{
+                background: orangered;
+            }
+            75%{
+                background: red;
+            }
+            100%{
+                background: deeppink;
+            }
+        }
+    </style>
 </head>
 <body>
-
+<div></div>
 </body>
 </html>
