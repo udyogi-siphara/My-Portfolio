@@ -272,8 +272,8 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
     body>main>section:nth-child(4)>section:nth-child(3)>section>div{
         position: absolute;
         width: 281px;
-        height: 369px;
-        left: 1em;
+        height: 288px;
+        left: 1.2em;
         top: 73em;
         background-color: #FFFFFF;
         border-radius: 15px;
@@ -336,7 +336,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
         width: 55px;
         height: 0px;
         left: 0.54em;
-        top: 5em;
+        top: 4.1em;
         z-index: 1;
         border: 2px solid #000000;
 
@@ -370,7 +370,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
         width: 36px;
         height: 0px;
         left: 6.58em;
-        top: 5em;
+        top: 4.1em;
         z-index: 1;
         border: 2px solid #000000;
     }
@@ -403,7 +403,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
         width: 71px;
         height: 0px;
         left: 12.5678456em;
-        top: 5.1em;
+        top: 4.1em;
         z-index: 1;
         border: 2px solid #000000;
     }
@@ -420,88 +420,118 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
     }
 
     .imgPara{
-        top: 75%;
-        left: 8%;
+        top: 58%;
+        left: 4%;
         z-index: 1;
         position: absolute;
-        display: none;
+    }
+
+    .java{
+        width: 30px;
+        height: 30px;
     }
 
     .javaScript{
-        left: 8em;
+        left: 2em;
         position: absolute;
-        display: none;
+        width: 30px;
+        height: 30px;
+
     }
 
     .css{
-        left: 17.5em;
+        width: 30px;
+        height: 30px;
+        left: 4.3em;
         position: absolute;
-        display: none;
+
     }
 
     .html{
-        left:25.5em;
+        width: 30px;
+        height: 30px;
+        left:6.4em;
         position: absolute;
-        display: none;
+
     }
 
     .mysql{
-        left:34em;
+        width: 30px;
+        height: 30px;
+        left:8.8em;
         position: absolute;
-        display: none;
+
     }
 
     .hibernate{
-        left:42em;
+        width: 30px;
+        height: 30px;
+        left:11.5em;
         position: absolute;
-        display: none;
+
     }
 
     .python{
-        left:50em;
+        width: 30px;
+        height: 30px;
+        left:14.2em;
         position: absolute;
-        display: none;
+
     }
 
     .intellij{
+        width: 30px;
+        height: 30px;
         left: 0em;
         position: absolute;
-        display: none;
+
     }
 
     .figma{
-        left: 8em;
+        width: 30px;
+        height: 30px;
+        left: 2em;
         position: absolute;
-        display: none;
+
     }
 
     .slack{
-        left: 17.5em;
+        width: 30px;
+        height: 30px;
+        left: 4.3em;
         position: absolute;
-        display: none;
+
     }
 
     .eclipse{
-        left:25.5em;
+        width: 30px;
+        height: 30px;
+        left:6.4em;
         position: absolute;
-        display: none;
+
     }
 
     .Scene{
-        left:34em;
+        width: 30px;
+        height: 30px;
+        left:8.8em;
         position: absolute;
-        display: none;
+
     }
 
     .gitHub{
-        left:42em;
+        width: 30px;
+        height: 30px;
+        left:11.5em;
         position: absolute;
-        display: none;
+
     }
 
     .visual{
-        left:50em;
+        width: 30px;
+        height: 30px;
+        left:14.2em;
         position: absolute;
-        display: none;
+
     }
 }
