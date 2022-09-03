@@ -1,6 +1,6 @@
 header{
     position: fixed;
-    z-index: 5;
+    z-index: 15;
     height: 50px;
     width: 98.73vw;
 }
