@@ -286,36 +286,36 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
         left: 5%;
         top:0;
         font-family: 'Arial';
-        font-size: 40px;
+        font-size: 22px;
         color: #000000;
         z-index: 1;
-        display: none;
+
     }
 
     .smiller2{
         position: absolute;
         width: 459px;
         height: 71px;
-        left: 30%;
+        left: 54.5%;
         top: 0;
         font-family: 'Arial';
-        font-size: 40px;
+        font-size: 22px;
         color: #000000;
         z-index: 1;
-        display: none;
+
     }
 
     #nonSmiller{
         position: absolute;
         width: 459px;
         height: 71px;
-        left: 7%;
+        left: 9%;
         top: 0;
         font-family: 'Arial';
-        font-size: 40px;
+        font-size: 22px;
         color: #701C7D;
         z-index: 1;
-        display: none;
+
     }
 
     #design{
