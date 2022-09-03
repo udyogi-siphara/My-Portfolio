@@ -73,7 +73,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
 
 #design{
     position: absolute;
-    width: 104px;
+    width: 150px;
     height: 31px;
     font-size: 25px;
     left: 8%;
@@ -81,9 +81,11 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div{
     color: #000000;
     font-family: 'Arial';
     z-index: 1;
+    border-bottom: 1px solid black;
 }
 
-body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(5){
+body>main>section:nth-child(4)>section:nth-child(3)>section>div>hr:nth-child(5){
+    display: inline-block;
     position: absolute;
     width: 170px;
     height: 0px;
@@ -106,7 +108,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(5)
 
 #web{
     position: absolute;
-    width: 64px;
+    width: 100px;
     height: 31px;
     left: 41%;
     top: 20%;
@@ -114,9 +116,11 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(5)
     color: black;
     z-index: 1;
     font-size: 25px;
+    border-bottom: 1px solid black;
 }
 
-body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(8){
+body>main>section:nth-child(4)>section:nth-child(3)>section>div>hr:nth-child(8){
+    display: inline-block;
     position: absolute;
     width: 170px;
     height: 0px;
@@ -139,7 +143,7 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(8)
 
 #software{
     position: absolute;
-    width: 64px;
+    width: 200px;
     height: 31px;
     left: 74%;
     top: 20%;
@@ -147,9 +151,11 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(8)
     color: black;
     z-index: 1;
     font-size: 25px;
+    border-bottom: 1px solid black;
 }
 
-body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11){
+body>main>section:nth-child(4)>section:nth-child(3)>section>div>hr:nth-child(11){
+    display: inline-block;
     position: absolute;
     width: 170px;
     height: 0px;
@@ -320,21 +326,23 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 
     #design{
         position: absolute;
-        width: 104px;
-        height: 31px;
+        width: 59px;
+        height: 13px;
         font-size: 12px;
         left: 3%;
         top: 15%;
         color: #000000;
         font-family: 'Arial';
         z-index: 1;
+        border-bottom: 1px solid black;
 
     }
 
-    body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(5){
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div>hr:nth-child(5){
+        display: inline-block;
         position: absolute;
         width: 55px;
-        height: 0px;
+        height: 0.1em;
         left: 0.54em;
         top: 4.1em;
         z-index: 1;
@@ -355,17 +363,19 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 
     #web{
         position: absolute;
-        width: 64px;
-        height: 31px;
+        width: 41px;
+        height: 13px;
         left: 37%;
         top: 15%;
         font-family: 'Arial';
         color: black;
         z-index: 1;
         font-size: 12px;
+        border-bottom: 1px solid black;
     }
 
-    body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(8){
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div>hr:nth-child(8){
+        display: inline-block;
         position: absolute;
         width: 36px;
         height: 0px;
@@ -388,17 +398,19 @@ body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11
 
     #software{
         position: absolute;
-        width: 64px;
-        height: 31px;
+        width: 77px;
+        height: 13px;
         left: 71%;
         top: 15%;
         font-family: 'Arial';
         color: black;
         z-index: 1;
         font-size: 12px;
+        border-bottom: 1px solid black;
     }
 
-    body>main>section:nth-child(4)>section:nth-child(3)>section>div>div:nth-child(11){
+    body>main>section:nth-child(4)>section:nth-child(3)>section>div>hr:nth-child(11){
+        display: inline-block;
         position: absolute;
         width: 71px;
         height: 0px;
