@@ -101,9 +101,9 @@ body>footer>section>section:nth-child(2)>p{
     body>footer{
         position: relative;
         width: 100vw;
-        height: 450px;
+        height: 332px;
         left: 0px;
-        bottom: -1230px;
+        bottom: -1232px;
         background-color: #470852;
     }
 
@@ -119,10 +119,10 @@ body>footer>section>section:nth-child(2)>p{
     body>footer>section>section:first-child{
         border-radius: 100%;
         position: absolute;
-        width: 300px;
-        height: 300px;
-        left: 528px;
-        bottom: 110px;
+        width: 200px;
+        height: 200px;
+        left: 60px;
+        bottom: 95px;
         background: #470852;
         border: 2px dashed #FFFFFF;
     }
@@ -131,37 +131,36 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 361px;
         height: 74px;
-        right: -32px;
-        bottom: 130px;
+        right: -81px;
+        bottom: 83px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 20px;
         line-height: 74px;
         color: #FFFFFF;
         z-index: 3;
-        display: none;
     }
 
     .gmail2{
         position: absolute;
-        width: 323px;
+        width: 225px;
         height: 29px;
         right: -15px;
-        bottom: 128px;
+        bottom: 76px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 10px;
         line-height: 29px;
         color: #FFFFFF;
-        display: none;
+
     }
 
     #email2{
         color: #FFFFFF;
         font-family: Arial;
-        display: none;
+
     }
 
     a {
@@ -170,11 +169,20 @@ body>footer>section>section:nth-child(2)>p{
 
     .iconGithub\&LinkedIn{
         position: absolute;
-        width: 45px;
-        height: 45px;
-        right: 141px;
-        bottom: 35px;
-        display: none;
+        width: 25px;
+        height: 25px;
+        right: 109px;
+        bottom: 20px;
+
+    }
+
+    #git{
+        width: 30px;
+        height: 30px;
+    }
+    #linked{
+        width: 30px;
+        height: 30px;
     }
 
     body>footer>section>section:nth-child(2)>hr{
