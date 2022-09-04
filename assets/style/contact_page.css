@@ -149,53 +149,49 @@
         position: absolute;
         width: 287px;
         height: 46px;
-        left: 39.5%;
-        top: 2970px;
+        left: 7%;
+        top: 1999px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
-        font-size: 30px;
+        font-size: 16px;
         margin-bottom: 15px;
-        display: none;
     }
 
     #let{
         position: absolute;
-        width: 600px;
+        width: 289px;
         height: 46px;
-        left: 28%;
-        top: 3010px;
+        left: 6%;
+        top: 2023px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
-        font-size: 35px;
-        display: none;
+        font-size: 23px;
     }
 
     .first{
         position: absolute;
-        width: 972px;
+        width: 351px;
         height: 29px;
-        left: 13.5%;
-        top: 3100px;
+        left: -5%;
+        top: 2085px;
         font-family: 'Arial';
-        font-size: 20px;
+        font-size: 11px;
         color: black;
         z-index: 1;
-        display: none;
     }
 
     .second{
         position: absolute;
-        width: 972px;
+        width: 311px;
         height: 29px;
-        left: 13.5%;
-        top: 3130px;
+        left: 0%;
+        top: 2114px;
         font-family: 'Arial';
-        font-size: 20px;
+        font-size: 11px;
         color: black;
         z-index: 1;
-        display: none;
     }
 
     .smallpic{
