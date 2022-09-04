@@ -107,11 +107,6 @@ body>footer>section>section:nth-child(2)>p{
         background-color: #470852;
     }
 
-    #email{
-        color: #FFFFFF;
-        font-family: Arial;
-        display: none;
-    }
     a{
         text-decoration:none;
     }
@@ -160,7 +155,6 @@ body>footer>section>section:nth-child(2)>p{
     #email2{
         color: #FFFFFF;
         font-family: Arial;
-
     }
 
     a {
@@ -187,26 +181,28 @@ body>footer>section>section:nth-child(2)>p{
 
     body>footer>section>section:nth-child(2)>hr{
         position: absolute;
-        width: 98.6vw;
+        width: 100vw;
         height: 0px;
         left: 0px;
         bottom: 70px;
         border: 1px solid #FFFFFF;
-        display: none;
     }
 
     body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 260px;
         height: 14px;
-        right: 530px;
+        right: 29px;
         bottom: 5px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        /*font-size: 10px;*/
+        /* font-size: 10px; */
         line-height: 14px;
         color: #FFFFFF;
-        display: none;
+    }
+
+    .copyRight{
+        font-size: 15px;
     }
 }
