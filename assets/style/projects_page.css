@@ -251,7 +251,7 @@ main>section:nth-child(5)>div{
     border-radius: 100%;
 }
 
-.arrow{
+.arrow1{
     position: absolute;
     width: 40px;
     height: 4px;
@@ -259,7 +259,7 @@ main>section:nth-child(5)>div{
     top: 2790px;
     background: rgba(255, 255, 255, 0.75);
 }
-.arrow::after, .arrow::before{
+.arrow1::after, .arrow1::before{
     content: '';
     position: absolute;
     width: 20px;
@@ -268,11 +268,11 @@ main>section:nth-child(5)>div{
     background: rgba(255, 255, 255, 0.75);
     z-index: 1;
 }
-.arrow::after{
+.arrow1::after{
     top: -10px;
     transform: rotate(55deg);
 }
-.arrow::before{
+.arrow1::before{
     top: 10px;
     transform: rotate(-55deg);
 }
@@ -543,31 +543,59 @@ main>section:nth-child(5)>div{
         border-radius: 100%;
     }
 
-    .arrow{
-        position: absolute;
-        width: 40px;
-        height: 4px;
-        left: 800px;
-        top: 2790px;
-        background: rgba(255, 255, 255, 0.75);
-        display: none;
-    }
-    .arrow::after, .arrow::before{
-        content: '';
+    .arrow1{
         position: absolute;
         width: 20px;
         height: 4px;
-        right: -3px;
+        left: 265px;
+        top: 1872px;
+        background: rgba(255, 255, 255, 0.75);
+
+    }
+    .arrow1::after, .arrow1::before{
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 4px;
+        right: -5px;
         background: rgba(255, 255, 255, 0.75);
         z-index: 1;
-        display: none;
+
     }
-    .arrow::after{
-        top: -10px;
-        transform: rotate(55deg);
+    .arrow1::after{
+        top: -4px;
+        transform: rotate(45deg);
     }
-    .arrow::before{
-        top: 10px;
-        transform: rotate(-55deg);
+    .arrow1::before{
+        top: 4px;
+        transform: rotate(-45deg);
+    }
+
+    .arrow2{
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 42px;
+        top: 1872px;
+        background: rgba(255, 255, 255, 0.75);
+
+    }
+    .arrow2::after, .arrow2::before{
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 4px;
+        right: 12px;
+        background: rgba(255, 255, 255, 0.75);
+        z-index: 1;
+
+    }
+    .arrow2::after{
+        top: -4px;
+        transform: rotate(134deg);
+    }
+    .arrow2::before{
+        top: 4px;
+        transform: rotate(-134deg);
     }
 }
