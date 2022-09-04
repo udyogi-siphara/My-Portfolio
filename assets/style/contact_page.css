@@ -196,78 +196,76 @@
 
     .smallpic{
         position: absolute;
-        left: 37%;
-        top: 3213px;
+        left: 23%;
+        top: 2174px;
         z-index: 2;
-        display: none;
     }
 
     .greenCircle{
         position: absolute;
         width: 10px;
         height: 10px;
-        left:38.5%;
-        top: 3237px;
+        left: 29%;
+        top: 2198px;
         border-radius: 100%;
         background: #00F461;
         z-index: 2;
-        display: none;
     }
 
     .Circle{
         position: absolute;
         width: 30px;
         height: 30px;
-        left: 37%;
-        top: 3213px;
+        left: 23%;
+        top: 2174px;
         border-radius: 100%;
         background: white;
         z-index: 1;
-        display: none;
     }
 
     #reply{
         position: absolute;
         width: 255px;
         height: 29px;
-        left: 37.5%;
-        top: 3205px;
-        font-size: 15px;
+        left: 21%;
+        top: 2171px;
+        font-size: 12px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
-        display: none;
     }
 
     .gmail{
         position: absolute;
-        width: 237px;
-        height: 30px;
-        left: 450px;
-        top: 206em;
+        width: 219px;
+        height: 39px;
+        left: 51px;
+        top: 140em;
         border-radius: 5px;
         background-color: #701C7D;
         z-index: 1;
         border: #701C7D;
-        display: none;
     }
 
     .number {
         position: absolute;
         width: 170px;
         height: 30px;
-        right: 33%;
-        top: 206em;
+        right: 23%;
+        top: 143em;
         border-radius: 5px;
         background-color: #3ABB56;
         z-index: 1;
         border: #3ABB56;
-        display: none;
     }
 
     #tel{
         color: #FFFFFF;
         font-family: Arial;
-        display: none;
+        font-size: 13px;
+    }
+
+    #email{
+        font-size: 13px;
     }
 }
