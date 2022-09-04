@@ -203,6 +203,7 @@ main>section:nth-child(5)>div{
     z-index: 7;
 }
 
+/*First dot*/
 #fourth>div:nth-child(4){
     position: absolute;
     width: 15px;
@@ -239,6 +240,7 @@ main>section:nth-child(5)>div{
     background: rgba(255, 255, 255, 0.75);
     border-radius: 100%;
 }
+/*last dot*/
 #fourth>div:nth-child(8){
     position: absolute;
     width: 15px;
@@ -493,55 +495,52 @@ main>section:nth-child(5)>div{
         display: none;
     }
 
+    /*first dot*/
     #fourth>div:nth-child(4){
         position: absolute;
-        width: 15px;
-        height: 15px;
-        left: 590px;
-        top: 2785px;
+        width: 12px;
+        height: 12px;
+        left: 75px;
+        top: 1867px;
         background: rgba(255, 255, 255, 0.5);
         border-radius: 100%;
-        display: none;
     }
     #fourth>div:nth-child(5){
         position: absolute;
-        width: 20px;
-        height: 20px;
-        left: 630px;
-        top: 2782px;
+        width: 17px;
+        height: 17px;
+        left: 109px;
+        top: 1864px;
         background: rgba(255, 255, 255, 0.75);
         border-radius: 100%;
-        display: none;
     }
     #fourth>div:nth-child(6){
         position: absolute;
-        width: 25px;
-        height: 25px;
-        left: 675px;
-        top: 2779px;
+        width: 22px;
+        height: 22px;
+        left: 152px;
+        top: 1862px;
         background: #FFFFFF;
         border-radius: 100%;
-        display: none;
     }
     #fourth>div:nth-child(7){
         position: absolute;
-        width: 20px;
-        height: 20px;
-        left: 725px;
-        top: 2782px;
+        width: 17px;
+        height: 17px;
+        left: 200px;
+        top: 1864px;
         background: rgba(255, 255, 255, 0.75);
         border-radius: 100%;
-        display: none;
     }
+    /*last dot*/
     #fourth>div:nth-child(8){
         position: absolute;
-        width: 15px;
-        height: 15px;
-        left: 770px;
-        top: 2785px;
+        width: 12px;
+        height: 12px;
+        left: 238px;
+        top: 1867px;
         background: rgba(255, 255, 255, 0.5);
         border-radius: 100%;
-        display: none;
     }
 
     .arrow{

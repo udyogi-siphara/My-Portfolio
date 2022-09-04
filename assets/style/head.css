@@ -41,7 +41,7 @@ body>header>nav>ul{
 @media all and (width: 320px){
     header{
         position: fixed;
-        z-index: 5;
+        z-index: 15;
         height: 50px;
         width: 100vw;
     }
