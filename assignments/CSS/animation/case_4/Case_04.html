@@ -6,114 +6,157 @@
     <link href="../../../../assets/style/normalize.css" rel="stylesheet">
     <style>
 
-        body{
+        body {
             overflow: hidden;
         }
-        main{
+
+        main {
             width: 100vw;
-            height: 300px;
+            height: 75vh;
             position: relative;
             left: 0;
             top: 0;
-            background:url("../../../../assets/image/carAnimation/sky.jpg");
+            background: url("../../../../assets/image/carAnimation/sky.jpg");
             background-size: cover;
         }
 
-        main>section{
-            width: 100%;
-            height: 100%;
+        section:nth-child(2) {
+            width: 200vw;
+            height: 200px;
             position: relative;
             left: 0;
-            bottom: 0;
+            top: 190px;
+            animation-name: city-animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
             display: flex;
-
+            flex-direction: row;
         }
-        main>section>div{
+        section:nth-child(2)>div{
             width: 100%;
             height: 100%;
-        }
-        main>section>div:first-child{
-            background:url("../../../../assets/image/carAnimation/city.png");
-            background-size: cover;
-            background-position: center;
-        }
-        main>section>div:nth-child(2){
-            background:url("../../../../assets/image/carAnimation/city.png");
-            background-size: cover;
-            background-position: center;
-        }
-        main>section>div:nth-child(3){
-            background:url("../../../../assets/image/carAnimation/city.png");
-            background-size: cover;
-            background-position: center;
-        }
-        main>section>div:nth-child(4){
-            background:url("../../../../assets/image/carAnimation/city.png");
-            background-size: cover;
-            background-position: center;
-        }
-        main>section>div:nth-child(5){
-            background:url("../../../../assets/image/carAnimation/city.png");
-            background-size: cover;
-            background-position: center;
+            position: relative;
+            top: -385px;
         }
 
-        footer{
-            width: 100vw;
-            height: 310px;
+        section:nth-child(2) > div:nth-child(1){
+            background: url(../../../../assets/image/carAnimation/city.png);
+            background-size: cover;
+            background-position: center;
+        }
+        section:nth-child(2)>div:nth-child(2){
+            background: url(../../../../assets/image/carAnimation/city.png);
+            background-size: cover;
+            background-position: center;
+        }
+        section:nth-child(3) {
+            width: 200vw;
+            height: 350px;
             position: relative;
             bottom: 0;
             left: 0;
-            background:url("../../../../assets/image/carAnimation/road.jpg");
+            animation-name: road_animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        section:nth-child(3) > div {
+            position: relative;
+            top: -205px;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: url("../../../../assets/image/carAnimation/road.jpg");
             background-position: center;
             background-size: cover;
         }
-        footer>section{
-            width: 494px;
+
+        section:nth-child(4) {
+            width: 424px;
             height: 174px;
             position: absolute;
             bottom: 0;
             right: 0;
             left: 0;
-            top: -277px;
+            top: 221px;
             margin: auto;
             background: url(../../../../assets/image/carAnimation/car.png);
             background-size: cover;
         }
 
-        footer>section>div:first-child{
-            width: 96px;
-            height: 96px;
-            margin-top: 108px;
-            margin-left: 39px;
+        section:nth-child(4) > div:first-child {
+            width: 83px;
+            height: 83px;
+            margin-top: 92px;
+            margin-left: 32px;
             background: url(../../../../assets/image/carAnimation/wheel.png);
             background-size: cover;
+            animation-name: wheel-animation;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
         }
-        footer>section>div:nth-child(2){
-            width: 96px;
-            height: 96px;
-            margin-top: -98px;
-            margin-left: 342px;
+
+        section:nth-child(4) > div:nth-child(2) {
+            width: 83px;
+            height: 83px;
+            margin-top: -83px;
+            margin-left: 295px;
             background: url(../../../../assets/image/carAnimation/wheel.png);
             background-size: cover;
+            animation-name: wheel-animation;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
         }
+
+        @keyframes city-animation {
+            0% {
+               transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes wheel-animation {
+            0% {
+                transform: rotate(0deg);
+
+            }
+            50% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes road_animation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
     </style>
 </head>
 <body>
-<main>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</main>
-<footer>
-    <section>
-        <div></div>
-        <div></div>
-    </section>
-</footer>
+<main></main>
+<section>
+    <div></div>
+    <div></div>
+</section>
+
+<section>
+    <div></div>
+</section>
+
+<section>
+    <div></div>
+    <div></div>
+</section>
 </body>
 </html>
