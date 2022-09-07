@@ -51,8 +51,8 @@
     <!--Navigations links-->
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About Me</li>
+            <li><a href="#firstPage">Home</a></li>
+            <li><a href="#secondPage">About Me</a></li>
             <li>Skills</li>
             <li>Projects</li>
             <li>Contact Me</li>
@@ -62,7 +62,7 @@
 <!--main side-->
 <main>
     <!--first page-->
-    <section>
+    <section id="firstPage">
         <!--for description-->
         <section>
             <!--for name-->
@@ -102,7 +102,7 @@
 
 
     <!--second page-->
-    <section>
+    <section id="secondPage">
         <!--for about topic-->
         <div>
             <svg class="aboutRec" height="200" width="1440">
@@ -134,36 +134,47 @@
                 I like improve my skills with working on projects. I also have knowledge of
                 UI/UX designing, database management and frameworks.</p>
 
+            <p align="center"><a href="assets/pdf/Udyogi_Siphara.pdf" download>
+                <button class="cv" type="button">Download CV</button>
+            </a></p>
 
         </article>
     </section>
 
     </section>
 
-    <!--services page-->
-    <section>
-        <!--for software development-->
-        <article>
-            <aside>
-                <img src="assets/image/soft_dev.png" alt="soft">
-            </aside>
-            <p>All standalone softwares developed by java, javaFx,MySql and hibernate</p>
-        </article>
-        <!--for web development-->
-        <article>
-            <aside>
-                <img src="assets/image/web_dev.png" alt="soft">
-            </aside>
-            <p>Blogs,E-commerce websites development with javaScript,CSS and HTML</p>
-        </article>
-        <!--for ui/ux design-->
-        <article><aside>
-            <img src="assets/image/ui_des.webp" alt="soft">
-        </aside>
-            <p>Mobile apps,Web sites design</p>
-        </article>
-    </section>
+    <!--&lt;!&ndash;services page&ndash;&gt;
+    <section id="servicesPage">
 
+        <div></div>
+
+        <h1 id="services">services</h1>
+
+        <section class="services1" >
+            <div>
+                <img class="service-img" src="assets/image/soft_dev.png" alt="software development" width="100" height="100">
+                <p class="service-p1"><b>Software Development</b></p>
+                <p class="service-p2">All standalone software development with Java, JavaFx,MySQL, SpringBoot and Hibernate</p>
+            </div>
+        </section>
+
+        <section class="services2">
+            <div>
+                <img class="service-img" src="assets/image/web_dev.png" alt="web development" width="100" height="100">
+                <p class="service-p1"><b>Web Development</b></p>
+                <p class="service-p2">Blogs,E-commerce websites development with JavaScript,CSS and HTML</p>
+            </div>
+        </section>
+
+        <section class="services3">
+            <div>
+                <img class="service-img" src="assets/image/ui_des.webp" alt="ux/ui design" width="100" height="100">
+                <p class="service-p1"><b>UX/UI Design</b></p>
+                <p class="service-p2">Mobile apps,Web sites design</p>
+            </div>
+        </section>
+    </section>
+-->
     <!--third page-->
     <section>
         <!--for skills rectangle-->
@@ -298,6 +309,8 @@
         <section>
             <div class="arrow2"></div>
         </section>
+
+        <button class="more_button"><a href="projects/projects.html" target="_blank"><div id="view">View More</div></a></button>
     </section>
     <!--fifth page-->
     <section>
