@@ -1,4 +1,3 @@
-/*
 #servicesPage>div{
     position: relative;
     width: 98.73vw;
@@ -13,8 +12,8 @@
     position: relative;
     width: 349px;
     height: 147px;
-    left: 493px;
-    top: 699px;
+    left: 450px;
+    top: 664px;
     z-index: 1;
     font-family: 'Arial';
     font-style: normal;
@@ -27,27 +26,98 @@
 
 .services1{
     position: absolute;
-    width: 430px;
-    height: 512px;
-    left: 50px;
-    top: 1525px;
-    border-radius: 25%;
-    box-shadow: 3px 2px 5px 1px black;
+    width: 344px;
+    height: 321px;
+    left: 63px;
+    top: 1448px;
+    border-radius: 5%;
+    box-shadow: 3px 5px 5px 1px #470852;
     background-color: #FFFFFF;
     z-index: 1;
 }
 
+.services2{
+    position: absolute;
+    width: 344px;
+    height: 321px;
+    left: 504px;
+    top: 1448px;
+    border-radius: 5%;
+    box-shadow: 3px 5px 5px 1px #470852;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+
+.services3{
+    position: absolute;
+    width: 344px;
+    height: 321px;
+    left: 942px;
+    top: 1448px;
+    border-radius: 5%;
+    box-shadow: 3px 5px 5px 1px #470852;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+
+.service-img{
+    height: 113px;
+    width: 113px;
+    margin-left: 127px;
+    margin-top: 20px;
+}
+
 .service-p1{
     position: absolute;
-    width: 292px;
+    width: 340px;
     height: 31px;
-    left: 119px;
-    top: 1703px;
-
+    left: 48px;
+    top: 108px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
-    line-height: 31px;
+    font-size: 20px;
     color: #000000;
-}*/
+}
+
+.service-p2{
+    position: absolute;
+    width: 340px;
+    height: 31px;
+    left: 81px;
+    top: 108px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+
+.service-p3{
+    position: absolute;
+    width: 340px;
+    height: 31px;
+    left: 102px;
+    top: 108px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+
+.serv-para1{
+    position: absolute;
+    width: 265px;
+    height: 303px;
+    left: 41px;
+    top: 171px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+

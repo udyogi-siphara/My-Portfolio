@@ -1,11 +1,10 @@
 /*Fourth Page*/
-
-main>section:nth-child(5)>div{
+main>section:nth-child(6)>div{
     position: relative;
     width: 98.73vw;
     height: 200px;
     left: 0px;
-    top: 1390px;
+    top: 1481px;
     background-color: #470852;
     z-index: 1;
 }
@@ -15,7 +14,7 @@ main>section:nth-child(5)>div{
     width: 349px;
     height: 147px;
     left: 472px;
-    top: 1120px;
+    top: 1202px;
     z-index: 1;
     font-family: 'Arial';
     font-size: 128px;
@@ -28,7 +27,7 @@ main>section:nth-child(5)>div{
     width: 272px;
     height: 214px;
     left: 320px;
-    top: 2520px;
+    top: 3020px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 7;
     background-color: #B6A3BC;
@@ -64,7 +63,7 @@ main>section:nth-child(5)>div{
     width: 204px;
     height: 154px;
     left: 170px;
-    top: 2550px;
+    top: 3048px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 4;
     background-color: #B6A3BC;
@@ -100,7 +99,7 @@ main>section:nth-child(5)>div{
     width: 330px;
     height: 250px;
     right: 500px;
-    top: 2500px;
+    top: 3000px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     z-index: 10;
     background-color: #B6A3BC;
@@ -136,7 +135,7 @@ main>section:nth-child(5)>div{
     width: 272px;
     height: 214px;
     right: 300px;
-    top: 2520px;
+    top: 3019px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 7;
     background-color: #B6A3BC;
@@ -173,7 +172,7 @@ main>section:nth-child(5)>div{
     width: 204px;
     height: 154px;
     right: 145px;
-    top: 2550px;
+    top: 3048px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 6;
     background-color: #B6A3BC;
@@ -209,7 +208,7 @@ main>section:nth-child(5)>div{
     width: 15px;
     height: 15px;
     left: 590px;
-    top: 2785px;
+    top: 3345px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
 }
@@ -218,7 +217,7 @@ main>section:nth-child(5)>div{
     width: 20px;
     height: 20px;
     left: 630px;
-    top: 2782px;
+    top: 3342px;
     background: rgba(255, 255, 255, 0.75);
     border-radius: 100%;
 }
@@ -227,7 +226,7 @@ main>section:nth-child(5)>div{
     width: 25px;
     height: 25px;
     left: 675px;
-    top: 2779px;
+    top: 3339px;
     background: #FFFFFF;
     border-radius: 100%;
 }
@@ -236,7 +235,7 @@ main>section:nth-child(5)>div{
     width: 20px;
     height: 20px;
     left: 725px;
-    top: 2782px;
+    top: 3342px;
     background: rgba(255, 255, 255, 0.75);
     border-radius: 100%;
 }
@@ -246,7 +245,7 @@ main>section:nth-child(5)>div{
     width: 15px;
     height: 15px;
     left: 770px;
-    top: 2785px;
+    top: 3345px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
 }
@@ -256,7 +255,7 @@ main>section:nth-child(5)>div{
     width: 40px;
     height: 4px;
     left: 800px;
-    top: 2790px;
+    top: 3351px;
     background: rgba(255, 255, 255, 0.75);
 }
 .arrow1::after, .arrow1::before{
@@ -282,7 +281,7 @@ main>section:nth-child(5)>div{
     height: 40px;
     width: 120px;
     left: 638px;
-    margin-top: 1573px;
+    margin-top: 1596px;
     background-color: #701C7D;
     color: white;
     border-color: white;
@@ -308,7 +307,7 @@ a{
 }
 
 @media all and (width: 320px){
-    main>section:nth-child(5)>div{
+    main>section:nth-child(6)>div{
         position: relative;
         width: 100vw;
         height: 70px;

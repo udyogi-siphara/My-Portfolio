@@ -17,7 +17,7 @@
     width: 287px;
     height: 46px;
     left: 39.5%;
-    top: 2970px;
+    top: 3534px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -29,8 +29,8 @@
     position: absolute;
     width: 600px;
     height: 46px;
-    left: 28%;
-    top: 3010px;
+    left: 29%;
+    top: 3574px;
     font-family: 'Arial';
     color: black;
     z-index: 1;
@@ -43,7 +43,7 @@
     width: 972px;
     height: 29px;
     left: 13.5%;
-    top: 3100px;
+    top: 3660px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -55,7 +55,7 @@
     width: 972px;
     height: 29px;
     left: 13.5%;
-    top: 3130px;
+    top: 3692px;
     font-family: 'Arial';
     font-size: 20px;
     color: black;
@@ -65,7 +65,7 @@
 .smallpic{
     position: absolute;
     left: 37%;
-    top: 3213px;
+    top: 3772px;
     z-index: 2;
 }
 
@@ -74,7 +74,7 @@
     width: 10px;
     height: 10px;
     left:38.5%;
-    top: 3237px;
+    top: 3797px;
     border-radius: 100%;
     background: #00F461;
     z-index: 2;
@@ -85,7 +85,7 @@
     width: 30px;
     height: 30px;
     left: 37%;
-    top: 3213px;
+    top: 3772px;
     border-radius: 100%;
     background: white;
     z-index: 1;
@@ -96,7 +96,7 @@
     width: 255px;
     height: 29px;
     left: 37.5%;
-    top: 3205px;
+    top: 3762px;
     font-size: 15px;
     font-family: 'Arial';
     color: black;
@@ -108,7 +108,7 @@
     width: 237px;
     height: 30px;
     left: 450px;
-    top: 206em;
+    top: 241em;
     border-radius: 5px;
     background-color: #701C7D;
     z-index: 1;
@@ -120,7 +120,7 @@
     width: 170px;
     height: 30px;
     right: 33%;
-    top: 206em;
+    top: 241em;
     border-radius: 5px;
     background-color: #3ABB56;
     z-index: 1;
