@@ -277,6 +277,36 @@ main>section:nth-child(5)>div{
     transform: rotate(-55deg);
 }
 
+.more_button {
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    left: 638px;
+    margin-top: 1573px;
+    background-color: #701C7D;
+    color: white;
+    border-color: white;
+
+    font-family: Arial;
+    border-radius: 20px;
+}
+
+#view{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.more_button:hover {
+    background-color: white;
+    color: #701C7D;
+    border: 3px solid #701C7D;
+}
+
+#view:hover{
+    color: #701C7D;
+}
+
 @media all and (width: 320px){
     main>section:nth-child(5)>div{
         position: relative;
