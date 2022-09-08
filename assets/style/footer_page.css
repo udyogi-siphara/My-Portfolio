@@ -224,7 +224,102 @@ body>footer>section>section:nth-child(2)>p{
 
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
+    body>footer{
+        position: relative;
+        width: 100vw;
+        height: 450px;
+        left: 0px;
+        bottom:-1628px;
+        background-color: #470852;
+    }
 
+    #email{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+    a{
+        text-decoration:none;
+    }
+
+    body>footer>section>section:first-child{
+        border-radius: 100%;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 376px;
+        bottom: 110px;
+        background: #470852;
+        border: 2px dashed #FFFFFF;
+    }
+
+    #hi{
+        position: absolute;
+        width: 361px;
+        height: 74px;
+        right: -32px;
+        bottom: 130px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 74px;
+        color: #FFFFFF;
+        z-index: 3;
+    }
+
+    .gmail2{
+        position: absolute;
+        width: 323px;
+        height: 29px;
+        right: -15px;
+        bottom: 128px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+
+    #email2{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .iconGithub\&LinkedIn{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        right: 141px;
+        bottom: 35px;
+    }
+
+    body>footer>section>section:nth-child(2)>hr{
+        position: absolute;
+        width: 100vw;
+        height: 0px;
+        left: 0px;
+        bottom: 70px;
+        border: 1px solid #FFFFFF;
+    }
+
+    body>footer>section>section:nth-child(2)>p{
+        position: absolute;
+        width: 260px;
+        height: 14px;
+        right: 353px;
+        bottom: 5px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        /*font-size: 10px;*/
+        line-height: 14px;
+        color: #FFFFFF;
+    }
 }
 
 /*================================== 1440->Laptop large ================================== */
