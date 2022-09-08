@@ -158,6 +158,7 @@ body>main>section>section>div:nth-child(4){
     top: 361px;
 }
 
+/*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px) {
     .WelcomeRectangle{
         position: absolute;
@@ -321,6 +322,7 @@ body>main>section>section>div:nth-child(4){
     }
 }
 
+/*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 320px) and (max-width: 375px) {
     .WelcomeRectangle{
         position: absolute;
@@ -482,6 +484,31 @@ body>main>section>section>div:nth-child(4){
         top: 361px;
         display: none;
     }
+}
+
+/*================================== 425->Mobile -L ================================== */
+@media all and (min-width: 376px) and (max-width: 425px){
+
+}
+
+/*================================== 768->Tablet ================================== */
+@media all and (min-width: 426px) and (max-width: 768px){
+
+}
+
+/*================================== 1024->Laptop ================================== */
+@media all and (min-width: 769px) and (max-width: 1024px){
+
+}
+
+/*================================== 1440->Laptop large ================================== */
+@media all and (min-width: 1025px) and (max-width: 1440px){
+
+}
+
+/* ================================== 4K ================================== */
+@media all and (min-width: 1441px) and (max-width: 2560px){
+
 }
 
 
