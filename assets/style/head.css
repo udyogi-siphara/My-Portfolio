@@ -1,7 +1,3 @@
-/*body{
-    overflow-x:hidden ;
-}*/
-
 header{
     position: fixed;
     z-index: 15;
@@ -42,6 +38,7 @@ body>header>nav>ul{
     right: 05%;
 }
 
+/*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px){
     header{
         position: fixed;
@@ -63,7 +60,7 @@ body>header>nav>ul{
         position: relative;
         width: 35px;
         height: 35px;
-        left: 330px;
+        left: 276px;
         top: 8px;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 100%;
@@ -108,7 +105,8 @@ body>header>nav>ul{
     }
 }
 
-@media all and (min-width: 320px) and (max-width: 375px){
+/*================================== 375 ->Mobile -M ==================================*/
+@media all and (min-width: 321px) and (max-width: 375px){
     header{
         position: fixed;
         z-index: 15;
@@ -129,7 +127,7 @@ body>header>nav>ul{
         position: relative;
         width: 35px;
         height: 35px;
-        left: 264px;
+        left: 326px;
         top: 8px;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 100%;
@@ -174,3 +172,29 @@ body>header>nav>ul{
 
     }
 }
+
+/*================================== 425->Mobile -L ================================== */
+@media all and (min-width: 376px) and (max-width: 425px){
+
+}
+
+/*================================== 768->Tablet ================================== */
+@media all and (min-width: 426px) and (max-width: 768px){
+
+}
+
+/*================================== 1024->Laptop ================================== */
+@media all and (min-width: 769px) and (max-width: 1024px){
+
+}
+
+/*================================== 1440->Laptop large ================================== */
+@media all and (min-width: 1025px) and (max-width: 1440px){
+
+}
+
+/* ================================== 4K ================================== */
+@media all and (min-width: 1441px) and (max-width: 2560px){
+
+}
+
