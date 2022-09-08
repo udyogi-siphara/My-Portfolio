@@ -209,10 +209,10 @@
 @media all and (min-width: 769px) and (max-width: 1024px){
     .aboutRec{/*about*/
         position: relative;
-        width: 98.73vw;
+        width: 100vw;
         height: 200px;
-        left:0px;
-        top: 481px;
+        left: 0px;
+        top: 466px;
         fill: #470852;
         z-index: 1;
     }
@@ -221,8 +221,8 @@
         position: absolute;
         width: 349px;
         height: 147px;
-        left: 539px;
-        top: 425px;
+        left: 360px;
+        top: 417px;
         z-index: 1;
         font-family: 'Arial';
         color: #FFFFFF;
@@ -235,9 +235,9 @@
 
     .aboutImage{
         position: absolute;
-        width: 595px;
-        height: 538px;
-        lef: 30px;
+        width: 412px;
+        height: 466px;
+        left: 9px;
         top: 645px;
     }
 
@@ -245,7 +245,7 @@
         position: absolute;
         width: 150px;
         height: 23.23px;
-        right: 37%;
+        right: 42%;
         top: 770px;
         font-family: 'Arial';
         font-style: normal;
@@ -260,7 +260,7 @@
         position: absolute;
         width: 15px;
         height: 15px;
-        right: 636px;
+        right: 567px;
         top: 832px;
         border-radius: 100%;
         border: 3px solid white;
@@ -268,9 +268,9 @@
 
     .paragraph1{
         position: absolute;
-        width: 609px;
+        width: 517px;
         height: 135.34px;
-        right: 18px;
+        right: 42px;
         top: 818px;
         font-family: 'Arial';
         color: #FFFFFF;
@@ -281,9 +281,9 @@
 
     .paragraph2{
         position: absolute;
-        width: 607px;
+        width: 517px;
         height: 135.34px;
-        right: 21px;
+        right: 42px;
         top: 875px;
         font-family: 'Arial';
         color: #FFFFFF;
@@ -296,8 +296,8 @@
         position: absolute;
         width: 129px;
         height: 40px;
-        margin-top: 756px;
-        margin-left: 143px;
+        margin-top: 784px;
+        margin-left: 124px;
         color: #FFFFFF;
         font-family: Arial;
         border-radius: 15px;
