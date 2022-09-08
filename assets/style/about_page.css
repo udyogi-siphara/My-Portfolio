@@ -202,7 +202,111 @@
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    .aboutRec{/*about*/
+        position: relative;
+        width: 100vw;
+        height: 143px;
+        left: 0px;
+        top: 447px;
+        fill: #470852;
+        z-index: 1;
+    }
 
+    #aboutTopic{
+        position: absolute;
+        width: 349px;
+        height: 147px;
+        left: 226px;
+        top: 385px;
+        z-index: 1;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        opacity: 0.4;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 110px;
+        line-height: 147px;
+    }
+
+    .aboutImage{
+        position: absolute;
+        width: 371px;
+        height: 404px;
+        left: 6px;
+        top: 586px;
+    }
+
+    .who{
+        position: absolute;
+        width: 150px;
+        height: 23.23px;
+        right: 31%;
+        top: 677px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+
+    .div1{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 372px;
+        top: 712px;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
+
+    .paragraph1{
+        position: absolute;
+        width: 330px;
+        height: 135.34px;
+        right: 40px;
+        top: 697px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+    .paragraph2{
+        position: absolute;
+        width: 330px;
+        height: 135.34px;
+        right: 40px;
+        top: 747px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+    .cv{
+        position: absolute;
+        width: 123px;
+        height: 33px;
+        margin-top: 731px;
+        margin-left: 124px;
+        color: #FFFFFF;
+        font-family: Arial;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+        background-color: #701C7D;
+        font-weight: bold;
+    }
+
+    .cv:hover {
+        background-color: white;
+        color: #701C7D;
+
+        border: 3px solid #701C7D;
+    }
 }
 
 /*================================== 1024->Laptop ================================== */
