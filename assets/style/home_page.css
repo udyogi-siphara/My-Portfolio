@@ -498,6 +498,162 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
+    .WelcomeRectangle{
+        position: absolute;
+        width: 160px;
+        height: 30px;
+        left: 35px;
+        top: 168px;
+        fill: white;
+        z-index: 1;
+
+        /* position: absolute;
+         width: 180px;
+         height: 40px;
+
+         left: 112px;
+         top: 150px;
+         z-index: 1;
+
+         background: wheat;
+         border-radius: 10px;
+         fill: wheat;
+         opacity: 0.2;*/
+
+    }
+
+    #welcome{
+        position: absolute;
+        width: 101px;
+        height: 20px;
+        left: 66px;
+        top: 142px;
+        z-index: 1;
+
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color : #701C7D;
+    }
+
+    body{
+        background: #701C7D;
+    }
+
+    #myName{
+        position: absolute;
+        width: 414px;
+        height: 55px;
+        left: 37px;
+        top: 215px;
+
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 55px;
+        color: white;
+    }
+
+    #myPost{
+        position: absolute;
+        width: 282px;
+        height: 17px;
+        left: 53px;
+        top: 256px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    .btnGetStarted{
+        position: absolute;
+        width: 137px;
+        height: 35px;
+        left: 163px;
+        top: 362px;
+        color: #701C7D;
+        z-index: 1;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+        font-weight: bolder;
+    }
+
+    .myProfile{
+        position: absolute;
+        width: 357px;
+        height: 340px;
+        right: 14%;
+        top: 147px;
+        z-index: 1;
+    }
+
+    body>main>section>section>div:nth-child(3){
+        position: absolute;
+        width: 221px;
+        height: 221px;
+        right: 223px;
+        top: 245px;
+        background: #FDFDFF;
+        border-radius: 100%;
+    }
+
+    body>main>section>section>div:nth-child(4){
+        position: absolute;
+        width: 236px;
+        height: 236px;
+        right: 108px;
+        top: 169px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        border: 2px dashed #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #follow{
+        position: absolute;
+        right: -5%;
+        top: 174.5px;
+        transform: rotate(90deg);
+        color: #FFFFFF;
+        font-family:"Calibri";
+        font-size: 14px;
+        height: 150px;
+        width: 300px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    .verticalLine{
+        height: 46px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        right: 3%;
+        top: 250px;
+    }
+
+    .linkedinWhite{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 1.7%;
+        top: 321px;
+    }
+
+    .githubWhite{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 1.7%;
+        top: 361px;
+    }
 
 }
 
