@@ -145,7 +145,136 @@
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    #servicesPage>div{
+        position: relative;
+        width: 100vw;
+        height: 143px;
+        left: 0px;
+        top: 801px;
+        background-color: #470852;
+        z-index: 1;
+    }
 
+    #services{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 177px;
+        top: 575px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 110px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    .services1{
+        position: absolute;
+        width: 219px;
+        height: 321px;
+        left: 30px;
+        top: 1180px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services2{
+        position: absolute;
+        width: 219px;
+        height: 321px;
+        left: 277px;
+        top: 1180px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services3{
+        position: absolute;
+        width: 219px;
+        height: 321px;
+        left: 524px;
+        top: 1180px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .service-img{
+        height: 113px;
+        width: 113px;
+        margin-left: 58px;
+        margin-top: 20px;
+    }
+
+    #uiImg{
+        width: 113px;
+        height: 113px;
+        margin-left: 54px;
+        margin-top: 25px;
+    }
+
+    .service-p1{
+        position: absolute;
+        width: 281px;
+        height: 31px;
+        left: 19px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .service-p2{
+        position: absolute;
+        width: 340px;
+        height: 31px;
+        left: 43px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .service-p3{
+        position: absolute;
+        width: 154px;
+        height: 31px;
+        left: 64px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .serv-para1{
+        position: absolute;
+        width: 212px;
+        height: 303px;
+        left: 4px;
+        top: 160px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 13px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }
 }
 
 /*================================== 1024->Laptop ================================== */
