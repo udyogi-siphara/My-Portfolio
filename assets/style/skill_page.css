@@ -565,7 +565,254 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
+    body>main>section:nth-child(5)>div{/*skills*/
+        position: relative;
+        width: 100vw;
+        height: 200px;
+        left: 0px;
+        top: 1017px;
+        background-color: #470852;
+        z-index: 1;
+    }
 
+    #skills{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 377px;
+        top: 757px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div{
+        position: absolute;
+        width: 904px;
+        height: 600px;
+        left: 4em;
+        top: 128em;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+    }
+
+    .smiller1{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 5%;
+        top:0;
+        font-family: 'Arial';
+        font-size: 40px;
+        color: #000000;
+        z-index: 1;
+    }
+
+    .smiller2{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 32.5%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 40px;
+        color: #000000;
+        z-index: 1;
+    }
+
+    #nonSmiller{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 7%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 40px;
+        color: #701C7D;
+        z-index: 1;
+    }
+
+    #design{
+        position: absolute;
+        width: 150px;
+        height: 31px;
+        font-size: 25px;
+        left: 5%;
+        top: 20%;
+        color: #000000;
+        font-family: 'Arial';
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(5){
+        display: inline-block;
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 5em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+    }
+
+    .designList{
+        list-style: none;
+        position: absolute;
+        left: 0.5%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+    }
+
+    #web{
+        position: absolute;
+        width: 100px;
+        height: 31px;
+        left: 39%;
+        top: 20%;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(8){
+        display: inline-block;
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 25.9em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+    }
+
+    .webList{
+        list-style: none;
+        position: absolute;
+        left: 35%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+    }
+
+    #software{
+        position: absolute;
+        width: 200px;
+        height: 31px;
+        left: 71%;
+        top: 20%;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11){
+        display: inline-block;
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 46.4em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+    }
+
+    .softwareList{
+        list-style: none;
+        position: absolute;
+        left: 66.5%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+    }
+
+    .imgPara{
+        top: 75%;
+        left: 4%;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .javaScript{
+        left: 8em;
+        position: absolute;
+    }
+
+    .css{
+        left: 17.5em;
+        position: absolute;
+    }
+
+    .html{
+        left:25.5em;
+        position: absolute;
+    }
+
+    .mysql{
+        left:34em;
+        position: absolute;
+    }
+
+    .hibernate{
+        left:42em;
+        position: absolute;
+    }
+
+    .python{
+        left:50em;
+        position: absolute;
+    }
+
+    .intellij{
+        left: 0em;
+        position: absolute;
+    }
+
+    .figma{
+        left: 8em;
+        position: absolute;
+    }
+
+    .slack{
+        left: 17.5em;
+        position: absolute;
+    }
+
+    .eclipse{
+        left:25.5em;
+        position: absolute;
+    }
+
+    .Scene{
+        left:34em;
+        position: absolute;
+    }
+
+    .gitHub{
+        left:42em;
+        position: absolute;
+    }
+
+    .visual{
+        left:50em;
+        position: absolute;
+    }
 }
 
 /*================================== 1440->Laptop large ================================== */
