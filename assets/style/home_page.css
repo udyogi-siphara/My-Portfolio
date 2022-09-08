@@ -493,7 +493,164 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    .WelcomeRectangle{
+        position: absolute;
+        width: 139px;
+        height: 30px;
+        left: 35px;
+        top: 168px;
+        fill: white;
+        z-index: 1;
 
+        /* position: absolute;
+         width: 180px;
+         height: 40px;
+
+         left: 112px;
+         top: 150px;
+         z-index: 1;
+
+         background: wheat;
+         border-radius: 10px;
+         fill: wheat;
+         opacity: 0.2;*/
+
+    }
+
+    #welcome{
+        position: absolute;
+        width: 101px;
+        height: 20px;
+        left: 55px;
+        top: 142px;
+        z-index: 1;
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #701C7D;
+    }
+
+    body{
+        background: #701C7D;
+    }
+
+    #myName{
+        position: absolute;
+        width: 414px;
+        height: 55px;
+        left: 37px;
+        top: 208px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 55px;
+        color: white;
+    }
+
+    #myPost{
+        position: absolute;
+        width: 282px;
+        height: 17px;
+        left: 53px;
+        top: 245px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    .btnGetStarted{
+        position: absolute;
+        width: 119px;
+        height: 33px;
+        left: 131px;
+        top: 333px;
+        color: #701C7D;
+        z-index: 1;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+        font-weight: bolder;
+    }
+
+    .myProfile{
+        position: absolute;
+        width: 311px;
+        height: 294px;
+        right: 12%;
+        top: 175px;
+        z-index: 1;
+    }
+
+    body>main>section>section>div:nth-child(3){
+        position: absolute;
+        width: 189px;
+        height: 189px;
+        right: 162px;
+        top: 262px;
+        background: #FDFDFF;
+        border-radius: 100%;
+    }
+
+    body>main>section>section>div:nth-child(4){
+        position: absolute;
+        width: 205px;
+        height: 205px;
+        right: 81px;
+        top: 210px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        border: 2px dashed #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #follow{
+        position: absolute;
+        right: -5%;
+        top: 174.5px;
+        transform: rotate(90deg);
+        color: #FFFFFF;
+        font-family:"Calibri";
+        font-size: 14px;
+        height: 150px;
+        width: 300px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        display: none;
+    }
+
+    .verticalLine{
+        height: 46px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        right: 3%;
+        top: 250px;
+        display: none;
+    }
+
+    .linkedinWhite{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 1.7%;
+        top: 321px;
+        display: none;
+    }
+
+    .githubWhite{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 1.7%;
+        top: 361px;
+        display: none;
+    }
 }
 
 /*================================== 1024->Laptop ================================== */
