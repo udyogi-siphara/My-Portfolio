@@ -190,7 +190,7 @@ body>header>nav>ul{
 
 /*================================== 1440->Laptop large ================================== */
 @media all and (min-width: 1025px) and (max-width: 1440px){
-    header{
+    /*header{
         position: fixed;
         z-index: 15;
         height: 50px;
@@ -220,7 +220,7 @@ body>header>nav>ul{
         color: #FFFFFF;
         font-size: 18px;
         padding: 10px;
-        /*right: -60%;*/
+        !*right: -60%;*!
         top: -15px;
         font-family: 'Doppio One', sans-serif;
     }
@@ -228,7 +228,7 @@ body>header>nav>ul{
     body>header>nav>ul{
         position: absolute;
         right: 05%;
-    }
+    }*/
 }
 
 /* ================================== 4K ================================== */
