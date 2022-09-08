@@ -6,6 +6,7 @@
     top: 930px;
     background-color: #470852;
     z-index: 1;
+
 }
 
 #services{
@@ -58,6 +59,7 @@
     box-shadow: 3px 5px 5px 1px #470852;
     background-color: #FFFFFF;
     z-index: 1;
+    display: inline-block;
 }
 
 .service-img{
@@ -95,7 +97,7 @@
 
 .service-p3{
     position: absolute;
-    width: 340px;
+    width: 154px;
     height: 31px;
     left: 102px;
     top: 108px;
