@@ -69,6 +69,13 @@
     margin-top: 20px;
 }
 
+#uiImg{
+    width: 113px;
+    height: 113px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
 .service-p1{
     position: absolute;
     width: 340px;
@@ -143,7 +150,136 @@
 
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
+    #servicesPage>div{
+        position: relative;
+        width: 100vw;
+        height: 200px;
+        left: 0px;
+        top: 870px;
+        background-color: #470852;
+        z-index: 1;
+    }
 
+    #services{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 293px;
+        top: 600px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    .services1{
+        position: absolute;
+        width: 250px;
+        height: 321px;
+        left: 63px;
+        top: 1369px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services2{
+        position: absolute;
+        width: 250px;
+        height: 321px;
+        left: 384px;
+        top: 1369px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services3{
+        position: absolute;
+        width: 250px;
+        height: 321px;
+        left: 704px;
+        top: 1369px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .service-img{
+        height: 113px;
+        width: 113px;
+        margin-left: 76px;
+        margin-top: 20px;
+    }
+
+    #uiImg{
+        width: 113px;
+        height: 113px;
+        margin-left: 71px;
+        margin-top: 20px;
+    }
+
+    .service-p1{
+        position: absolute;
+        width: 281px;
+        height: 31px;
+        left: 26px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #000000;
+    }
+
+    .service-p2{
+        position: absolute;
+        width: 340px;
+        height: 31px;
+        left: 47px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #000000;
+    }
+
+    .service-p3{
+        position: absolute;
+        width: 154px;
+        height: 31px;
+        left: 70px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #000000;
+    }
+
+    .serv-para1{
+        position: absolute;
+        width: 245px;
+        height: 303px;
+        left: -1px;
+        top: 171px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 15px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }
 }
 
 /*================================== 1440->Laptop large ================================== */
