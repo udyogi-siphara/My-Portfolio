@@ -175,7 +175,76 @@ body>header>nav>ul{
 
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    header{
+        position: fixed;
+        z-index: 15;
+        height: 50px;
+        width: 100vw;
+    }
 
+    .MenuRectangle{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 50px;
+        width: 100vw;
+        background: #701C7D;;
+    }
+
+    /*for Hamburger*/
+    body>header>section{
+        position: relative;
+        width: 35px;
+        height: 35px;
+        left: 381px;
+        top: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 100%;
+        z-index: 1;
+    }
+    body>header>section>div:first-child{
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        right: 7px;
+        top: 11px;
+        background-color: #FFFFFF;
+        z-index: 2;
+    }
+    body>header>section>div:nth-child(2){
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        right: 7px;
+        top: 22px;
+        background-color: #FFFFFF;
+        z-index: 2;
+    }
+
+    .logo{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 10px;
+        top: -5px;
+        z-index: 1;
+    }
+    body>header>nav>ul>li{
+        display: inline-block;
+        position: relative;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 10px;
+        /*right: -60%;*/
+        top: -15px;
+        font-family: 'Doppio One', sans-serif;
+        display: none;
+    }
+
+    body>header>nav>ul{
+        position: absolute;
+        right: 05%;
+    }
 }
 
 /*================================== 768->Tablet ================================== */
