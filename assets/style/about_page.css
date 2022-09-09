@@ -197,7 +197,111 @@
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    .aboutRec{/*about*/
+        position: relative;
+        width: 100vw;
+        height: 90px;
+        left: 0px;
+        top: 585px;
+        fill: #470852;
+        z-index: 1;
+    }
 
+    #aboutTopic{
+        position: absolute;
+        width: 349px;
+        height: 147px;
+        left: 120px;
+        top: 525px;
+        z-index: 1;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        opacity: 0.4;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 147px;
+    }
+
+    .aboutImage{
+        position: absolute;
+        width: 362px;
+        height: 351px;
+        left: 35px;
+        top: 650px;
+    }
+
+    .who{
+        position: absolute;
+        width: 150px;
+        height: 23.23px;
+        right: 23%;
+        top: 1001px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+
+    .div1{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 376px;
+        top: 1041px;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
+
+    .paragraph1{
+        position: absolute;
+        width: 330px;
+        height: 135.34px;
+        right: 40px;
+        top: 1023px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+    .paragraph2{
+        position: absolute;
+        width: 330px;
+        height: 135.34px;
+        right: 40px;
+        top: 1066px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+    .cv{
+        position: absolute;
+        width: 120px;
+        height: 29px;
+        margin-top: 1094px;
+        margin-left: -48px;
+        color: #FFFFFF;
+        font-family: Arial;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+        background-color: #701C7D;
+        font-weight: bold;
+    }
+
+    .cv:hover {
+        background-color: white;
+        color: #701C7D;
+
+        border: 3px solid #701C7D;
+    }
 }
 
 /*================================== 768->Tablet ================================== */
