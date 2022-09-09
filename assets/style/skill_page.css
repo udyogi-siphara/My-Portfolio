@@ -560,7 +560,285 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    body>main>section:nth-child(5)>div{/*skills*/
+        position: relative;
+        width: 100vw;
+        height: 143px;
+        left: 0px;
+        top: 935px;
+        background-color: #470852;
+        z-index: 1;
+    }
 
+    #skills{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 262px;
+        top: 715px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 110px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div{
+        position: absolute;
+        width: 672px;
+        height: 600px;
+        left: 3em;
+        top: 108em;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+    }
+
+    .smiller1{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 5%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 37px;
+        color: #000000;
+        z-index: 1;
+    }
+
+    .smiller2{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 41%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 37px;
+        color: #000000;
+        z-index: 1;
+    }
+
+    #nonSmiller{
+        position: absolute;
+        width: 459px;
+        height: 71px;
+        left: 8.7%;
+        top: 0;
+        font-family: 'Arial';
+        font-size: 37px;
+        color: #701C7D;
+        z-index: 1;
+    }
+
+    #design{
+        position: absolute;
+        width: 150px;
+        height: 31px;
+        font-size: 25px;
+        left: 5%;
+        top: 13%;
+        color: #000000;
+        font-family: 'Arial';
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(5){
+        display: inline-block;
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 5em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+    }
+
+    .designList{
+        list-style: none;
+        position: absolute;
+        left: -1%;
+        top: 20%;
+        font-size: 20px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+    }
+
+    #web{
+        position: absolute;
+        width: 100px;
+        height: 31px;
+        left: 39%;
+        top: 13%;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(8){
+        display: inline-block;
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 25.9em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+    }
+
+    .webList{
+        list-style: none;
+        position: absolute;
+        left: 33.5%;
+        top: 20%;
+        font-size: 20px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+    }
+
+    #software{
+        position: absolute;
+        width: 175px;
+        height: 31px;
+        left: 71%;
+        top: 13%;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+    }
+
+    body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11){
+        display: inline-block;
+        position: absolute;
+        width: 170px;
+        height: 0px;
+        left: 46.4em;
+        top: 11em;
+        z-index: 1;
+        border: 2px solid #000000;
+    }
+
+    .softwareList{
+        list-style: none;
+        position: absolute;
+        left: 65%;
+        top: 20%;
+        font-size: 20px;
+        font-family: 'Arial';
+        color: #4A4A4A;
+        z-index: 1;
+    }
+
+    .imgPara{
+        top: 70%;
+        left: 4%;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .java{
+        width: 50px;
+        height: 50px;
+    }
+
+    .javaScript{
+        left: 5.5em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .css{
+        left: 11em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .html{
+        left: 16.5em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .mysql{
+        left: 22em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .hibernate{
+        left: 28em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .python{
+        left: 34em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .intellij{
+        left: 0em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .figma{
+        left: 5.5em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .slack{
+        left: 11em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .eclipse{
+        left:16.5em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .Scene{
+        left:22em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .gitHub{
+        left:28em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    .visual{
+        left:34em;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /*================================== 1024->Laptop ================================== */
