@@ -282,7 +282,135 @@
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    .contactRec{
+        position: relative;
+        width: 100vw;
+        height: 400px;
+        left: 0px;
+        top: 1466px;
+        z-index: 1;
+        fill: white;
+    }
 
+    #get{
+        position: absolute;
+        width: 287px;
+        height: 46px;
+        left: 35%;
+        top: 2984px;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #let{
+        position: absolute;
+        width: 512px;
+        height: 46px;
+        left: 21%;
+        top: 3018px;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 35px;
+
+    }
+
+    .first{
+        position: absolute;
+        width: 606px;
+        height: 29px;
+        left: 15%;
+        top: 3089px;
+        font-family: 'Arial';
+        font-size: 15px;
+        color: black;
+        z-index: 1;
+    }
+
+    .second{
+        position: absolute;
+        width: 606px;
+        height: 29px;
+        left: 15%;
+        top: 3114px;
+        font-family: 'Arial';
+        font-size: 15px;
+        color: black;
+        z-index: 1;
+    }
+
+    .smallpic{
+        position: absolute;
+        left: 37%;
+        top: 3181px;
+        z-index: 2;
+    }
+
+    .greenCircle{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 39.5%;
+        top: 3205px;
+        border-radius: 100%;
+        background: #00F461;
+        z-index: 2;
+    }
+
+    .Circle{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 37%;
+        top: 3181px;
+        border-radius: 100%;
+        background: white;
+        z-index: 1;
+    }
+
+    #reply{
+        position: absolute;
+        width: 255px;
+        height: 29px;
+        left: 37.5%;
+        top: 3174px;
+        font-size: 15px;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+    }
+
+    .gmail{
+        position: absolute;
+        width: 237px;
+        height: 30px;
+        left: 174px;
+        top: 204em;
+        border-radius: 5px;
+        background-color: #701C7D;
+        z-index: 1;
+        border: #701C7D;
+    }
+
+    .number {
+        position: absolute;
+        width: 170px;
+        height: 30px;
+        right: 19%;
+        top: 204em;
+        border-radius: 5px;
+        background-color: #3ABB56;
+        z-index: 1;
+        border: #3ABB56;
+    }
+
+    #tel{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
 }
 
 /*================================== 1024->Laptop ================================== */
