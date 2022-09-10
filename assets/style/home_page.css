@@ -1,4 +1,8 @@
 /*Home Page*/
+#firstPage{
+    height: 502px;
+    /*background-color: green;*/
+}
 .WelcomeRectangle{
     position: absolute;
     width: 160px;

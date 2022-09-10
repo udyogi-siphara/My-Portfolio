@@ -1,12 +1,16 @@
+#servicesPage{
+    height: 100vh;
+    /*background-color: green;*/
+}
+
 #servicesPage>div{
     position: relative;
     width: 98.73vw;
     height: 200px;
     left: 0px;
-    top: 930px;
+    top: 0px;
     background-color: #470852;
     z-index: 1;
-
 }
 
 #services{
@@ -14,7 +18,7 @@
     width: 349px;
     height: 147px;
     left: 450px;
-    top: 664px;
+    top: -270px;
     z-index: 1;
     font-family: 'Arial';
     font-style: normal;

@@ -1,10 +1,14 @@
 /*Fourth Page*/
+#fourth{
+    height: 725px;
+    /*background-color: green;*/
+}
 main>section:nth-child(6)>div{
     position: relative;
     width: 98.73vw;
     height: 200px;
     left: 0px;
-    top: 1481px;
+    top: 0px;
     background-color: #470852;
     z-index: 1;
 }
@@ -14,7 +18,7 @@ main>section:nth-child(6)>div{
     width: 349px;
     height: 147px;
     left: 472px;
-    top: 1202px;
+    top: -276px;
     z-index: 1;
     font-family: 'Arial';
     font-size: 128px;
@@ -280,12 +284,11 @@ main>section:nth-child(6)>div{
     position: absolute;
     height: 40px;
     width: 120px;
-    left: 638px;
-    margin-top: 1596px;
+    left: 630px;
+    margin-top: 120px;
     background-color: #701C7D;
     color: white;
     border-color: white;
-
     font-family: Arial;
     border-radius: 20px;
 }

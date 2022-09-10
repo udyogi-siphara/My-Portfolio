@@ -1,10 +1,15 @@
 /*Third Page*/
+#ThirdPage{
+    height: 954px;
+    /*background-color: darkblue;*/
+}
+
 body>main>section:nth-child(5)>div{/*skills*/
     position: relative;
     width: 98.73vw;
     height: 200px;
     left: 0px;
-    top: 1073px;
+    top: 0px;
     background-color: #470852;
     z-index: 1;
 }
@@ -14,7 +19,7 @@ body>main>section:nth-child(5)>div{/*skills*/
     width: 349px;
     height: 147px;
     left: 539px;
-    top: 807px;
+    top: -258px;
     z-index: 1;
     font-family: 'Arial';
     font-style: normal;
