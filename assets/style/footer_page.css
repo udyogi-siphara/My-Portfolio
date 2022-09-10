@@ -214,7 +214,110 @@ body>footer>section>section:nth-child(2)>p{
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    body>footer{
+        position: relative;
+        width: 100vw;
+        height: 390px;
+        left: 0px;
+        bottom: -1392px;
+        background-color: #470852;
+        display: none;
+    }
 
+    #email{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+    a{
+        text-decoration:none;
+    }
+
+    body>footer>section>section:first-child{
+        border-radius: 100%;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 273px;
+        bottom: 110px;
+        background: #470852;
+        border: 2px dashed #FFFFFF;
+        display: none;
+    }
+
+    #hi{
+        position: absolute;
+        width: 361px;
+        height: 74px;
+        right: -54px;
+        bottom: 103px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 74px;
+        color: #FFFFFF;
+        z-index: 3;
+        display: none;
+    }
+
+    .gmail2{
+        position: absolute;
+        width: 323px;
+        height: 29px;
+        right: -37px;
+        bottom: 105px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 29px;
+        color: #FFFFFF;
+        display: none;
+    }
+
+    #email2{
+        color: #FFFFFF;
+        font-family: Arial;
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .iconGithub\&LinkedIn{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: 141px;
+        bottom: 35px;
+        display: none;
+    }
+
+    body>footer>section>section:nth-child(2)>hr{
+        position: absolute;
+        width: 100vw;
+        height: 0px;
+        left: 0px;
+        bottom: 70px;
+        border: 1px solid #FFFFFF;
+        display: none;
+    }
+
+    body>footer>section>section:nth-child(2)>p{
+        position: absolute;
+        width: 260px;
+        height: 14px;
+        right: 234px;
+        bottom: 5px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        display: none;
+    }
 }
 
 /*================================== 768->Tablet ================================== */

@@ -636,7 +636,348 @@ a{
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    main>section:nth-child(6)>div{
+        position: relative;
+        width: 100vw;
+        height: 143px;
+        left: 0px;
+        top: 1327px;
+        background-color: #470852;
+        z-index: 1;
+        display: none;
+    }
 
+    #projects {
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 176px;
+        top: 1103px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-size: 110px;
+        color: #FFFFFF;
+        opacity: 0.4;
+        display: none;
+    }
+
+    #fourth>section:nth-child(3)>div:nth-child(1){
+        position: absolute;
+        width: 272px;
+        height: 214px;
+        left: 167px;
+        top: 3088px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 7;
+        background-color: #B6A3BC;
+        opacity: 0.8;
+        border-radius: unset;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(1)>figure{
+        position: absolute;
+        width: 260px;
+        height: 210px;
+        left: -15px;
+        top: 20px;
+        z-index: 8;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(1)>figure>figcaption{
+        position: absolute;
+        width: 300px;
+        height: 31.58px;
+        left: -30px;
+        top: -30px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        z-index: 8;
+        display: none;
+    }
+
+    #fourth>section:nth-child(3)>div:nth-child(2){
+        position: absolute;
+        width: 219px;
+        height: 178px;
+        left: 67px;
+        top: 2595px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 4;
+        background-color: #B6A3BC;
+        border-radius: unset;
+        opacity: 0.8;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(2)>figure{
+        position: absolute;
+        width: 260px;
+        height: 210px;
+        left: -17px;
+        top: 19px;
+        z-index: 7;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(2)>figure>figcaption{
+        position: absolute;
+        width: 285px;
+        height: 31.58px;
+        left: -60px;
+        top: -25px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        z-index: 7;
+        display: none;
+    }
+
+    #ayur{
+        width: 230px;
+        height: 150px;
+        display: none;
+    }
+
+    #fourth>section:nth-child(3)>div:nth-child(3){
+        position: absolute;
+        width: 272px;
+        height: 214px;
+        right: 244px;
+        top: 2571px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        background-color: #B6A3BC;
+        opacity: 0.8;
+        border-radius: unset;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(3)>figure{
+        position: absolute;
+        width: 260px;
+        height: 210px;
+        right: -49px;
+        top: 20px;
+        z-index: 8;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(3)>figure>figcaption{
+        position: absolute;
+        width: 300px;
+        height: 31.58px;
+        right: -5px;
+        top: -30px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        z-index: 8;
+        display: none;
+    }
+
+    #market{
+        width: 170px;
+        height: 120px;
+        display: none;
+    }
+
+    #fourth>section:nth-child(3)>div:nth-child(4){
+        position: absolute;
+        width: 219px;
+        height: 178px;
+        right: 57px;
+        top: 2595px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 7;
+        background-color: #B6A3BC;
+        opacity: 0.8;
+        border-radius: unset;
+        border: unset;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(4)>figure{
+        position: absolute;
+        width: 260px;
+        height: 210px;
+        right: -108px;
+        top: 15px;
+        z-index: 8;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(4)>figure>figcaption{
+        position: absolute;
+        width: 300px;
+        height: 31.58px;
+        right: 22px;
+        top: -25px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        z-index: 8;
+        display: none;
+    }
+
+    #fourth>section:nth-child(3)>div:nth-child(5){
+        position: absolute;
+        width: 204px;
+        height: 154px;
+        right: 33px;
+        top: 3117px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 6;
+        background-color: #B6A3BC;
+        border-radius: unset;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(5)>figure{
+        position: absolute;
+        width: 260px;
+        height: 210px;
+        right: -117px;
+        top: 8px;
+        z-index: 7;
+        display: none;
+    }
+    #fourth>section:nth-child(3)>div:nth-child(5)>figure>figcaption{
+        position: absolute;
+        width: 300px;
+        height: 31.58px;
+        right: 32px;
+        top: -25px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        z-index: 7;
+        display: none;
+    }
+
+    /*First dot*/
+    #fourth>div:nth-child(4){
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 418px;
+        top: 3345px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        display: none;
+    }
+    #fourth>div:nth-child(5){
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 335px;
+        top: 2814px;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 100%;
+        display: none;
+    }
+    #fourth>div:nth-child(6){
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 381px;
+        top: 2812px;
+        background: #FFFFFF;
+        border-radius: 100%;
+        display: none;
+    }
+    #fourth>div:nth-child(7){
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 433px;
+        top: 2814px;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 100%;
+        display: none;
+    }
+    /*last dot*/
+    #fourth>div:nth-child(8){
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 594px;
+        top: 3345px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        display: none;
+    }
+
+    .arrow1{
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        left: 468px;
+        top: 2822px;
+        background: rgba(255, 255, 255, 0.75);
+        display: none;
+    }
+    .arrow1::after, .arrow1::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        right: -3px;
+        background: rgba(255, 255, 255, 0.75);
+        z-index: 1;
+        display: none;
+    }
+    .arrow1::after{
+        top: -10px;
+        transform: rotate(55deg);
+    }
+    .arrow1::before{
+        top: 10px;
+        transform: rotate(-55deg);
+    }
+
+    .more_button {
+        position: absolute;
+        height: 40px;
+        width: 120px;
+        left: 342px;
+        margin-top: 1387px;
+        background-color: #701C7D;
+        color: white;
+        border-color: white;
+        font-family: Arial;
+        border-radius: 20px;
+        display: none;
+    }
+
+    #view{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+    }
+    .more_button:hover {
+        background-color: white;
+        color: #701C7D;
+        border: 3px solid #701C7D;
+    }
+
+    #view:hover{
+        color: #701C7D;
+    }
 }
 
 /*================================== 768->Tablet ================================== */
