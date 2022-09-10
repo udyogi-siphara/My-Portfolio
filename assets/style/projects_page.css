@@ -639,26 +639,24 @@ a{
     main>section:nth-child(6)>div{
         position: relative;
         width: 100vw;
-        height: 143px;
+        height: 90px;
         left: 0px;
-        top: 1327px;
+        top: 2254px;
         background-color: #470852;
         z-index: 1;
-        display: none;
     }
 
     #projects {
         position: relative;
         width: 349px;
         height: 147px;
-        left: 176px;
-        top: 1103px;
+        left: 45px;
+        top: 2113px;
         z-index: 1;
         font-family: 'Arial';
-        font-size: 110px;
+        font-size: 70px;
         color: #FFFFFF;
         opacity: 0.4;
-        display: none;
     }
 
     #fourth>section:nth-child(3)>div:nth-child(1){
@@ -740,38 +738,35 @@ a{
     }
 
     #ayur{
-        width: 230px;
-        height: 150px;
-        display: none;
+        width: 319px;
+        height: 166px;
     }
 
     #fourth>section:nth-child(3)>div:nth-child(3){
         position: absolute;
-        width: 272px;
+        width: 343px;
         height: 214px;
-        right: 244px;
-        top: 2571px;
+        right: 43px;
+        top: 3173px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         z-index: 10;
         background-color: #B6A3BC;
         opacity: 0.8;
         border-radius: unset;
-        display: none;
     }
     #fourth>section:nth-child(3)>div:nth-child(3)>figure{
         position: absolute;
         width: 260px;
         height: 210px;
-        right: -49px;
+        right: 31px;
         top: 20px;
         z-index: 8;
-        display: none;
     }
     #fourth>section:nth-child(3)>div:nth-child(3)>figure>figcaption{
         position: absolute;
-        width: 300px;
+        width: 403px;
         height: 31.58px;
-        right: -5px;
+        right: -99px;
         top: -30px;
         font-family: 'Arial';
         font-style: normal;
@@ -781,7 +776,6 @@ a{
         text-align: center;
         color: #000000;
         z-index: 8;
-        display: none;
     }
 
     #market{
@@ -923,30 +917,58 @@ a{
 
     .arrow1{
         position: absolute;
-        width: 40px;
+        width: 20px;
         height: 4px;
-        left: 468px;
-        top: 2822px;
+        left: 350px;
+        top: 3413px;
         background: rgba(255, 255, 255, 0.75);
-        display: none;
+
     }
     .arrow1::after, .arrow1::before{
         content: '';
         position: absolute;
-        width: 20px;
+        width: 12px;
         height: 4px;
-        right: -3px;
+        right: -5px;
         background: rgba(255, 255, 255, 0.75);
         z-index: 1;
-        display: none;
+
     }
     .arrow1::after{
-        top: -10px;
-        transform: rotate(55deg);
+        top: -4px;
+        transform: rotate(45deg);
     }
     .arrow1::before{
-        top: 10px;
-        transform: rotate(-55deg);
+        top: 4px;
+        transform: rotate(-45deg);
+    }
+
+    .arrow2{
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 53px;
+        top: 3413px;
+        background: rgba(255, 255, 255, 0.75);
+
+    }
+    .arrow2::after, .arrow2::before{
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 4px;
+        right: 12px;
+        background: rgba(255, 255, 255, 0.75);
+        z-index: 1;
+
+    }
+    .arrow2::after{
+        top: -4px;
+        transform: rotate(134deg);
+    }
+    .arrow2::before{
+        top: 4px;
+        transform: rotate(-134deg);
     }
 
     .more_button {
