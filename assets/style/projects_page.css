@@ -639,12 +639,16 @@ a{
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    #fourth{
+        height: 415px;
+        background-color: green;
+    }
     main>section:nth-child(6)>div{
         position: relative;
         width: 100vw;
         height: 90px;
         left: 0px;
-        top: 2254px;
+        top: 0px;
         background-color: #470852;
         z-index: 1;
     }
@@ -654,7 +658,7 @@ a{
         width: 349px;
         height: 147px;
         left: 45px;
-        top: 2113px;
+        top: -135px;
         z-index: 1;
         font-family: 'Arial';
         font-size: 70px;
@@ -750,7 +754,7 @@ a{
         width: 343px;
         height: 214px;
         right: 43px;
-        top: 3173px;
+        top: 3204px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         z-index: 10;
         background-color: #B6A3BC;
@@ -923,7 +927,7 @@ a{
         width: 20px;
         height: 4px;
         left: 350px;
-        top: 3413px;
+        top: 3446px;
         background: rgba(255, 255, 255, 0.75);
 
     }
@@ -951,7 +955,7 @@ a{
         width: 20px;
         height: 4px;
         left: 53px;
-        top: 3413px;
+        top: 3446px;
         background: rgba(255, 255, 255, 0.75);
 
     }
