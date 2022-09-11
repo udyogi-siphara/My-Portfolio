@@ -284,7 +284,7 @@
         width: 100vw;
         height: 400px;
         left: 0px;
-        top: 1466px;
+        top: 0px;
         z-index: 1;
         fill: white;
     }
@@ -293,125 +293,114 @@
         position: absolute;
         width: 287px;
         height: 46px;
-        left: 35%;
-        top: 2984px;
+        left: 17%;
+        top: 3497px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
-        font-size: 25px;
+        font-size: 18px;
         margin-bottom: 15px;
-        display: none;
     }
 
     #let{
         position: absolute;
-        width: 512px;
+        width: 313px;
         height: 46px;
-        left: 21%;
-        top: 3018px;
+        left: 13%;
+        top: 3527px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
-        font-size: 35px;
-        display: none;
-
+        font-size: 25px;
     }
 
     .first{
         position: absolute;
-        width: 606px;
+        width: 307px;
         height: 29px;
         left: 15%;
-        top: 3089px;
+        top: 3599px;
         font-family: 'Arial';
-        font-size: 15px;
+        font-size: 13px;
         color: black;
         z-index: 1;
-        display: none;
     }
 
     .second{
         position: absolute;
-        width: 606px;
+        width: 307px;
         height: 29px;
-        left: 15%;
-        top: 3114px;
+        left: 14%;
+        top: 3632px;
         font-family: 'Arial';
-        font-size: 15px;
+        font-size: 13px;
         color: black;
         z-index: 1;
-        display: none;
     }
 
     .smallpic{
         position: absolute;
-        left: 37%;
-        top: 3181px;
+        left: 25%;
+        top: 3726px;
         z-index: 2;
-        display: none;
     }
 
     .greenCircle{
         position: absolute;
         width: 10px;
         height: 10px;
-        left: 39.5%;
-        top: 3205px;
+        left: 29.5%;
+        top: 3750px;
         border-radius: 100%;
         background: #00F461;
         z-index: 2;
-        display: none;
     }
 
     .Circle{
         position: absolute;
         width: 30px;
         height: 30px;
-        left: 37%;
-        top: 3181px;
+        left: 25%;
+        top: 3726px;
         border-radius: 100%;
         background: white;
         z-index: 1;
-        display: none;
     }
 
     #reply{
         position: absolute;
         width: 255px;
         height: 29px;
-        left: 37.5%;
-        top: 3174px;
+        left: 26%;
+        top: 3719px;
         font-size: 15px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
-        display: none;
     }
 
     .gmail{
         position: absolute;
         width: 237px;
         height: 30px;
-        left: 174px;
-        top: 204em;
+        left: 92px;
+        top: 237em;
         border-radius: 5px;
         background-color: #701C7D;
         z-index: 1;
         border: #701C7D;
-        display: none;
     }
 
     .number {
         position: absolute;
         width: 170px;
         height: 30px;
-        right: 19%;
-        top: 204em;
+        right: 29.5%;
+        top: 240em;
         border-radius: 5px;
         background-color: #3ABB56;
         z-index: 1;
         border: #3ABB56;
-        display: none;
     }
 
     #tel{
