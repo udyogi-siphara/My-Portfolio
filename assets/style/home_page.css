@@ -328,6 +328,10 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px) {
+    #firstPage{
+        height: 594px;
+        background-color: green;
+    }
     .WelcomeRectangle{
         position: absolute;
         width: 125px;
@@ -417,27 +421,27 @@ body>main>section>section>div:nth-child(4){
 
     .myProfile{
         position: absolute;
-        width: 218px;
-        height: 201px;
+        width: 250px;
+        height: 233px;
         right: 12%;
-        top: 352px;
+        top: 362px;
         z-index: 1;
     }
 
     body>main>section>section>div:nth-child(3){
         position: absolute;
-        width: 132px;
-        height: 132px;
-        right: 89px;
-        top: 407px;
+        width: 155px;
+        height: 155px;
+        right: 101px;
+        top: 429px;
         background: #FDFDFF;
         border-radius: 100%;
     }
 
     body>main>section>section>div:nth-child(4){
         position: absolute;
-        width: 155px;
-        height: 155px;
+        width: 185px;
+        height: 185px;
         right: 19px;
         top: 374px;
         border-radius: 100%;
