@@ -255,12 +255,16 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
 /*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px) {
-    body>main>section:nth-child(4)>div{/*skills*/
+    #ThirdPage{
+        height: 431px;
+        background-color: darkblue;
+    }
+    body>main>section:nth-child(5)>div{/*skills*/
         position: relative;
         width: 100vw;
         height: 70px;
         left: 0px;
-        top: 962px;
+        top: 0px;
         background-color: #470852;
         z-index: 1;
     }
@@ -269,8 +273,8 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         position: relative;
         width: 349px;
         height: 147px;
-        left: 101px;
-        top: 821px;
+        left: 105px;
+        top: -140px;
         z-index: 1;
         font-family: 'Arial';
         font-style: normal;
@@ -286,7 +290,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         width: 281px;
         height: 288px;
         left: 1.2em;
-        top: 73em;
+        top: 154em;
         background-color: #FFFFFF;
         border-radius: 15px;
     }
