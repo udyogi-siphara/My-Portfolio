@@ -197,7 +197,112 @@
 
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px) {
+    #secondPage{
+        height: 686px;
+        background-color: darkblue;
+    }
+    .aboutRec{/*about*/
+        position: relative;
+        width: 100vw;
+        height: 80px;
+        left: 0px;
+        top: 0px;
+        fill: #470852;
+        z-index: 1;
+    }
 
+    #aboutTopic{
+        position: absolute;
+        width: 349px;
+        height: 147px;
+        left: 116px;
+        top: 523px;
+        z-index: 1;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        opacity: 0.4;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 147px;
+    }
+
+    .aboutImage{
+        position: absolute;
+        width: 341px;
+        height: 319px;
+        left: 17px;
+        top: 656px;
+    }
+
+    .who{
+        position: absolute;
+        width: 150px;
+        height: 23.23px;
+        right: 19%;
+        top: 965px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+
+    .div1{
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        right: 333px;
+        top: 1006px;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
+
+    .paragraph1{
+        position: absolute;
+        width: 295px;
+        height: 135.34px;
+        right: 35px;
+        top: 994px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    .paragraph2{
+        position: absolute;
+        width: 295px;
+        height: 135.34px;
+        right: 37px;
+        top: 1056px;
+        font-family: 'Arial';
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 13px;
+    }
+    .cv{
+        position: absolute;
+        width: 123px;
+        height: 36px;
+        margin-top: -97px;
+        margin-left: -52px;
+        color: #FFFFFF;
+        font-family: Arial;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+        background-color: #701C7D;
+        font-weight: bold;
+    }
+
+    .cv:hover {
+        background-color: white;
+        color: #701C7D;
+
+        border: 3px solid #701C7D;
+    }
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
