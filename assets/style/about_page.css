@@ -111,12 +111,16 @@
 
 /*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px){
+    #secondPage{
+        height: 596px;
+        background-color: darkblue;
+    }
     .aboutRec{/*about*/
         position: relative;
         width: 100vw;
         height: 70px;
         left: 0px;
-        top: 533px;
+        top: 0px;
         fill: #470852;
         z-index: 1;
     }
@@ -126,7 +130,7 @@
         width: 349px;
         height: 147px;
         left: 95px;
-        top: 478px;
+        top: 483px;
         z-index: 1;
         font-family: 'Arial';
         color: #FFFFFF;
@@ -192,6 +196,26 @@
         color: #FFFFFF;
         text-align: justify;
         font-size: 11px;
+    }
+    .cv{
+        position: absolute;
+        width: 122px;
+        height: 34px;
+        margin-top: -107px;
+        margin-left: -52px;
+        color: #FFFFFF;
+        font-family: Arial;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+        background-color: #701C7D;
+        font-weight: bold;
+    }
+
+    .cv:hover {
+        background-color: white;
+        color: #701C7D;
+
+        border: 3px solid #701C7D;
     }
 }
 
