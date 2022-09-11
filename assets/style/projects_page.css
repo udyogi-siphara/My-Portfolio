@@ -311,12 +311,16 @@ a{
 
 /*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px){
+    #fourth{
+        height: 452px;
+        background-color: green;
+    }
     main>section:nth-child(6)>div{
         position: relative;
         width: 100vw;
         height: 70px;
         left: 0px;
-        top: 1141px;
+        top: 0px;
         background-color: #470852;
         z-index: 1;
     }
@@ -326,7 +330,7 @@ a{
         width: 349px;
         height: 147px;
         left: -11px;
-        top: 1043px;
+        top: -99px;
         z-index: 1;
         font-family: 'Arial';
         font-size: 48px;
@@ -419,7 +423,7 @@ a{
         width: 272px;
         height: 214px;
         right: 23px;
-        top: 1622px;
+        top: 2896px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         z-index: 10;
         background-color: #B6A3BC;
@@ -581,7 +585,7 @@ a{
         width: 20px;
         height: 4px;
         left: 265px;
-        top: 1872px;
+        top: 3130px;
         background: rgba(255, 255, 255, 0.75);
 
     }
@@ -609,7 +613,7 @@ a{
         width: 20px;
         height: 4px;
         left: 42px;
-        top: 1872px;
+        top: 3130px;
         background: rgba(255, 255, 255, 0.75);
 
     }
@@ -630,6 +634,34 @@ a{
     .arrow2::before{
         top: 4px;
         transform: rotate(-134deg);
+    }
+    .more_button {
+        position: absolute;
+        height: 40px;
+        width: 120px;
+        left: 109px;
+        margin-top: 73px;
+        background-color: #701C7D;
+        color: white;
+        border-color: white;
+        font-family: Arial;
+        border-radius: 20px;
+    }
+
+    #view{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+    }
+    .more_button:hover {
+        background-color: white;
+        color: #701C7D;
+        border: 3px solid #701C7D;
+    }
+
+    #view:hover{
+        color: #701C7D;
     }
 }
 
