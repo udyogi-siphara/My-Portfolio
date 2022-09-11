@@ -144,12 +144,16 @@
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    #servicesPage{
+        height: 1200px;
+        background-color: green;
+    }
     #servicesPage>div{
         position: relative;
         width: 100vw;
         height: 90px;
         left: 0px;
-        top: 1164px;
+        top: 0px;
         background-color: #470852;
         z-index: 1;
     }
@@ -159,7 +163,7 @@
         width: 349px;
         height: 147px;
         left: 72px;
-        top: 998px;
+        top: -171px;
         z-index: 1;
         font-family: 'Arial';
         font-style: normal;

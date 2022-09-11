@@ -201,12 +201,16 @@
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    #secondPage{
+        height: 686px;
+        background-color: darkblue;
+    }
     .aboutRec{/*about*/
         position: relative;
         width: 100vw;
         height: 90px;
         left: 0px;
-        top: 585px;
+        top: 0px;
         fill: #470852;
         z-index: 1;
     }
@@ -290,7 +294,7 @@
         position: absolute;
         width: 120px;
         height: 29px;
-        margin-top: 1094px;
+        margin-top: -74px;
         margin-left: -48px;
         color: #FFFFFF;
         font-family: Arial;
