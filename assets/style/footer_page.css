@@ -210,7 +210,102 @@ body>footer>section>section:nth-child(2)>p{
 
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px) {
+    body>footer{
+        position: relative;
+        width: 100vw;
+        height: 337px;
+        left: 0px;
+        bottom: 0px;
+        background-color: #470852;
+    }
 
+    #email{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+    a{
+        text-decoration:none;
+    }
+
+    body>footer>section>section:first-child{
+        border-radius: 100%;
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        left: 98px;
+        bottom: 84px;
+        background: #470852;
+        border: 2px dashed #FFFFFF;
+    }
+
+    #hi{
+        position: absolute;
+        width: 361px;
+        height: 74px;
+        right: -62px;
+        bottom: 83px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 74px;
+        color: #FFFFFF;
+        z-index: 3;
+    }
+
+    .gmail2{
+        position: absolute;
+        width: 323px;
+        height: 29px;
+        right: -43px;
+        bottom: 89px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+
+    #email2{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .iconGithub\&LinkedIn{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: 133px;
+        bottom: 35px;
+    }
+
+    body>footer>section>section:nth-child(2)>hr{
+        position: absolute;
+        width: 100vw;
+        height: 0px;
+        left: 0px;
+        bottom: 57px;
+        border: 1px solid #FFFFFF;
+    }
+
+    body>footer>section>section:nth-child(2)>p{
+        position: absolute;
+        width: 260px;
+        height: 14px;
+        right: 83px;
+        bottom: 5px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){

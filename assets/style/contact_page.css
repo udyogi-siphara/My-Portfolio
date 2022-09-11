@@ -275,7 +275,134 @@
 
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px) {
+    .contactRec{
+        position: relative;
+        width: 100vw;
+        height: 400px;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        fill: white;
+    }
 
+    #get{
+        position: absolute;
+        width: 287px;
+        height: 46px;
+        left: 14%;
+        top: 3532px;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #let{
+        position: absolute;
+        width: 289px;
+        height: 46px;
+        left: 13%;
+        top: 3566px;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+        font-size: 23px;
+    }
+
+    .first{
+        position: absolute;
+        width: 270px;
+        height: 29px;
+        left: 15%;
+        top: 3630px;
+        font-family: 'Arial';
+        font-size: 13px;
+        color: black;
+        z-index: 1;
+    }
+
+    .second{
+        position: absolute;
+        width: 276px;
+        height: 29px;
+        left: 14%;
+        top: 3660px;
+        font-family: 'Arial';
+        font-size: 13px;
+        color: black;
+        z-index: 1;
+    }
+
+    .smallpic{
+        position: absolute;
+        left: 25%;
+        top: 3726px;
+        z-index: 2;
+    }
+
+    .greenCircle{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 29.5%;
+        top: 3750px;
+        border-radius: 100%;
+        background: #00F461;
+        z-index: 2;
+    }
+
+    .Circle{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 25%;
+        top: 3726px;
+        border-radius: 100%;
+        background: white;
+        z-index: 1;
+    }
+
+    #reply{
+        position: absolute;
+        width: 255px;
+        height: 29px;
+        left: 23%;
+        top: 3719px;
+        font-size: 15px;
+        font-family: 'Arial';
+        color: black;
+        z-index: 1;
+    }
+
+    .gmail{
+        position: absolute;
+        width: 237px;
+        height: 30px;
+        left: 72px;
+        top: 238em;
+        border-radius: 5px;
+        background-color: #701C7D;
+        z-index: 1;
+        border: #701C7D;
+    }
+
+    .number {
+        position: absolute;
+        width: 170px;
+        height: 30px;
+        right: 27%;
+        top: 241em;
+        border-radius: 5px;
+        background-color: #3ABB56;
+        z-index: 1;
+        border: #3ABB56;
+    }
+
+    #tel{
+        color: #FFFFFF;
+        font-family: Arial;
+    }
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
