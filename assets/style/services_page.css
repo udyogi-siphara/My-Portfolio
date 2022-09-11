@@ -140,7 +140,140 @@
 }
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px) {
+    #servicesPage{
+        height: 1200px;
+        background-color: green;
+    }
+    #servicesPage>div{
+        position: relative;
+        width: 100vw;
+        height: 80px;
+        left: 0px;
+        top: 0px;
+        background-color: #470852;
+        z-index: 1;
+    }
 
+    #services{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 83px;
+        top: -151px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    .services1{
+        position: absolute;
+        width: 255px;
+        height: 321px;
+        left: 63px;
+        top: 1408px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services2{
+        position: absolute;
+        width: 255px;
+        height: 321px;
+        left: 63px;
+        top: 1765px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services3{
+        position: absolute;
+        width: 255px;
+        height: 321px;
+        left: 63px;
+        top: 2121px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .service-img{
+        height: 113px;
+        width: 113px;
+        margin-left: 77px;
+        margin-top: 20px;
+    }
+
+    #uiImg{
+        width: 113px;
+        height: 113px;
+        margin-left: 71px;
+        margin-top: 25px;
+    }
+
+    .service-p1{
+        position: absolute;
+        width: 281px;
+        height: 31px;
+        left: 41px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .service-p2{
+        position: absolute;
+        width: 340px;
+        height: 31px;
+        left: 60px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .service-p3{
+        position: absolute;
+        width: 154px;
+        height: 31px;
+        left: 80px;
+        top: 115px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .serv-para1{
+        position: absolute;
+        width: 212px;
+        height: 303px;
+        left: 22px;
+        top: 160px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 13px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }
 }
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
