@@ -164,6 +164,10 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px) {
+    #firstPage{
+        height: 553px;
+        background-color: green;
+    }
     .WelcomeRectangle{
         position: absolute;
         width: 125px;
