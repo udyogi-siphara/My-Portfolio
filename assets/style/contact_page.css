@@ -1,7 +1,7 @@
 /*Fifth Page*/
 #fifthPage{
     height: 400px;
-    /*background-color: darkblue;*/
+    background-color: darkblue;
 }
 
 .contactRec{
@@ -428,7 +428,7 @@
         width: 100vw;
         height: 400px;
         left: 0px;
-        top: 1466px;
+        top: 0;
         z-index: 1;
         fill: white;
     }
@@ -438,7 +438,7 @@
         width: 287px;
         height: 46px;
         left: 35%;
-        top: 2984px;
+        top: 3122px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
@@ -451,7 +451,7 @@
         width: 512px;
         height: 46px;
         left: 21%;
-        top: 3018px;
+        top: 3154px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
@@ -464,7 +464,7 @@
         width: 606px;
         height: 29px;
         left: 15%;
-        top: 3089px;
+        top: 3250px;
         font-family: 'Arial';
         font-size: 15px;
         color: black;
@@ -476,7 +476,7 @@
         width: 606px;
         height: 29px;
         left: 15%;
-        top: 3114px;
+        top: 3275px;
         font-family: 'Arial';
         font-size: 15px;
         color: black;
@@ -486,7 +486,7 @@
     .smallpic{
         position: absolute;
         left: 37%;
-        top: 3181px;
+        top: 3343px;
         z-index: 2;
     }
 
@@ -495,7 +495,7 @@
         width: 10px;
         height: 10px;
         left: 39.5%;
-        top: 3205px;
+        top: 3367px;
         border-radius: 100%;
         background: #00F461;
         z-index: 2;
@@ -506,7 +506,7 @@
         width: 30px;
         height: 30px;
         left: 37%;
-        top: 3181px;
+        top: 3343px;
         border-radius: 100%;
         background: white;
         z-index: 1;
@@ -517,7 +517,7 @@
         width: 255px;
         height: 29px;
         left: 37.5%;
-        top: 3174px;
+        top: 3335px;
         font-size: 15px;
         font-family: 'Arial';
         color: black;
@@ -529,7 +529,7 @@
         width: 237px;
         height: 30px;
         left: 174px;
-        top: 204em;
+        top: 214em;
         border-radius: 5px;
         background-color: #701C7D;
         z-index: 1;
@@ -541,7 +541,7 @@
         width: 170px;
         height: 30px;
         right: 19%;
-        top: 204em;
+        top: 214em;
         border-radius: 5px;
         background-color: #3ABB56;
         z-index: 1;
@@ -561,7 +561,7 @@
         width: 100vw;
         height: 400px;
         left: 0px;
-        top: 1700px;
+        top: 0;
         z-index: 1;
         fill: white;
     }

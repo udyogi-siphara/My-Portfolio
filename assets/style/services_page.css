@@ -1,6 +1,6 @@
 #servicesPage{
-    height: 100vh;
-    /*background-color: green;*/
+    height: 659px;
+    background-color: green;
 }
 
 #servicesPage>div{
@@ -278,12 +278,16 @@
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    #servicesPage{
+        height: 566px;
+        background-color: green;
+    }
     #servicesPage>div{
         position: relative;
         width: 100vw;
         height: 143px;
         left: 0px;
-        top: 801px;
+        top: 0;
         background-color: #470852;
         z-index: 1;
     }
@@ -293,7 +297,7 @@
         width: 349px;
         height: 147px;
         left: 177px;
-        top: 575px;
+        top: -228px;
         z-index: 1;
         font-family: 'Arial';
         font-style: normal;
@@ -309,7 +313,7 @@
         width: 219px;
         height: 321px;
         left: 30px;
-        top: 1180px;
+        top: 1221px;
         border-radius: 5%;
         box-shadow: 3px 5px 5px 1px #470852;
         background-color: #FFFFFF;
@@ -321,7 +325,7 @@
         width: 219px;
         height: 321px;
         left: 277px;
-        top: 1180px;
+        top: 1221px;
         border-radius: 5%;
         box-shadow: 3px 5px 5px 1px #470852;
         background-color: #FFFFFF;
@@ -333,7 +337,7 @@
         width: 219px;
         height: 321px;
         left: 524px;
-        top: 1180px;
+        top: 1221px;
         border-radius: 5%;
         box-shadow: 3px 5px 5px 1px #470852;
         background-color: #FFFFFF;
@@ -417,7 +421,7 @@
         width: 100vw;
         height: 200px;
         left: 0px;
-        top: 870px;
+        top: 0px;
         background-color: #470852;
         z-index: 1;
     }
@@ -426,8 +430,8 @@
         position: relative;
         width: 349px;
         height: 147px;
-        left: 293px;
-        top: 600px;
+        left: 266px;
+        top: -260px;
         z-index: 1;
         font-family: 'Arial';
         font-style: normal;
@@ -443,7 +447,7 @@
         width: 250px;
         height: 321px;
         left: 63px;
-        top: 1369px;
+        top: 1420px;
         border-radius: 5%;
         box-shadow: 3px 5px 5px 1px #470852;
         background-color: #FFFFFF;
@@ -455,7 +459,7 @@
         width: 250px;
         height: 321px;
         left: 384px;
-        top: 1369px;
+        top: 1420px;
         border-radius: 5%;
         box-shadow: 3px 5px 5px 1px #470852;
         background-color: #FFFFFF;
@@ -467,7 +471,7 @@
         width: 250px;
         height: 321px;
         left: 704px;
-        top: 1369px;
+        top: 1420px;
         border-radius: 5%;
         box-shadow: 3px 5px 5px 1px #470852;
         background-color: #FFFFFF;

@@ -1,7 +1,7 @@
 /*Home Page*/
 #firstPage{
     height: 502px;
-    /*background-color: green;*/
+    background-color: green;
 }
 .WelcomeRectangle{
     position: absolute;
@@ -492,6 +492,10 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
+    #firstPage{
+        height: 605px;
+        background-color: green;
+    }
     .WelcomeRectangle{
         position: absolute;
         width: 124px;
@@ -654,6 +658,10 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    #firstPage{
+        height: 469px;
+        background-color: green;
+    }
     .WelcomeRectangle{
         position: absolute;
         width: 139px;
@@ -816,6 +824,10 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
+    #firstPage{
+        height: 487px;
+        background-color: green;
+    }
     .WelcomeRectangle{
         position: absolute;
         width: 160px;

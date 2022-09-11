@@ -1,7 +1,7 @@
 /*Second Page*/
 #secondPage{
     height: 656px;
-    /*background-color: darkblue;*/
+    background-color: darkblue;
 }
 .aboutRec{/*about*/
     position: relative;
@@ -310,12 +310,16 @@
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    #secondPage{
+        height: 554px;
+        background-color: darkblue;
+    }
     .aboutRec{/*about*/
         position: relative;
         width: 100vw;
         height: 143px;
         left: 0px;
-        top: 447px;
+        top: 0px;
         fill: #470852;
         z-index: 1;
     }
@@ -324,8 +328,8 @@
         position: absolute;
         width: 349px;
         height: 147px;
-        left: 226px;
-        top: 385px;
+        left: 248px;
+        top: 392px;
         z-index: 1;
         font-family: 'Arial';
         color: #FFFFFF;
@@ -341,7 +345,7 @@
         width: 371px;
         height: 404px;
         left: 6px;
-        top: 586px;
+        top: 611px;
     }
 
     .who{
@@ -399,7 +403,7 @@
         position: absolute;
         width: 123px;
         height: 33px;
-        margin-top: 731px;
+        margin-top: -145px;
         margin-left: 124px;
         color: #FFFFFF;
         font-family: Arial;
@@ -424,7 +428,7 @@
         width: 100vw;
         height: 200px;
         left: 0px;
-        top: 466px;
+        top: 0px;
         fill: #470852;
         z-index: 1;
     }
@@ -434,7 +438,7 @@
         width: 349px;
         height: 147px;
         left: 360px;
-        top: 417px;
+        top: 423px;
         z-index: 1;
         font-family: 'Arial';
         color: #FFFFFF;
@@ -450,7 +454,7 @@
         width: 412px;
         height: 466px;
         left: 9px;
-        top: 645px;
+        top: 679px;
     }
 
     .who{
@@ -508,7 +512,7 @@
         position: absolute;
         width: 129px;
         height: 40px;
-        margin-top: 784px;
+        margin-top: -157px;
         margin-left: 124px;
         color: #FFFFFF;
         font-family: Arial;

@@ -327,7 +327,7 @@ body>footer>section>section:nth-child(2)>p{
         width: 100vw;
         height: 390px;
         left: 0px;
-        bottom: -1392px;
+        bottom: 0;
         background-color: #470852;
     }
 
@@ -427,7 +427,7 @@ body>footer>section>section:nth-child(2)>p{
         width: 100vw;
         height: 450px;
         left: 0px;
-        bottom:-1628px;
+        bottom:0;
         background-color: #470852;
     }
 

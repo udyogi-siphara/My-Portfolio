@@ -1,7 +1,7 @@
 /*Fourth Page*/
 #fourth{
     height: 725px;
-    /*background-color: green;*/
+    background-color: green;
 }
 main>section:nth-child(6)>div{
     position: relative;
@@ -1007,12 +1007,16 @@ a{
 
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
+    #fourth{
+        height: 644px;
+        background-color: green;
+    }
     main>section:nth-child(6)>div{
         position: relative;
         width: 100vw;
         height: 143px;
         left: 0px;
-        top: 1327px;
+        top: 0;
         background-color: #470852;
         z-index: 1;
     }
@@ -1022,7 +1026,7 @@ a{
         width: 349px;
         height: 147px;
         left: 176px;
-        top: 1103px;
+        top: -226px;
         z-index: 1;
         font-family: 'Arial';
         font-size: 110px;
@@ -1074,7 +1078,7 @@ a{
         width: 219px;
         height: 178px;
         left: 67px;
-        top: 2595px;
+        top: 2720px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 4;
         background-color: #B6A3BC;
@@ -1115,7 +1119,7 @@ a{
         width: 272px;
         height: 214px;
         right: 244px;
-        top: 2571px;
+        top: 2701px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         z-index: 10;
         background-color: #B6A3BC;
@@ -1156,7 +1160,7 @@ a{
         width: 219px;
         height: 178px;
         right: 57px;
-        top: 2595px;
+        top: 2720px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 7;
         background-color: #B6A3BC;
@@ -1242,7 +1246,7 @@ a{
         width: 20px;
         height: 20px;
         left: 335px;
-        top: 2814px;
+        top: 2941px;
         background: rgba(255, 255, 255, 0.75);
         border-radius: 100%;
     }
@@ -1251,7 +1255,7 @@ a{
         width: 25px;
         height: 25px;
         left: 381px;
-        top: 2812px;
+        top: 2939px;
         background: #FFFFFF;
         border-radius: 100%;
     }
@@ -1260,7 +1264,7 @@ a{
         width: 20px;
         height: 20px;
         left: 433px;
-        top: 2814px;
+        top: 2941px;
         background: rgba(255, 255, 255, 0.75);
         border-radius: 100%;
     }
@@ -1281,7 +1285,7 @@ a{
         width: 40px;
         height: 4px;
         left: 468px;
-        top: 2822px;
+        top: 2951px;
         background: rgba(255, 255, 255, 0.75);
     }
     .arrow1::after, .arrow1::before{
@@ -1307,12 +1311,13 @@ a{
         height: 40px;
         width: 120px;
         left: 342px;
-        margin-top: 1387px;
+        margin-top: 89px;
         background-color: #701C7D;
         color: white;
         border-color: white;
         font-family: Arial;
         border-radius: 20px;
+        z-index: 10;
     }
 
     #view{
@@ -1339,7 +1344,7 @@ a{
         width: 100vw;
         height: 200px;
         left: 0px;
-        top: 1481px;
+        top: 0px;
         background-color: #470852;
         z-index: 1;
     }
@@ -1349,7 +1354,7 @@ a{
         width: 349px;
         height: 147px;
         left: 296px;
-        top: 1202px;
+        top: -274px;
         z-index: 1;
         font-family: 'Arial';
         font-size: 128px;
@@ -1616,11 +1621,10 @@ a{
         height: 40px;
         width: 120px;
         left: 455px;
-        margin-top: 1596px;
+        margin-top: 106px;
         background-color: #701C7D;
         color: white;
         border-color: white;
-
         font-family: Arial;
         border-radius: 20px;
     }
