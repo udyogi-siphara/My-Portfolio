@@ -143,7 +143,7 @@
         width: 100vw;
         height: 400px;
         left: 0px;
-        top: 1305px;
+        top: 0px;
         z-index: 1;
         fill: white;
     }
@@ -153,7 +153,7 @@
         width: 287px;
         height: 46px;
         left: 7%;
-        top: 1999px;
+        top: 3281px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
@@ -166,7 +166,7 @@
         width: 289px;
         height: 46px;
         left: 6%;
-        top: 2023px;
+        top: 3303px;
         font-family: 'Arial';
         color: black;
         z-index: 1;
@@ -175,10 +175,10 @@
 
     .first{
         position: absolute;
-        width: 351px;
+        width: 219px;
         height: 29px;
-        left: -5%;
-        top: 2085px;
+        left: 16%;
+        top: 3359px;
         font-family: 'Arial';
         font-size: 11px;
         color: black;
@@ -187,10 +187,10 @@
 
     .second{
         position: absolute;
-        width: 311px;
+        width: 219px;
         height: 29px;
-        left: 0%;
-        top: 2114px;
+        left: 16%;
+        top: 3385px;
         font-family: 'Arial';
         font-size: 11px;
         color: black;
@@ -200,7 +200,7 @@
     .smallpic{
         position: absolute;
         left: 23%;
-        top: 2174px;
+        top: 3430px;
         z-index: 2;
     }
 
@@ -209,7 +209,7 @@
         width: 10px;
         height: 10px;
         left: 29%;
-        top: 2198px;
+        top: 3455px;
         border-radius: 100%;
         background: #00F461;
         z-index: 2;
@@ -220,7 +220,7 @@
         width: 30px;
         height: 30px;
         left: 23%;
-        top: 2174px;
+        top: 3430px;
         border-radius: 100%;
         background: white;
         z-index: 1;
@@ -230,8 +230,8 @@
         position: absolute;
         width: 255px;
         height: 29px;
-        left: 21%;
-        top: 2171px;
+        left: 17%;
+        top: 3429px;
         font-size: 12px;
         font-family: 'Arial';
         color: black;
@@ -243,7 +243,7 @@
         width: 219px;
         height: 39px;
         left: 51px;
-        top: 140em;
+        top: 219em;
         border-radius: 5px;
         background-color: #701C7D;
         z-index: 1;
@@ -255,7 +255,7 @@
         width: 170px;
         height: 30px;
         right: 23%;
-        top: 143em;
+        top: 223em;
         border-radius: 5px;
         background-color: #3ABB56;
         z-index: 1;
