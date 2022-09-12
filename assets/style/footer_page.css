@@ -125,9 +125,9 @@ body>footer>section>section:nth-child(2)>p{
 
     #hi{
         position: absolute;
-        width: 361px;
+        width: 121px;
         height: 74px;
-        right: -81px;
+        right: 39px;
         bottom: 83px;
         font-family: 'Arial';
         font-style: normal;
@@ -286,7 +286,7 @@ body>footer>section>section:nth-child(2)>p{
 
     body>footer>section>section:nth-child(2)>hr{
         position: absolute;
-        width: 100vw;
+        width: 99.5vw;
         height: 0px;
         left: 0px;
         bottom: 57px;
@@ -385,7 +385,7 @@ body>footer>section>section:nth-child(2)>p{
 
     body>footer>section>section:nth-child(2)>hr{
         position: absolute;
-        width: 100vw;
+        width: 99.5vw;
         height: 0px;
         left: 0px;
         bottom: 57px;

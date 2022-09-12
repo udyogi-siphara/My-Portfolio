@@ -316,6 +316,7 @@ a{
         background-color: green;
     }
     main>section:nth-child(6)>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 70px;
@@ -327,9 +328,9 @@ a{
 
     #projects {
         position: relative;
-        width: 349px;
+        width: 274px;
         height: 147px;
-        left: -11px;
+        left: 30px;
         top: -99px;
         z-index: 1;
         font-family: 'Arial';
@@ -683,9 +684,9 @@ a{
 
     #projects {
         position: relative;
-        width: 349px;
+        width: 281px;
         height: 147px;
-        left: 14px;
+        left: 47px;
         top: -114px;
         z-index: 1;
         font-family: 'Arial';
@@ -799,9 +800,9 @@ a{
     }
     #fourth>section:nth-child(3)>div:nth-child(3)>figure>figcaption{
         position: absolute;
-        width: 403px;
+        width: 233px;
         height: 31.58px;
-        right: -82px;
+        right: -5px;
         top: -30px;
         font-family: 'Arial';
         font-style: normal;
@@ -1041,6 +1042,7 @@ a{
         background-color: green;
     }
     main>section:nth-child(6)>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 90px;
@@ -1052,9 +1054,9 @@ a{
 
     #projects {
         position: relative;
-        width: 349px;
+        width: 192px;
         height: 147px;
-        left: 45px;
+        left: 73px;
         top: -135px;
         z-index: 1;
         font-family: 'Arial';
@@ -1412,6 +1414,7 @@ a{
         background-color: green;
     }
     main>section:nth-child(6)>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 143px;
@@ -1740,6 +1743,7 @@ a{
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
     main>section:nth-child(6)>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 200px;
@@ -2048,10 +2052,5 @@ a{
 
 /*================================== 1440->Laptop large ================================== */
 @media all and (min-width: 1025px) and (max-width: 1440px){
-
-}
-
-/* ================================== 4K ================================== */
-@media all and (min-width: 1441px) and (max-width: 2560px){
 
 }

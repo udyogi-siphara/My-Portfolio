@@ -370,7 +370,7 @@ body>header>nav>ul{
         position: fixed;
         z-index: 15;
         height: 50px;
-        width: 98.73vw;
+        width: 103vw;
     }
 
     .MenuRectangle{
@@ -378,7 +378,7 @@ body>header>nav>ul{
         left: 0px;
         top: 0px;
         height: 50px;
-        width: 98.73vw;
+        width: 103vw;
         background: #701C7D;;
     }
 

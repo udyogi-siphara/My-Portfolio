@@ -45,6 +45,7 @@
 
 body{
     background: #701C7D;
+    /*overflow-x: hidden;*/
 }
 
 #myName{
@@ -213,7 +214,7 @@ body>main>section>section>div:nth-child(4){
 
     #myName{
         position: absolute;
-        width: 414px;
+        width: 263px;
         height: 55px;
         left: 30px;
         top: 121px;
@@ -381,7 +382,7 @@ body>main>section>section>div:nth-child(4){
 
     #myName{
         position: absolute;
-        width: 414px;
+        width: 258px;
         height: 55px;
         left: 30px;
         top: 121px;
@@ -549,7 +550,7 @@ body>main>section>section>div:nth-child(4){
 
     #myName{
         position: absolute;
-        width: 414px;
+        width: 352px;
         height: 55px;
         left: 37px;
         top: 121px;
@@ -997,7 +998,7 @@ body>main>section>section>div:nth-child(4){
 
 /*================================== 1440->Laptop large ================================== */
 @media all and (min-width: 1025px) and (max-width: 1440px){
-   /* .WelcomeRectangle{
+    /*.WelcomeRectangle{
         position: absolute;
         width: 160px;
         height: 30px;
@@ -1037,11 +1038,9 @@ body>main>section>section>div:nth-child(4){
         color : #701C7D;
     }
 
-    body{
-        background: #701C7D;
-    }
 
-    #myName{
+
+     #myName{
         position: absolute;
         width: 414px;
         height: 55px;
@@ -1158,10 +1157,6 @@ body>main>section>section>div:nth-child(4){
     }*/
 }
 
-/* ================================== 4K ================================== */
-@media all and (min-width: 1441px) and (max-width: 2560px){
-
-}
 
 
 

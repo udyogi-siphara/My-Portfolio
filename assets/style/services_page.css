@@ -141,6 +141,7 @@
         background-color: green;
     }
     #servicesPage>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 70px;
@@ -152,7 +153,7 @@
 
     #services{
         position: relative;
-        width: 349px;
+        width: 195px;
         height: 147px;
         left: 72px;
         top: -141px;
@@ -219,7 +220,7 @@
 
     .service-p1{
         position: absolute;
-        width: 281px;
+        width: 197px;
         height: 31px;
         left: 41px;
         top: 115px;
@@ -232,7 +233,7 @@
 
     .service-p2{
         position: absolute;
-        width: 340px;
+        width: 197px;
         height: 31px;
         left: 60px;
         top: 115px;
@@ -278,6 +279,7 @@
         background-color: green;
     }
     #servicesPage>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 80px;
@@ -289,7 +291,7 @@
 
     #services{
         position: relative;
-        width: 349px;
+        width: 198px;
         height: 147px;
         left: 83px;
         top: -151px;
@@ -356,7 +358,7 @@
 
     .service-p1{
         position: absolute;
-        width: 281px;
+        width: 204px;
         height: 31px;
         left: 41px;
         top: 115px;
@@ -369,7 +371,7 @@
 
     .service-p2{
         position: absolute;
-        width: 340px;
+        width: 187px;
         height: 31px;
         left: 60px;
         top: 115px;
@@ -415,6 +417,7 @@
         background-color: green;
     }
     #servicesPage>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 90px;
@@ -506,7 +509,7 @@
 
     .service-p2{
         position: absolute;
-        width: 340px;
+        width: 189px;
         height: 31px;
         left: 60px;
         top: 115px;
@@ -553,6 +556,7 @@
         background-color: green;
     }
     #servicesPage>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 143px;
@@ -687,6 +691,7 @@
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
     #servicesPage>div{
+        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 200px;
@@ -820,7 +825,141 @@
 
 /*================================== 1440->Laptop large ================================== */
 @media all and (min-width: 1025px) and (max-width: 1440px){
+    /*#servicesPage{
+        height: 659px;
+        background-color: green;
+    }
 
+    #servicesPage>div{
+        position: relative;
+        width: 103vw;
+        height: 200px;
+        left: 0px;
+        top: 0px;
+        background-color: #470852;
+        z-index: 1;
+    }
+
+    #services{
+        position: relative;
+        width: 349px;
+        height: 147px;
+        left: 450px;
+        top: -270px;
+        z-index: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 147px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    .services1{
+        position: absolute;
+        width: 344px;
+        height: 321px;
+        left: 63px;
+        top: 1448px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services2{
+        position: absolute;
+        width: 344px;
+        height: 321px;
+        left: 504px;
+        top: 1448px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .services3{
+        position: absolute;
+        width: 344px;
+        height: 321px;
+        left: 942px;
+        top: 1448px;
+        border-radius: 5%;
+        box-shadow: 3px 5px 5px 1px #470852;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .service-img{
+        height: 113px;
+        width: 113px;
+        margin-left: 127px;
+        margin-top: 20px;
+    }
+
+    #uiImg{
+        width: 113px;
+        height: 113px;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+
+    .service-p1{
+        position: absolute;
+        width: 340px;
+        height: 31px;
+        left: 48px;
+        top: 108px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .service-p2{
+        position: absolute;
+        width: 340px;
+        height: 31px;
+        left: 81px;
+        top: 108px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .service-p3{
+        position: absolute;
+        width: 154px;
+        height: 31px;
+        left: 102px;
+        top: 108px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .serv-para1{
+        position: absolute;
+        width: 265px;
+        height: 303px;
+        left: 41px;
+        top: 171px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 10;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }*/
 }
 
 /* ================================== 4K ================================== */

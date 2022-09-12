@@ -271,7 +271,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     #skills{
         position: relative;
-        width: 349px;
+        width: 172px;
         height: 147px;
         left: 105px;
         top: -140px;
@@ -297,7 +297,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     .smiller1{
         position: absolute;
-        width: 459px;
+        width: 160px;
         height: 71px;
         left: 3%;
         top:0;
@@ -310,7 +310,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     .smiller2{
         position: absolute;
-        width: 459px;
+        width: 154px;
         height: 71px;
         left: 53%;
         top: 0;
@@ -323,7 +323,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     #nonSmiller{
         position: absolute;
-        width: 459px;
+        width: 154px;
         height: 71px;
         left: 7%;
         top: 0;
@@ -563,6 +563,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     #ThirdPage{
         height: 575px;
         background-color: darkblue;
+
     }
     body>main>section:nth-child(5)>div{/*skills*/
         position: relative;
@@ -576,7 +577,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     #skills{
         position: relative;
-        width: 349px;
+        width: 196px;
         height: 147px;
         left: 132px;
         top: -148px;
@@ -591,6 +592,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     }
 
     body>main>section:nth-child(5)>section:nth-child(3)>section>div{
+        overflow-x: hidden !important;
         position: absolute;
         width: 314px;
         height: 393px;
@@ -614,7 +616,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     .smiller2{
         position: absolute;
-        width: 459px;
+        width: 174px;
         height: 71px;
         left: 53%;
         top: 0;
@@ -626,7 +628,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     #nonSmiller{
         position: absolute;
-        width: 459px;
+        width: 124px;
         height: 71px;
         left: 7%;
         top: 0;
@@ -877,6 +879,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     }
 
     body>main>section:nth-child(5)>section:nth-child(3)>section>div{
+        overflow-x: hidden !important;
         position: absolute;
         width: 360px;
         height: 393px;
@@ -900,7 +903,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     .smiller2{
         position: absolute;
-        width: 459px;
+        width: 171px;
         height: 71px;
         left: 55%;
         top: 0;
@@ -912,7 +915,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
     #nonSmiller{
         position: absolute;
-        width: 459px;
+        width: 207px;
         height: 71px;
         left: 7%;
         top: 0;
@@ -1164,6 +1167,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     }
 
     body>main>section:nth-child(5)>section:nth-child(3)>section>div{
+        overflow-x: hidden !important;
         position: absolute;
         width: 672px;
         height: 600px;
@@ -1447,6 +1451,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     }
 
     body>main>section:nth-child(5)>section:nth-child(3)>section>div{
+        overflow-x: hidden !important;
         position: absolute;
         width: 904px;
         height: 600px;
@@ -1675,7 +1680,3 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 
 }
 
-/* ================================== 4K ================================== */
-@media all and (min-width: 1441px) and (max-width: 2560px){
-
-}
