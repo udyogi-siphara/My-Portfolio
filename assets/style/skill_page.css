@@ -1,7 +1,7 @@
 /*Third Page*/
 #ThirdPage{
     height: 954px;
-    background-color: darkblue;
+    /*background-color: darkblue;*/
 }
 
 body>main>section:nth-child(5)>div{/*skills*/
@@ -259,7 +259,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 @media all and (width: 320px) {
     #ThirdPage{
         height: 431px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     body>main>section:nth-child(5)>div{/*skills*/
         overflow: hidden !important;
@@ -567,7 +567,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 @media all and (min-width: 321px) and (max-width: 375px) {
     #ThirdPage{
         height: 575px;
-        background-color: darkblue;
+       /* background-color: darkblue;*/
 
     }
     body>main>section:nth-child(5)>div{/*skills*/
@@ -857,7 +857,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 @media all and (min-width: 376px) and (max-width: 425px){
     #ThirdPage{
         height: 575px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     body>main>section:nth-child(5)>div{/*skills*/
         position: relative;
@@ -1146,7 +1146,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
 @media all and (min-width: 426px) and (max-width: 768px){
     #ThirdPage{
         height: 864px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     body>main>section:nth-child(5)>div{/*skills*/
         position: relative;

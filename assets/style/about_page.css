@@ -1,7 +1,7 @@
 /*Second Page*/
 #secondPage{
     height: 656px;
-    background-color: darkblue;
+    /*background-color: darkblue;*/
 }
 .aboutRec{/*about*/
     position: relative;
@@ -113,7 +113,7 @@
 @media all and (width: 320px){
     #secondPage{
         height: 596px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     .aboutRec{/*about*/
         position: relative;
@@ -223,7 +223,7 @@
 @media all and (min-width: 321px) and (max-width: 375px) {
     #secondPage{
         height: 686px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     .aboutRec{/*about*/
         position: relative;
@@ -332,7 +332,7 @@
 @media all and (min-width: 376px) and (max-width: 425px){
     #secondPage{
         height: 686px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     .aboutRec{/*about*/
         position: relative;
@@ -445,7 +445,7 @@
 @media all and (min-width: 426px) and (max-width: 768px){
     #secondPage{
         height: 554px;
-        background-color: darkblue;
+        /*background-color: darkblue;*/
     }
     .aboutRec{/*about*/
         position: relative;
@@ -664,115 +664,5 @@
 }
 
 /*================================== 1440->Laptop large ================================== */
-@media all and (min-width: 1025px) and (max-width: 1440px){
-   /* .aboutRec{!*about*!
-        position: relative;
-        width: 100%;
-        height: 200px;
-        left:0px;
-        top: 0px;
-        fill: #470852;
-        z-index: 1;
-    }
-
-    #aboutTopic{
-        position: absolute;
-        width: 349px;
-        height: 147px;
-        left: 565px;
-        top: 440px;
-        z-index: 1;
-        font-family: 'Arial';
-        color: #FFFFFF;
-        opacity: 0.4;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 128px;
-        line-height: 147px;
-    }
-
-    .aboutImage{
-        position: absolute;
-        width: 595px;
-        height: 538px;
-        lef: 30px;
-        top: 645px;
-    }
-
-    .who{
-        position: absolute;
-        width: 150px;
-        height: 23.23px;
-        right: 37%;
-        top: 770px;
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
-        text-decoration-line: underline;
-        color: #FFFFFF;
-    }
-
-    .div1{
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        right: 636px;
-        top: 832px;
-        border-radius: 100%;
-        border: 3px solid white;
-    }
-
-    .paragraph1{
-        position: absolute;
-        width: 609px;
-        height: 135.34px;
-        right: 18px;
-        top: 818px;
-        font-family: 'Arial';
-        color: #FFFFFF;
-        text-align: justify;
-        font-size: 16px;
-        letter-spacing: 0.03em;
-    }
-
-    .paragraph2{
-        position: absolute;
-        width: 607px;
-        height: 135.34px;
-        right: 21px;
-        top: 875px;
-        font-family: 'Arial';
-        color: #FFFFFF;
-        text-align: justify;
-        font-size: 16px;
-        letter-spacing: 0.03em;
-    }
-
-    .cv{
-        position: absolute;
-        width: 129px;
-        height: 40px;
-        margin-top: 756px;
-        margin-left: 143px;
-        color: #FFFFFF;
-        font-family: Arial;
-        border-radius: 15px;
-        border-color: #FFFFFF;
-        background-color: #701C7D;
-        font-weight: bold;
-    }
-
-    .cv:hover {
-        background-color: white;
-        color: #701C7D;
-
-        border: 3px solid #701C7D;
-    }*/
-}
-
-/* ================================== 4K ================================== */
-@media all and (min-width: 1441px) and (max-width: 2560px){
-
+@media all and (min-width: 1025px) and (max-width: 1440px) {
 }

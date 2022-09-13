@@ -1,6 +1,6 @@
 #servicesPage{
     height: 659px;
-    background-color: green;
+    /*background-color: green;*/
 }
 
 #servicesPage>div{
@@ -138,7 +138,7 @@
 @media all and (width: 320px){
     #servicesPage{
         height: 1200px;
-        background-color: green;
+        /*background-color: green;*/
     }
     #servicesPage>div{
         position: relative;
@@ -275,7 +275,7 @@
 @media all and (min-width: 321px) and (max-width: 375px) {
     #servicesPage{
         height: 1200px;
-        background-color: green;
+        /*background-color: green;*/
     }
     #servicesPage>div{
         position: relative;
@@ -412,7 +412,7 @@
 @media all and (min-width: 376px) and (max-width: 425px){
     #servicesPage{
         height: 1200px;
-        background-color: green;
+        /*background-color: green;*/
     }
     #servicesPage>div{
         position: relative;
@@ -550,7 +550,7 @@
 @media all and (min-width: 426px) and (max-width: 768px){
     #servicesPage{
         height: 566px;
-        background-color: green;
+        /*background-color: green;*/
     }
     #servicesPage>div{
         position: relative;

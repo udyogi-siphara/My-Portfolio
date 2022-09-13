@@ -1,7 +1,7 @@
 /*Fourth Page*/
 #fourth{
     height: 725px;
-    background-color: green;
+    /*background-color: green;*/
 }
 main>section:nth-child(6)>div{
     position: relative;
@@ -317,7 +317,7 @@ a{
 @media all and (width: 320px){
     #fourth{
         height: 452px;
-        background-color: green;
+        /*background-color: green;*/
     }
     main>section:nth-child(6)>div{
         position: relative;
@@ -677,7 +677,7 @@ a{
 @media all and (min-width: 321px) and (max-width: 375px) {
     #fourth{
         height: 452px;
-        background-color: green;
+        /*background-color: green;*/
     }
     main>section:nth-child(6)>div{
         position: relative;
@@ -1050,7 +1050,7 @@ a{
 @media all and (min-width: 376px) and (max-width: 425px){
     #fourth{
         height: 415px;
-        background-color: green;
+        /*background-color: green;*/
     }
     main>section:nth-child(6)>div{
         position: relative;
@@ -1425,7 +1425,7 @@ a{
 @media all and (min-width: 426px) and (max-width: 768px){
     #fourth{
         height: 644px;
-        background-color: green;
+        /*background-color: green;*/
     }
     main>section:nth-child(6)>div{
         position: relative;
@@ -2074,7 +2074,7 @@ a{
 @media all and (min-width: 1025px) and (max-width: 1440px){
     #fourth{
         height: 725px;
-        background-color: green;
+        /*background-color: green;*/
     }
     main>section:nth-child(6)>div{
         position: relative;
