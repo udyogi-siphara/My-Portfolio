@@ -260,6 +260,7 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         background-color: darkblue;
     }
     body>main>section:nth-child(5)>div{/*skills*/
+        overflow: hidden !important;
         position: relative;
         width: 100vw;
         height: 70px;
@@ -879,7 +880,6 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     }
 
     body>main>section:nth-child(5)>section:nth-child(3)>section>div{
-        overflow-x: hidden !important;
         position: absolute;
         width: 360px;
         height: 393px;
@@ -1451,7 +1451,6 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
     }
 
     body>main>section:nth-child(5)>section:nth-child(3)>section>div{
-        overflow-x: hidden !important;
         position: absolute;
         width: 904px;
         height: 600px;

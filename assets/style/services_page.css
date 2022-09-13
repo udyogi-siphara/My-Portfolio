@@ -141,7 +141,6 @@
         background-color: green;
     }
     #servicesPage>div{
-        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 70px;
@@ -279,7 +278,6 @@
         background-color: green;
     }
     #servicesPage>div{
-        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 80px;
@@ -417,7 +415,6 @@
         background-color: green;
     }
     #servicesPage>div{
-        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 90px;
@@ -556,7 +553,6 @@
         background-color: green;
     }
     #servicesPage>div{
-        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 143px;
@@ -691,7 +687,6 @@
 /*================================== 1024->Laptop ================================== */
 @media all and (min-width: 769px) and (max-width: 1024px){
     #servicesPage>div{
-        overflow-x: hidden !important;
         position: relative;
         width: 100vw;
         height: 200px;
