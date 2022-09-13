@@ -34,7 +34,9 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div{
     position: absolute;
     width: 1000px;
     height: 600px;
-    left: 11em;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 131em;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -290,7 +292,9 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         position: absolute;
         width: 281px;
         height: 288px;
-        left: 1.2em;
+        left: 0;
+        right: 0;
+        margin: auto;
         top: 154em;
         background-color: #FFFFFF;
         border-radius: 15px;
@@ -597,7 +601,9 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         position: absolute;
         width: 314px;
         height: 393px;
-        left: 2em;
+        left: 0;
+        right: 0;
+        margin: auto;
         top: 165em;
         background-color: #FFFFFF;
         border-radius: 21px;
@@ -883,7 +889,9 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         position: absolute;
         width: 360px;
         height: 393px;
-        left: 2em;
+        left: 0;
+        right: 0;
+        margin: auto;
         top: 165em;
         background-color: #FFFFFF;
         border-radius: 21px;
@@ -1171,7 +1179,9 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         position: absolute;
         width: 672px;
         height: 600px;
-        left: 3em;
+        left: 0;
+        right: 0;
+        margin: auto;
         top: 113em;
         background-color: #FFFFFF;
         border-radius: 30px;
@@ -1454,7 +1464,9 @@ body>main>section:nth-child(5)>section:nth-child(3)>section>div>hr:nth-child(11)
         position: absolute;
         width: 904px;
         height: 600px;
-        left: 4em;
+        left: 0;
+        right: 0;
+        margin: auto;
         top: 132em;
         background-color: #FFFFFF;
         border-radius: 30px;

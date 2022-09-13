@@ -21,7 +21,9 @@ body>footer>section>section:first-child{
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 528px;
+    left: 0;
+    right: 0;
+    margin: auto;
     bottom: 110px;
     background: #470852;
     border: 2px dashed #FFFFFF;
@@ -86,8 +88,10 @@ body>footer>section>section:nth-child(2)>p{
     position: absolute;
     width: 260px;
     height: 14px;
-    right: 530px;
-    bottom: 5px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 42px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -117,7 +121,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 200px;
         height: 200px;
-        left: 60px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 95px;
         background: #470852;
         border: 2px dashed #FFFFFF;
@@ -193,8 +199,10 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 260px;
         height: 14px;
-        right: 29px;
-        bottom: 5px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 26px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
@@ -232,7 +240,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 230px;
         height: 230px;
-        left: 70px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 84px;
         background: #470852;
         border: 2px dashed #FFFFFF;
@@ -297,7 +307,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 260px;
         height: 14px;
-        right: 58px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 5px;
         font-family: 'Arial';
         font-style: normal;
@@ -331,7 +343,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 230px;
         height: 230px;
-        left: 98px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 84px;
         background: #470852;
         border: 2px dashed #FFFFFF;
@@ -396,7 +410,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 260px;
         height: 14px;
-        right: 83px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 5px;
         font-family: 'Arial';
         font-style: normal;
@@ -431,7 +447,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 250px;
         height: 250px;
-        left: 273px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 110px;
         background: #470852;
         border: 2px dashed #FFFFFF;
@@ -496,7 +514,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 260px;
         height: 14px;
-        right: 234px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 5px;
         font-family: 'Arial';
         font-style: normal;
@@ -531,7 +551,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 300px;
         height: 300px;
-        left: 376px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 110px;
         background: #470852;
         border: 2px dashed #FFFFFF;
@@ -596,7 +618,9 @@ body>footer>section>section:nth-child(2)>p{
         position: absolute;
         width: 260px;
         height: 14px;
-        right: 353px;
+        left: 0;
+        right: 0;
+        margin: auto;
         bottom: 5px;
         font-family: 'Arial';
         font-style: normal;
@@ -609,10 +633,5 @@ body>footer>section>section:nth-child(2)>p{
 
 /*================================== 1440->Laptop large ================================== */
 @media all and (min-width: 1025px) and (max-width: 1440px){
-
-}
-
-/* ================================== 4K ================================== */
-@media all and (min-width: 1441px) and (max-width: 2560px){
 
 }
