@@ -363,7 +363,7 @@ body>main>section>section>div:nth-child(4){
 
     #welcome{
         position: absolute;
-        width: 101px;
+        width: 128px;
         height: 20px;
         left: 42px;
         top: 63px;
@@ -412,8 +412,8 @@ body>main>section>section>div:nth-child(4){
 
     .btnGetStarted{
         position: absolute;
-        width: 96px;
-        height: 29px;
+        width: 101px;
+        height: 32px;
         left: 94px;
         top: 251px;
         color: #701C7D;
