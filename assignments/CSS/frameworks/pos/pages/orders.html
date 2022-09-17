@@ -42,5 +42,91 @@
         </div>
     </nav>
 </header>
+<main class="container position-relative">
+    <div>
+        <div class="row ">
+            <div class="p-1 px-3 col rounded-3 fw-bolder bg-light text-success fs-3 mt-4 shadow-sm"><i class="fas fa-cart-plus me-2"></i>Place Order
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="mt-4">
+            <div class="row gx-3">
+                <div class="col-xl col-lg-5 col-sm-6">
+                    <div class="p-2 rounded-3  bg-success text-light fw-bolder ">Invoice Details</div>
+
+                    <div class="rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
+                        <div class="row gx-3">
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="orderId" class="form-label">Order ID</label>
+                                    <input type="text" class="form-control" id="orderId" placeholder="O001">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="OrderDate" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="OrderDate">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row gx-3">
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="customerId" class="form-label">Customer ID</label>
+                                    <select class="form-select form-select-ls" id="customerId" aria-label=".form-select-lg example">
+                                        <option selected>C001</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="customerName" class="form-label">Customer</label>
+                                    <input type="text" class="form-control" id="customerName" placeholder="Siphara">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row gx-3">
+                            <div class="mb-lg-4 mb-sm-3 mb-3">
+                                <label for="salary" class="form-label">Salary</label>
+                                <input type="text" class="form-control" id="salary" placeholder="0000.00">
+                            </div>
+                            <div class="mb-lg-4 mb-md-5 ">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Galle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg col-sm-6">
+                    <div class="p-2 rounded-3 bg-success text-light fw-bolder">Item Details</div>
+                    <div class="px-2 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
+                        <div class="row gx-3">
+                            <div class="col">
+                                <div class="mb-4">
+                                    <label for="itemId" class="form-label">Item ID</label>
+                                    <select class="form-select form-select-ls" id="itemId" aria-label=".form-select-lg example">
+                                        <option selected>P001</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-4">
+                                    <label for="item" class="form-label">Item</label>
+                                    <input type="text" class="form-control" id="item" placeholder="Soap">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
