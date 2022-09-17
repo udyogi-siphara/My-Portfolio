@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>US POS System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../../../../assets/boostrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../../assets/fonts/css/all.css">
-    <link rel="stylesheet" href="../../../../../assets/posStyle/dashBord.css">
+    <title>US POS System | Customer</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../../../../../assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../../assets/fonts/css/all.css" rel="stylesheet">
+    <link href="../../../../../assets/posStyle/dashBord.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -14,12 +14,13 @@
         <div class="container-fluid">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../../../../../assets/image/market-removebg-preview.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <img alt="Logo" class="d-inline-block align-text-top" height="24" src="../../../../../assets/image/market-removebg-preview.png"
+                         width="30">
                     US POS System
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="items.html">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bolder" aria-current="page" href="customers.html">Customer</a>
+                        <a aria-current="page" class="nav-link active fw-bolder" href="customers.html">Customer</a>
                     </li>
                 </ul>
             </div>
@@ -42,4 +43,31 @@
     </nav>
 </header>
 </body>
+<main class="container position-relative">
+    <div>
+        <div class="row">
+            <div class="p-1 px-3 col rounded-3 fw-bolder bg-dark text-light fs-3 mt-4 shadow-sm"><i
+                    class="fas fa-user-edit me-2"></i>
+                Customer
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col-5 col-xl-2 col-sm-3 col-md-2 col-lg-2">
+                <select aria-label="form-select-lg example" class="form-select form-select-ls mt-4">
+                    <option selected>ID</option>
+                    <option value="1">Name</option>
+                </select>
+            </div>
+            <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
+                <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
+                    <input aria-label="Search" class="form-control me-2" placeholder="Search Customer" type="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
 </html>
