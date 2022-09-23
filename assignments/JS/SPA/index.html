@@ -710,9 +710,11 @@
         $('#order').css('display','none');
         $('#items').css('display','none');
         $('#customer').css('display','none');
-        /*$('#dashboardList').css('color','white');
-        $('#dashboardList').css('font-weight','20px');
-        $('#dashboardList').css('aria-current','page');*/
+        $('#dashboardList').css({ 'font-weight': 'bold','color':'white'});
+        $('#customersList').css('color','0xC5E1BF');
+        $('#itemList').css('color','0xC5E1BF');
+        $('#orderList').css('color','0xC5E1BF');
+
     });
 
     $('#orderList').click(function (){
@@ -720,9 +722,10 @@
         $('#order').css('display','block');
         $('#items').css('display','none');
         $('#customer').css('display','none');
-        /*$('#orderList').css('color','white');
-        $('#orderList').css('font-weight','20px');
-        $('#orderList').css('aria-current','page');*/
+        $('#dashboardList').css('color','0xC5E1BF');
+        $('#customersList').css('color','0xC5E1BF')
+        $('#itemList').css('color','0xC5E1BF');
+        $('#orderList').css({ 'font-weight': 'bold','color':'white'});
     });
 
     $('#itemList').click(function (){
@@ -730,7 +733,10 @@
         $('#order').css('display','none');
         $('#items').css('display','block');
         $('#customer').css('display','none');
-        /*$('#itemList').css('color','white');*/
+        $('#dashboardList').css('color','0xC5E1BF');
+        $('#customersList').css('color','0xC5E1BF')
+        $('#itemList').css({ 'font-weight': 'bold','color':'white'});
+        $('#orderList').css('color','0xC5E1BF');
     });
 
     $('#customersList').click(function (){
@@ -738,7 +744,10 @@
         $('#order').css('display','none');
         $('#items').css('display','none');
         $('#customer').css('display','block');
-        /*$('#customersList').css('color','white');*/
+        $('#dashboardList').css('color','0xC5E1BF');
+        $('#customersList').css('color','white').css({ 'font-weight': 'bold'});
+        $('#itemList').css('color','0xC5E1BF');
+        $('#orderList').css('color','0xC5E1BF');
     });
 </script>
 </body>
