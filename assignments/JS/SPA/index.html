@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bolder" aria-current="page" href="dashboard.html">Dashboard</a>
+                        <div id="dashboardList" class="nav-link active fw-bolder" aria-current="page" style="cursor: pointer">Dashboard</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="orders.html">Orders</a>
+                        <div id="orderList" class="nav-link" style="cursor: pointer">Orders</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="items.html">Items</a>
+                        <div id="itemList" class="nav-link" style="cursor: pointer">Items</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="customers.html">Customer</a>
+                        <div id="customersList" class="nav-link" style="cursor: pointer">Customer</div>
                     </li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
     </nav>
 </header>
 <!--dashboard content-->
-<main class="container-md position-relative">
+<main id="dashboard" class="container-md position-relative">
     <div>
         <div class="row ">
             <div class="p-1 px-3 rounded-3 fw-bolder bg-light text-success fs-3 mt-4 shadow-sm"><i class="fas fa-shopping-cart me-1"></i>
@@ -180,7 +180,7 @@
 </main>
 
 <!--customer content-->
-<main class="container position-relative">
+<main id="customer" class="container position-relative" style="display: none">
     <div>
         <div class="row">
             <div class="p-1 px-3 col rounded-3 fw-bolder bg-dark text-light fs-3 mt-4 shadow-sm"><i
@@ -346,7 +346,7 @@
 </main>
 
 <!--item content-->
-<main class="container position-relative">
+<main id="items" class="container position-relative" style="display: none">
     <div>
         <div class="row">
             <div class="p-1 px-3 col rounded-3 fw-bolder bg-dark text-light fs-3 mt-4 shadow-sm"><i class="fas fa-box-open me-2 fs-4"></i>
@@ -509,7 +509,7 @@
 </main>
 
 <!--Order content-->
-<main class="container position-relative">
+<main id="order" class="container position-relative" style="display: none">
     <div>
         <div class="row ">
             <div class="p-1 px-3 col rounded-3 fw-bolder bg-light text-success fs-3 mt-4 shadow-sm"><i class="fas fa-cart-plus me-2"></i>Place Order
@@ -702,6 +702,44 @@
     </section>
 </main>
 
+<script src="../../../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../../../assets/boostrap/js/bootstrap.min.js"></script>
+<script>
+    $('#dashboardList').click(function (){
+        $('#dashboard').css('display','block');
+        $('#order').css('display','none');
+        $('#items').css('display','none');
+        $('#customer').css('display','none');
+        /*$('#dashboardList').css('color','white');
+        $('#dashboardList').css('font-weight','20px');
+        $('#dashboardList').css('aria-current','page');*/
+    });
+
+    $('#orderList').click(function (){
+        $('#dashboard').css('display','none');
+        $('#order').css('display','block');
+        $('#items').css('display','none');
+        $('#customer').css('display','none');
+        /*$('#orderList').css('color','white');
+        $('#orderList').css('font-weight','20px');
+        $('#orderList').css('aria-current','page');*/
+    });
+
+    $('#itemList').click(function (){
+        $('#dashboard').css('display','none');
+        $('#order').css('display','none');
+        $('#items').css('display','block');
+        $('#customer').css('display','none');
+        /*$('#itemList').css('color','white');*/
+    });
+
+    $('#customersList').click(function (){
+        $('#dashboard').css('display','none');
+        $('#order').css('display','none');
+        $('#items').css('display','none');
+        $('#customer').css('display','block');
+        /*$('#customersList').css('color','white');*/
+    });
+</script>
 </body>
 </html>
