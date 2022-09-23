@@ -207,9 +207,9 @@
 
             <div class="col-xl col-lg col-sm-12 col-md-4 d-grid justify-content-md-end">
                 <button type="button" class="btn btn-success mt-4 d-grid  col-6 col-md-12 col-sm-6 mx-auto" data-bs-toggle="modal"
-                        data-bs-target="#addItemModal">+Add Customer</button>
+                        data-bs-target="#addCustomerModal">+Add Customer</button>
 
-                <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+                <div class="modal fade" id="addCustomerModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
                     <div class="modal-dialog-centered modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header bg-success text-light">
@@ -372,9 +372,11 @@
             </div>
 
             <div class="col-xl col-lg col-sm-12 col-md-4 d-grid justify-content-md-end">
+                <!--Add Item-->
                 <button type="button" class="btn btn-success mt-4 d-grid  col-6 col-md-12 col-sm-6 mx-auto" data-bs-toggle="modal"
-                        data-bs-target="#addItemModal">+Add Item</button>
-                <div class="modal fade" id="addItemModl" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+                        data-bs-target="#addItemModalItem">+Add Item</button>
+
+                <div class="modal fade" id="addItemModalItem" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
                     <div class="modal-dialog-centered modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header bg-success text-light">
@@ -711,9 +713,9 @@
         $('#items').css('display','none');
         $('#customer').css('display','none');
         $('#dashboardList').css({ 'font-weight': 'bold','color':'white'});
-        $('#customersList').css('color','0xC5E1BF');
-        $('#itemList').css('color','0xC5E1BF');
-        $('#orderList').css('color','0xC5E1BF');
+        $('#customersList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#itemList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#orderList').css({ 'font-weight': 'none','color':'C5E1D4'});
 
     });
 
@@ -722,9 +724,9 @@
         $('#order').css('display','block');
         $('#items').css('display','none');
         $('#customer').css('display','none');
-        $('#dashboardList').css('color','0xC5E1BF');
-        $('#customersList').css('color','0xC5E1BF')
-        $('#itemList').css('color','0xC5E1BF');
+        $('#dashboardList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#customersList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#itemList').css({ 'font-weight': 'none','color':'C5E1D4'});
         $('#orderList').css({ 'font-weight': 'bold','color':'white'});
     });
 
@@ -733,10 +735,10 @@
         $('#order').css('display','none');
         $('#items').css('display','block');
         $('#customer').css('display','none');
-        $('#dashboardList').css('color','0xC5E1BF');
-        $('#customersList').css('color','0xC5E1BF')
+        $('#dashboardList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#customersList').css({ 'font-weight': 'none','color':'C5E1D4'});
         $('#itemList').css({ 'font-weight': 'bold','color':'white'});
-        $('#orderList').css('color','0xC5E1BF');
+        $('#orderList').css({ 'font-weight': 'none','color':'C5E1D4'});
     });
 
     $('#customersList').click(function (){
@@ -744,10 +746,10 @@
         $('#order').css('display','none');
         $('#items').css('display','none');
         $('#customer').css('display','block');
-        $('#dashboardList').css('color','0xC5E1BF');
-        $('#customersList').css('color','white').css({ 'font-weight': 'bold'});
-        $('#itemList').css('color','0xC5E1BF');
-        $('#orderList').css('color','0xC5E1BF');
+        $('#dashboardList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#customersList').css({ 'font-weight': 'bold','color':'white'});
+        $('#itemList').css({ 'font-weight': 'none','color':'C5E1D4'});
+        $('#orderList').css({ 'font-weight': 'none','color':'C5E1D4'});
     });
 </script>
 </body>
