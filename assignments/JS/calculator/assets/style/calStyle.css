@@ -12,6 +12,9 @@
 }
 
 #calSection>div{
-    border: 2px solid black;
-    height: 100px;
+    border: 1px solid black;
+}
+
+#calSection>div:nth-child(1)>div{
+    border: 1px solid black;
 }
