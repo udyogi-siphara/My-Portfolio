@@ -35,7 +35,7 @@
 }
 
 #calSection>span:hover{
-    background-color: #A281A9BA;
+    background-color: #148BA1B3;
 }
 
 /*clear button*/
@@ -49,20 +49,32 @@
     grid-column:  2/5;
 
 }
+#calSection>span:nth-child(2):hover{
+    background-color: transparent;
+}
 
 /*7*/
 #calSection>span:nth-child(3){
     background-color: #0B0111B3;
+}
+#calSection>span:nth-child(3):hover{
+    background-color: #A281A9BA;
 }
 
 /*8*/
 #calSection>span:nth-child(4){
     background-color: #0B0111B3;
 }
+#calSection>span:nth-child(4):hover{
+    background-color: #A281A9BA;
+}
 
 /*9*/
 #calSection>span:nth-child(5){
     background-color: #0B0111B3;
+}
+#calSection>span:nth-child(5):hover{
+    background-color: #A281A9BA;
 }
 
 /*+*/
@@ -74,15 +86,24 @@
 #calSection>span:nth-child(7){
     background-color: #0B0111B3;
 }
+#calSection>span:nth-child(7):hover{
+    background-color: #A281A9BA;
+}
 
 /*5*/
 #calSection>span:nth-child(8){
     background-color: #0B0111B3;
 }
+#calSection>span:nth-child(8):hover{
+    background-color: #A281A9BA;
+}
 
 /*6*/
 #calSection>span:nth-child(9){
     background-color: #0B0111B3;
+}
+#calSection>span:nth-child(9):hover{
+    background-color: #A281A9BA;
 }
 
 /*-*/
@@ -94,15 +115,24 @@
 #calSection>span:nth-child(11){
     background-color: #0B0111B3;
 }
+#calSection>span:nth-child(11):hover{
+    background-color: #A281A9BA;
+}
 
 /*2*/
 #calSection>span:nth-child(12){
     background-color: #0B0111B3;
 }
+#calSection>span:nth-child(12):hover{
+    background-color: #A281A9BA;
+}
 
 /*3*/
 #calSection>span:nth-child(13){
     background-color: #0B0111B3;
+}
+#calSection>span:nth-child(13):hover{
+    background-color: #A281A9BA;
 }
 
 /*/*/
@@ -118,6 +148,9 @@
 /*0*/
 #calSection>span:nth-child(16){
     background-color: #0B0111B3;
+}
+#calSection>span:nth-child(16):hover{
+    background-color: #A281A9BA;
 }
 
 /*=*/
