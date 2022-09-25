@@ -18,3 +18,7 @@
 #calSection>div:nth-child(1)>div{
     border: 1px solid black;
 }
+
+#calSection>div:nth-child(2)>div{
+    border: 1px solid black;
+}
