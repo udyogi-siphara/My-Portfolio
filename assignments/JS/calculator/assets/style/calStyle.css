@@ -6,9 +6,16 @@
     bottom: 0;
     margin: auto;
     background-color: #0a58ca;
-    width: 400px;
+    width: 320px;
     height: 500px;
     z-index: 1;
+    /* From https://css.glass */
+    background: rgba(53, 5, 81, 0.21);
+   /* border-radius: 16px;*/
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(53, 5, 81, 0.47);
 }
 
 #calSection>div{
