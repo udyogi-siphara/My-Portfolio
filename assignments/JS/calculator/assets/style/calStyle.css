@@ -1,0 +1,17 @@
+#calSection{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #0a58ca;
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+}
+
+#calSection>div{
+    border: 2px solid black;
+    height: 100px;
+}
