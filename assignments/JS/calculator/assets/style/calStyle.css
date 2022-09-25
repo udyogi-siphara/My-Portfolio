@@ -13,10 +13,8 @@
     text-align: center;
     color: #FFFFFF;
     font-family: Arial;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+
+    padding:5px;
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -32,7 +30,7 @@
 }
 
 #calSection>span{
-    border: 1px solid #2C0734BA;
+    border: 1px solid #A281A9BA;
     padding-top: 35px;
 }
 
@@ -41,8 +39,95 @@
     background-color: #A281A9BA;
 }
 
+/*clear button*/
+#calSection>span:nth-child(1){
+
+}
+
+/*input*/
 #calSection>span:nth-child(2){
     grid-row: 1/2;
     grid-column:  2/5;
 
 }
+
+/*7*/
+#calSection>span:nth-child(3){
+
+}
+
+/*8*/
+#calSection>span:nth-child(4){
+
+}
+
+/*9*/
+#calSection>span:nth-child(5){
+
+}
+
+/*+*/
+#calSection>span:nth-child(6){
+
+}
+
+/*4*/
+#calSection>span:nth-child(7){
+
+}
+
+/*5*/
+#calSection>span:nth-child(8){
+
+}
+
+/*6*/
+#calSection>span:nth-child(9){
+
+}
+
+/*-*/
+#calSection>span:nth-child(10){
+
+}
+
+/*1*/
+#calSection>span:nth-child(11){
+
+}
+
+/*2*/
+#calSection>span:nth-child(12){
+
+}
+
+/*3*/
+#calSection>span:nth-child(13){
+
+}
+
+/*/*/
+#calSection>span:nth-child(14){
+
+}
+
+/*.*/
+#calSection>span:nth-child(15){
+
+}
+
+/*0*/
+#calSection>span:nth-child(16){
+
+}
+
+/*=*/
+#calSection>span:nth-child(17){
+
+}
+
+/*(*)*/
+#calSection>span:nth-child(18){
+
+}
+
