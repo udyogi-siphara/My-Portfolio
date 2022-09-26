@@ -1,4 +1,5 @@
 let curNum = null;
+let previousNum = null;
 
 $('#calNumber0').click(function (){
    $('#calCurrentNumber').text("0");
@@ -112,4 +113,102 @@ $('#calNumber9').click(function (){
 $('#calClear').click(function (){
     $('#calCurrentNumber').text("0");
     curNum=null;
+    $('#calPreviousNumber').text("0");
+    previousNum=null;
 });
+
+/*Functions*/
+$('#calAdd').click(function (){
+    if(curNum!==null){
+        if (previousNum === "0" || previousNum === null) {
+            $('#calPreviousNumber').text(curNum + " + ");
+            previousNum = (curNum + " + ");
+            clearCurrNum();
+        } else {
+            previousNum = previousNum + (curNum + " + ");
+            $('#calPreviousNumber').text(previousNum);
+            clearCurrNum();
+        }
+    }
+});
+
+$('#calSub').click(function (){
+    if(curNum!==null){
+        if (previousNum === "0" || previousNum === null) {
+            $('#calPreviousNumber').text(curNum + " - ");
+            previousNum = (curNum + " - ");
+            clearCurrNum();
+        } else {
+            previousNum = previousNum + (curNum + " - ");
+            $('#calPreviousNumber').text(previousNum);
+            clearCurrNum();
+        }
+    }
+
+});
+
+$('#calDivide').click(function (){
+    if(curNum!==null){
+        if (previousNum === "0" || previousNum === null) {
+            $('#calPreviousNumber').text(curNum + " / ");
+            previousNum = (curNum + " / ");
+            clearCurrNum();
+        } else {
+            previousNum = previousNum + (curNum + " / ");
+            $('#calPreviousNumber').text(previousNum);
+            clearCurrNum();
+        }
+    }
+
+});
+
+$('#calMulti').click(function (){
+    if(curNum!==null){
+        if (previousNum === "0" || previousNum === null) {
+            $('#calPreviousNumber').text(curNum + " * ");
+            previousNum = (curNum + " * ");
+            clearCurrNum();
+        } else {
+            previousNum = previousNum + (curNum + " * ");
+            $('#calPreviousNumber').text(previousNum);
+            clearCurrNum();
+        }
+    }
+
+});
+
+$('#calEqual').click(function (){
+
+
+});
+
+$('#calDot').click(function (){
+    let tempCurrentIndex = $('#calCurrentNumber').text();
+    if (!(tempCurrentIndex.includes('.'))){
+        if(curNum!==null){
+            curNum+=".";
+            $('#calCurrentNumber').text(curNum);
+        }else{
+            curNum="0.";
+            $('#calCurrentNumber').text(curNum);
+        }
+    }else if (tempCurrentIndex.includes('.')){
+
+    }
+
+
+
+});
+
+
+
+
+
+
+
+
+/*Methods*/
+function clearCurrNum(){
+    $('#calCurrentNumber').text("0");
+    curNum=null;
+}
