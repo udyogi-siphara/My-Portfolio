@@ -110,5 +110,6 @@ $('#calNumber9').click(function (){
 });
 
 $('#calClear').click(function (){
-    $('#calCurrentNumber').remove();
-})
+    $('#calCurrentNumber').text("0");
+    curNum=null;
+});
