@@ -47,8 +47,34 @@
 #calSection>span:nth-child(2){
     grid-row: 1/2;
     grid-column:  2/5;
-
+    padding-top: 0;
 }
+
+.display {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /*box-shadow: rgb(229, 243, 254);*/
+    padding: 25px 15px 0 0;
+    overflow: hidden;
+}
+
+.previous {
+    font-size:18px;
+    font-weight: 100;
+
+    color: grey;
+}
+.current {
+    font-size:40px;
+    font-weight: 150;
+    position: relative;
+    overflow-wrap: break-word;
+
+    color: #ffffff;
+}
+
 #calSection>span:nth-child(2):hover{
     background-color: transparent;
 }
