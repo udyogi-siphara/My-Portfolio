@@ -117,7 +117,7 @@ $('#calClear').click(function (){
     curNum=null;
     $('#calPreviousNumber').text("0");
     previousNum=null;
-    tempValue=0;
+    tempValue=null;
 });
 
 /*Functions*/
@@ -149,7 +149,9 @@ $('#calAdd').click(function (){
     }
 });
 
+let miniCount = 0;
 $('#calSub').click(function (){
+    let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
         if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " - ");
@@ -160,8 +162,26 @@ $('#calSub').click(function (){
             $('#calPreviousNumber').text(previousNum);
             clearCurrNum();
         }
-    }
+        let preNumArray = previousNum.split(" - ");
 
+        if(miniCount<1){
+            /*if this is first time*/
+            if(preNumArray.length>2){
+                tempValue=parseFloat(preNumArray[0])-parseFloat(preNumArray[1]);
+                $('#calCurrentNumber').text(tempValue.toString());
+                miniCount=1;
+            }
+        }else{ //if this Second or higher time
+
+            if(tempValue !== null){
+                tempValue -= parseFloat(typedText);
+                $('#calCurrentNumber').text(tempValue.toString());
+            }else{
+                tempValue=typedText;
+                $('#calCurrentNumber').text(tempValue.toString());
+            }
+        }
+    }
 });
 
 $('#calDivide').click(function (){
@@ -195,19 +215,24 @@ $('#calMulti').click(function (){
 });
 
 $('#calEqual').click(function (){
-    let tempPreviousIndex = $('#calPreviousNumber').text();;
-    let tempCurrentIndex = $('#calCurrentNumber').text();
+    let typedText=$('#calCurrentNumber').text();
+    if (tempValue === null){
+        operator = previousNum.charAt(parseInt(previousNum.length-2));
 
-    if (operator === "+"){
-        tempValue = parseInt(tempPreviousIndex)  +  parseInt(tempCurrentIndex);
-        console.log(tempValue);
-    }else if (operator === "-"){
-        tempPreviousIndex = previousNum;
-        tempCurrentIndex = curNum;
-        tempValue = parseInt(tempPreviousIndex)  -  parseInt(tempCurrentIndex);
+        let prevNum =  previousNum.split(""+operator+"");
+        let firstNum = prevNum[0];
+
+        equalLogics(firstNum,typedText,operator);
+        $('#calCurrentNumber').text(tempValue);
+
+    }else{
+        $('#calCurrentNumber').text(tempValue);
     }
-    $('#calCurrentNumber').text(tempValue);
-    clearPreNum();
+
+    curNum=null
+    previousNum=null;
+    tempValue=null;
+    $('#calPreviousNumber').text("0");
 });
 
 $('#calDot').click(function (){
@@ -241,4 +266,17 @@ function clearCurrNum(){
 function clearPreNum(){
     $('#calPreviousNumber').text("0");
     previousNum=null;
+}
+
+function equalLogics(numb1,numb2,operator){
+    if (operator === "+"){
+        tempValue = parseFloat(numb1)  +  parseFloat(numb2);
+        console.log(tempValue);
+    }else if (operator === "-"){
+        tempValue = parseFloat(numb1)  -  parseFloat(numb2);
+    }else if (operator === "/"){
+        tempValue = parseFloat(numb1)  /  parseFloat(numb2);
+    }else if (operator === "*"){
+        tempValue = parseFloat(numb1)  *  parseFloat(numb2);
+    }
 }
