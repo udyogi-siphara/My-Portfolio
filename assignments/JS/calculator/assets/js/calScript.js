@@ -1,5 +1,7 @@
 let curNum = null;
 let previousNum = null;
+let tempValue = null;
+let operator = null;
 
 $('#calNumber0').click(function (){
    $('#calCurrentNumber').text("0");
@@ -119,17 +121,32 @@ $('#calClear').click(function (){
 
 /*Functions*/
 $('#calAdd').click(function (){
+    let tempPreviousIndex = null;
+    let tempCurrentIndex = $('#calCurrentNumber').text();
     if(curNum!==null){
+        tempPreviousIndex = previousNum;
         if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " + ");
             previousNum = (curNum + " + ");
             clearCurrNum();
+
         } else {
+            tempCurrentIndex = curNum;
             previousNum = previousNum + (curNum + " + ");
+            tempValue = parseInt(tempPreviousIndex)  +  parseInt(tempCurrentIndex);
+            console.log(tempPreviousIndex);
+            console.log(tempCurrentIndex);
             $('#calPreviousNumber').text(previousNum);
+
+            console.log(tempValue);
             clearCurrNum();
         }
+        $('#calCurrentNumber').text(tempValue);
     }
+    $('#calCurrentNumber').text(tempValue);
+
+    /*tempValue = parseInt(tempCurrentIndex) + parseInt(tempCurrentIndex);
+    $('#calCurrentNumber').text(tempValue);*/
 });
 
 $('#calSub').click(function (){
@@ -178,8 +195,19 @@ $('#calMulti').click(function (){
 });
 
 $('#calEqual').click(function (){
+    let tempPreviousIndex = $('#calPreviousNumber').text();;
+    let tempCurrentIndex = $('#calCurrentNumber').text();
 
-
+    if (operator === "+"){
+        tempValue = parseInt(tempPreviousIndex)  +  parseInt(tempCurrentIndex);
+        console.log(tempValue);
+    }else if (operator === "-"){
+        tempPreviousIndex = previousNum;
+        tempCurrentIndex = curNum;
+        tempValue = parseInt(tempPreviousIndex)  -  parseInt(tempCurrentIndex);
+    }
+    $('#calCurrentNumber').text(tempValue);
+    clearPreNum();
 });
 
 $('#calDot').click(function (){
@@ -195,9 +223,6 @@ $('#calDot').click(function (){
     }else if (tempCurrentIndex.includes('.')){
 
     }
-
-
-
 });
 
 
@@ -211,4 +236,9 @@ $('#calDot').click(function (){
 function clearCurrNum(){
     $('#calCurrentNumber').text("0");
     curNum=null;
+}
+
+function clearPreNum(){
+    $('#calPreviousNumber').text("0");
+    previousNum=null;
 }
