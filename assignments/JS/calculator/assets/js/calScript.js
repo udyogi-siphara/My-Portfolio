@@ -117,36 +117,36 @@ $('#calClear').click(function (){
     curNum=null;
     $('#calPreviousNumber').text("0");
     previousNum=null;
+    tempValue=0;
 });
 
 /*Functions*/
+let addCount = 0;
 $('#calAdd').click(function (){
-    let tempPreviousIndex = null;
-    let tempCurrentIndex = $('#calCurrentNumber').text();
+    let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
-        tempPreviousIndex = previousNum;
         if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " + ");
             previousNum = (curNum + " + ");
             clearCurrNum();
-
         } else {
-            tempCurrentIndex = curNum;
             previousNum = previousNum + (curNum + " + ");
-            tempValue = parseInt(tempPreviousIndex)  +  parseInt(tempCurrentIndex);
-            console.log(tempPreviousIndex);
-            console.log(tempCurrentIndex);
             $('#calPreviousNumber').text(previousNum);
-
-            console.log(tempValue);
             clearCurrNum();
         }
-        $('#calCurrentNumber').text(tempValue);
+        let preNumArray = previousNum.split(" + ");
+        if(addCount<1){
+            /*if this is first time*/
+            if(preNumArray.length>2){
+                tempValue=parseFloat(preNumArray[0])+parseFloat(preNumArray[1]);
+                $('#calCurrentNumber').text(tempValue.toString());
+                addCount=1;
+            }
+        }else{ //if this Second or higher time
+            tempValue+=parseFloat(typedText);
+            $('#calCurrentNumber').text(tempValue.toString());
+        }
     }
-    $('#calCurrentNumber').text(tempValue);
-
-    /*tempValue = parseInt(tempCurrentIndex) + parseInt(tempCurrentIndex);
-    $('#calCurrentNumber').text(tempValue);*/
 });
 
 $('#calSub').click(function (){
