@@ -1,7 +1,7 @@
 let curNum = null;
 let previousNum = null;
 let tempValue = null;
-let operator = null;
+let previousNoArray=[];
 
 $('#calNumber0').click(function (){
    $('#calCurrentNumber').text("0");
@@ -122,10 +122,16 @@ $('#calClear').click(function (){
 
 /*Functions*/
 let addCount = 0;
+let prn=null;
+let countAddBtnClick=0;
 $('#calAdd').click(function (){
+    countAddBtnClick++;
     let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
-        if (previousNum === "0" || previousNum === null) {
+        previousNoArray.push(curNo);
+        previousNoArray.push(" + ");
+        clearCurrNum();
+        /*if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " + ");
             previousNum = (curNum + " + ");
             clearCurrNum();
@@ -136,7 +142,7 @@ $('#calAdd').click(function (){
         }
         let preNumArray = previousNum.split(" + ");
         if(addCount<1){
-            /*if this is first time*/
+            /!*if this is first time*!/
             if(preNumArray.length>2){
                 tempValue=parseFloat(preNumArray[0])+parseFloat(preNumArray[1]);
                 $('#calCurrentNumber').text(tempValue.toString());
@@ -145,7 +151,37 @@ $('#calAdd').click(function (){
         }else{ //if this Second or higher time
             tempValue+=parseFloat(typedText);
             $('#calCurrentNumber').text(tempValue.toString());
+        }*/
+
+        if(addCount===0){ //if is first time
+            $('#calPreviousNumber').text(typedText);
+            addCount=1;
+            prn=typedText;
+        }else{ //if isn't first time
+            prn='';
+            for(let i=0;i<previousNoArray.length;i++){
+                prn=prn+previousNoArray[i]
+            }
+            $('#calPreviousNumber').text(prn);
         }
+
+        //value calculate if the array have more than two values
+        if(previousNoArray.length>2){
+
+            //calculate
+            allCalc();
+
+        }
+    }
+
+    //for change the Operator when btn click
+    if(countAddBtnClick>2){
+        previousNoArray[previousNoArray.length-1]=" + ";
+        prn='';
+        for(let i=0;i<previousNoArray.length;i++){
+            prn=prn+previousNoArray[i]
+        }
+        $('#calPreviousNumber').text(prn);
     }
 });
 
@@ -155,9 +191,16 @@ $('#calSub').click(function (){
     if(curNum!==null){
         if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " - ");
+
+            previousNoArray.push(curNum);
+            previousNoArray.push(" - ");
+
             previousNum = (curNum + " - ");
             clearCurrNum();
         } else {
+            previousNoArray.push(curNum);
+            previousNoArray.push(" - ");
+
             previousNum = previousNum + (curNum + " - ");
             $('#calPreviousNumber').text(previousNum);
             clearCurrNum();
@@ -184,28 +227,65 @@ $('#calSub').click(function (){
     }
 });
 
+let divideCount = 0;
 $('#calDivide').click(function (){
+    let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
         if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " / ");
+
+            previousNoArray.push(curNum);
+            previousNoArray.push(" / ");
+
             previousNum = (curNum + " / ");
             clearCurrNum();
         } else {
+            previousNoArray.push(curNum);
+            previousNoArray.push(" / ");
+
             previousNum = previousNum + (curNum + " / ");
             $('#calPreviousNumber').text(previousNum);
+
             clearCurrNum();
+        }
+        let preNumArray = previousNum.split(" / ");
+
+        if(divideCount<1){
+            /*if this is first time*/
+            if(preNumArray.length>2){
+                tempValue=(parseFloat(preNumArray[0])/parseFloat(preNumArray[1])).toFixed(2);
+                $('#calCurrentNumber').text(tempValue.toString());
+                divideCount=1;
+            }
+        }else{ //if this Second or higher time
+            if (tempValue!==null){
+                tempValue/=parseFloat(typedText).toFixed(2);
+                $('#calCurrentNumber').text((tempValue.toFixed(2)).toString());
+            }else{
+                tempValue = typedText;
+                $('#calCurrentNumber').text(tempValue.toString());
+            }
         }
     }
 
 });
 
+let multiCount=0;
 $('#calMulti').click(function (){
+    let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
         if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " * ");
+
+            previousNoArray.push(curNum);
+            previousNoArray.push(" * ");
+
             previousNum = (curNum + " * ");
             clearCurrNum();
         } else {
+            previousNoArray.push(curNum);
+            previousNoArray.push(" * ");
+
             previousNum = previousNum + (curNum + " * ");
             $('#calPreviousNumber').text(previousNum);
             clearCurrNum();
@@ -237,16 +317,16 @@ $('#calEqual').click(function (){
 
 $('#calDot').click(function (){
     let tempCurrentIndex = $('#calCurrentNumber').text();
-    if (!(tempCurrentIndex.includes('.'))){
-        if(curNum!==null){
-            curNum+=".";
-            $('#calCurrentNumber').text(curNum);
-        }else{
-            curNum="0.";
-            $('#calCurrentNumber').text(curNum);
-        }
-    }else if (tempCurrentIndex.includes('.')){
 
+    /*Search . is in the Word*/
+    if (!tempCurrentIndex.includes('.')) {
+        if (curNum !== null) {
+            curNum += ".";
+            $("#calCurrentNumber").text(curNum);
+        } else {
+            curNum = "0.";
+            $("#calCurrentNumber").text(curNum);
+        }
     }
 });
 
@@ -279,4 +359,8 @@ function equalLogics(numb1,numb2,operator){
     }else if (operator === "*"){
         tempValue = parseFloat(numb1)  *  parseFloat(numb2);
     }
+}
+
+function allCalc (){
+
 }
