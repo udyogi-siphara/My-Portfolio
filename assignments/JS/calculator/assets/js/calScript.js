@@ -186,10 +186,37 @@ $('#calAdd').click(function (){
 });
 
 let miniCount = 0;
+let prnMin = null;
+let countMinBtnClick = 0;
 $('#calSub').click(function (){
+    countMinBtnClick++;
     let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
-        if (previousNum === "0" || previousNum === null) {
+        previousNoArray.push(curNum);
+        previousNoArray.push(" - ");
+
+        clearCurrNum();
+
+        if (addCount === 0) { //if is first time
+            $('#calPreviousNumber').text(typedText);
+            addCount = 1;
+
+        } else { //if isn't first time
+            prn = '';
+            for (let i = 0; i < previousNoArray.length; i++) {
+                prn = prn + previousNoArray[i]
+            }
+            $('#calPreviousNumber').text(prn);
+        }
+
+        //value calculate if the array have more than two values
+        if (previousNoArray.length > 2) {
+
+            //calculate
+            allCalc();
+
+        }
+        /*if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " - ");
 
             previousNoArray.push(curNum);
@@ -208,7 +235,7 @@ $('#calSub').click(function (){
         let preNumArray = previousNum.split(" - ");
 
         if(miniCount<1){
-            /*if this is first time*/
+            /!*if this is first time*!/
             if(preNumArray.length>2){
                 tempValue=parseFloat(preNumArray[0])-parseFloat(preNumArray[1]);
                 $('#calCurrentNumber').text(tempValue.toString());
@@ -223,15 +250,34 @@ $('#calSub').click(function (){
                 tempValue=typedText;
                 $('#calCurrentNumber').text(tempValue.toString());
             }
+        }*/
+    }
+
+    if (countMinBtnClick > 2) {
+        console.log("Changed sum + to -")
+        previousNoArray[previousNoArray.length - 1] = " - ";
+        console.log("What is Last Index "+previousNoArray[previousNoArray.length-1]);
+        prn = '';
+        for (let i = 0; i < previousNoArray.length; i++) {
+            prn = prn + previousNoArray[i]
         }
+        $('#calPreviousNumber').text(prn);
     }
 });
 
 let divideCount = 0;
+let divCount = 0;
+let countDivBtnClick = 0;
 $('#calDivide').click(function (){
+    countDivBtnClick++;
     let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
-        if (previousNum === "0" || previousNum === null) {
+        previousNoArray.push(curNum);
+        previousNoArray.push(" / ");
+
+        clearCurrNum();
+
+        /*if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " / ");
 
             previousNoArray.push(curNum);
@@ -251,7 +297,7 @@ $('#calDivide').click(function (){
         let preNumArray = previousNum.split(" / ");
 
         if(divideCount<1){
-            /*if this is first time*/
+            /!*if this is first time*!/
             if(preNumArray.length>2){
                 tempValue=(parseFloat(preNumArray[0])/parseFloat(preNumArray[1])).toFixed(2);
                 $('#calCurrentNumber').text(tempValue.toString());
@@ -265,16 +311,66 @@ $('#calDivide').click(function (){
                 tempValue = typedText;
                 $('#calCurrentNumber').text(tempValue.toString());
             }
+        }*/
+
+        //for the display previous number
+        if (addCount === 0) { //if is first time
+            $('#calPreviousNumber').text(typedText);
+            addCount = 1;
+
+        } else { //if isn't first time
+            prn = '';
+            for (let i = 0; i < previousNoArray.length; i++) {
+                prn = prn + previousNoArray[i]
+            }
+            $('#calPreviousNumber').text(prn);
         }
+
+        //value calculate if the array have more than two values
+        if (previousNoArray.length > 2) {
+
+            //calculate
+            allCalc();
+
+        }
+    }
+
+    //for the display previous number
+    if (addCount === 0) { //if is first time
+        $('#calPreviousNumber').text(typedText);
+        addCount = 1;
+
+    } else { //if isn't first time
+        prn = '';
+        for (let i = 0; i < previousNoArray.length; i++) {
+            prn = prn + previousNoArray[i]
+        }
+        $('#calPreviousNumber').text(prn);
+    }
+
+    //value calculate if the array have more than two values
+    if (previousNoArray.length > 2) {
+
+        //calculate
+        allCalc();
+
     }
 
 });
 
 let multiCount=0;
+let MultiCount = 0;
+let countMultiBtnClick = 0;
 $('#calMulti').click(function (){
+    countMultiBtnClick++;
     let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
-        if (previousNum === "0" || previousNum === null) {
+        previousNoArray.push(curNum);
+        previousNoArray.push(" * ");
+
+        clearCurrNum();
+
+        /*if (previousNum === "0" || previousNum === null) {
             $('#calPreviousNumber').text(curNum + " * ");
 
             previousNoArray.push(curNum);
@@ -289,14 +385,45 @@ $('#calMulti').click(function (){
             previousNum = previousNum + (curNum + " * ");
             $('#calPreviousNumber').text(previousNum);
             clearCurrNum();
+        }*/
+
+        //for the display previous number
+        if (addCount === 0) { //if is first time
+            $('#calPreviousNumber').text(typedText);
+            addCount = 1;
+
+        } else { //if isn't first time
+            prn = '';
+            for (let i = 0; i < previousNoArray.length; i++) {
+                prn = prn + previousNoArray[i]
+            }
+            $('#calPreviousNumber').text(prn);
+        }
+
+        //value calculate if the array have more than two values
+        if (previousNoArray.length > 2) {
+
+            //calculate
+            allCalc();
+
         }
     }
 
-    let preNumArray = previousNum.split(" * ");
+    if (countDivBtnClick > 2) {
+        console.log("Changed all  to *")
+        previousNoArray[previousNoArray.length - 1] = " * ";
+        prn = '';
+        for (let i = 0; i < previousNoArray.length; i++) {
+            prn = prn + previousNoArray[i]
+        }
+        $('#calPreviousNumber').text(prn);
+    }
 
-    /*if this is first time*/
+    /*let preNumArray = previousNum.split(" * ");
+
+    /!*if this is first time*!/
     if(multiCount<1){
-        /*if this is first time*/
+        /!*if this is first time*!/
         if(preNumArray.length>2){
             tempValue=parseFloat(preNumArray[0])*parseFloat(preNumArray[1]);
 
@@ -316,29 +443,39 @@ $('#calMulti').click(function (){
             tempValue=typedText; //ignore answer  text and assign typed value.
             $('#calCurrentNumber').text(tempValue.toString());
         }
-    }
-
+    }*/
 });
 
 $('#calEqual').click(function (){
-    let typedText=$('#calCurrentNumber').text();
-    if (tempValue === null){
-        operator = previousNum.charAt(parseInt(previousNum.length-2));
+    let typedText = $('#calCurrentNumber').text();
 
-        let prevNum =  previousNum.split(""+operator+"");
-        let firstNum = prevNum[0];
+    if (curNum !== null) {
 
-        equalLogics(firstNum,typedText,operator);
-        $('#calCurrentNumber').text(tempValue);
+        previousNoArray.push(curNum);
+        previousNoArray.push("   ");
+        clearCurrNum();
 
-    }else{
-        $('#calCurrentNumber').text(tempValue);
+        //for the display previous number
+        if (addCount === 0) { //if is first time
+            $('#calPreviousNumber').text(typedText);
+            addCount = 1;
+
+        } else { //if isn't first time
+            prn = '';
+            for (let i = 0; i < previousNoArray.length; i++) {
+                prn = prn + previousNoArray[i]
+            }
+            $('#calPreviousNumber').text(prn);
+        }
+
+        //value calculate if the array have more than two values
+        if (previousNoArray.length > 2) {
+
+            //calculate
+            allCalc();
+
+        }
     }
-
-    curNum=null
-    previousNum=null;
-    tempValue=null;
-    $('#calPreviousNumber').text("0");
 });
 
 $('#calDot').click(function (){
@@ -365,13 +502,8 @@ $('#calDot').click(function (){
 
 /*Methods*/
 function clearCurrNum(){
-    $('#calCurrentNumber').text("0");
+    $('#calCurrentNumber').text("");
     curNum=null;
-}
-
-function clearPreNum(){
-    $('#calPreviousNumber').text("0");
-    previousNum=null;
 }
 
 function equalLogics(numb1,numb2,operator){
@@ -439,8 +571,24 @@ function allCalc() {
                 }
 
             }else if(previousNoArray[i]===" - "){
+                //first time (need to added newAns only one time)
+                if (checkFTime === 0) {
+                    tempNewAns = newAns - parseFloat(previousNoArray[i + 1]);
+                    checkFTime = 1;
+
+                } else { //after that want to loop the answer and array value.
+                    tempNewAns = tempNewAns - parseFloat(previousNoArray[i + 1]);
+                }
 
             }else if(previousNoArray[i]===" / "){
+                //first time (need to added newAns only one time)
+                if (checkFTime === 0) {
+                    tempNewAns = newAns / parseFloat(previousNoArray[i + 1]);
+                    checkFTime = 1;
+
+                } else { //after that want to loop the answer and array value.
+                    tempNewAns = tempNewAns / parseFloat(previousNoArray[i + 1]);
+                }
 
             }else if(previousNoArray[i]===" * "){
 
