@@ -117,6 +117,7 @@ $('#calClear').click(function (){
     curNum=null;
     $('#calPreviousNumber').text("0");
     previousNoArray=[];
+    /*comment below*/
 });
 
 /*Functions*/
