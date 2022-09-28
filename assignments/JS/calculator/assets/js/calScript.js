@@ -116,9 +116,7 @@ $('#calClear').click(function (){
     $('#calCurrentNumber').text("0");
     curNum=null;
     $('#calPreviousNumber').text("0");
-    previousNum=null;
-    tempValue=null;
-    previousNoArray = [];
+
 });
 
 /*Functions*/
@@ -132,27 +130,6 @@ $('#calAdd').click(function (){
         previousNoArray.push(curNum);
         previousNoArray.push(" + ");
         clearCurrNum();
-        /*if (previousNum === "0" || previousNum === null) {
-            $('#calPreviousNumber').text(curNum + " + ");
-            previousNum = (curNum + " + ");
-            clearCurrNum();
-        } else {
-            previousNum = previousNum + (curNum + " + ");
-            $('#calPreviousNumber').text(previousNum);
-            clearCurrNum();
-        }
-        let preNumArray = previousNum.split(" + ");
-        if(addCount<1){
-            /!*if this is first time*!/
-            if(preNumArray.length>2){
-                tempValue=parseFloat(preNumArray[0])+parseFloat(preNumArray[1]);
-                $('#calCurrentNumber').text(tempValue.toString());
-                addCount=1;
-            }
-        }else{ //if this Second or higher time
-            tempValue+=parseFloat(typedText);
-            $('#calCurrentNumber').text(tempValue.toString());
-        }*/
 
         if(addCount===0){ //if is first time
             $('#calPreviousNumber').text(typedText);
@@ -217,41 +194,7 @@ $('#calSub').click(function (){
             allCalc();
 
         }
-        /*if (previousNum === "0" || previousNum === null) {
-            $('#calPreviousNumber').text(curNum + " - ");
 
-            previousNoArray.push(curNum);
-            previousNoArray.push(" - ");
-
-            previousNum = (curNum + " - ");
-            clearCurrNum();
-        } else {
-            previousNoArray.push(curNum);
-            previousNoArray.push(" - ");
-
-            previousNum = previousNum + (curNum + " - ");
-            $('#calPreviousNumber').text(previousNum);
-            clearCurrNum();
-        }
-        let preNumArray = previousNum.split(" - ");
-
-        if(miniCount<1){
-            /!*if this is first time*!/
-            if(preNumArray.length>2){
-                tempValue=parseFloat(preNumArray[0])-parseFloat(preNumArray[1]);
-                $('#calCurrentNumber').text(tempValue.toString());
-                miniCount=1;
-            }
-        }else{ //if this Second or higher time
-
-            if(tempValue !== null){
-                tempValue -= parseFloat(typedText);
-                $('#calCurrentNumber').text(tempValue.toString());
-            }else{
-                tempValue=typedText;
-                $('#calCurrentNumber').text(tempValue.toString());
-            }
-        }*/
     }
 
     if (countMinBtnClick > 2) {
@@ -278,41 +221,7 @@ $('#calDivide').click(function (){
 
         clearCurrNum();
 
-        /*if (previousNum === "0" || previousNum === null) {
-            $('#calPreviousNumber').text(curNum + " / ");
 
-            previousNoArray.push(curNum);
-            previousNoArray.push(" / ");
-
-            previousNum = (curNum + " / ");
-            clearCurrNum();
-        } else {
-            previousNoArray.push(curNum);
-            previousNoArray.push(" / ");
-
-            previousNum = previousNum + (curNum + " / ");
-            $('#calPreviousNumber').text(previousNum);
-
-            clearCurrNum();
-        }
-        let preNumArray = previousNum.split(" / ");
-
-        if(divideCount<1){
-            /!*if this is first time*!/
-            if(preNumArray.length>2){
-                tempValue=(parseFloat(preNumArray[0])/parseFloat(preNumArray[1])).toFixed(2);
-                $('#calCurrentNumber').text(tempValue.toString());
-                divideCount=1;
-            }
-        }else{ //if this Second or higher time
-            if (tempValue!==null){
-                tempValue/=parseFloat(typedText).toFixed(2);
-                $('#calCurrentNumber').text((tempValue.toFixed(2)).toString());
-            }else{
-                tempValue = typedText;
-                $('#calCurrentNumber').text(tempValue.toString());
-            }
-        }*/
 
         //for the display previous number
         if (addCount === 0) { //if is first time
@@ -336,25 +245,16 @@ $('#calDivide').click(function (){
         }
     }
 
-    //for the display previous number
-    if (addCount === 0) { //if is first time
-        $('#calPreviousNumber').text(typedText);
-        addCount = 1;
 
-    } else { //if isn't first time
+    //for change the Operator when btn click
+    if (countDivBtnClick > 2) {
+        // console.log("Changed all  to /")
+        previousNoArray[previousNoArray.length - 1] = " / ";
         prn = '';
         for (let i = 0; i < previousNoArray.length; i++) {
             prn = prn + previousNoArray[i]
         }
         $('#calPreviousNumber').text(prn);
-    }
-
-    //value calculate if the array have more than two values
-    if (previousNoArray.length > 2) {
-
-        //calculate
-        allCalc();
-
     }
 
 });
@@ -371,22 +271,7 @@ $('#calMulti').click(function (){
 
         clearCurrNum();
 
-        /*if (previousNum === "0" || previousNum === null) {
-            $('#calPreviousNumber').text(curNum + " * ");
 
-            previousNoArray.push(curNum);
-            previousNoArray.push(" * ");
-
-            previousNum = (curNum + " * ");
-            clearCurrNum();
-        } else {
-            previousNoArray.push(curNum);
-            previousNoArray.push(" * ");
-
-            previousNum = previousNum + (curNum + " * ");
-            $('#calPreviousNumber').text(previousNum);
-            clearCurrNum();
-        }*/
 
         //for the display previous number
         if (addCount === 0) { //if is first time
@@ -420,31 +305,7 @@ $('#calMulti').click(function (){
         $('#calPreviousNumber').text(prn);
     }
 
-    /*let preNumArray = previousNum.split(" * ");
 
-    /!*if this is first time*!/
-    if(multiCount<1){
-        /!*if this is first time*!/
-        if(preNumArray.length>2){
-            tempValue=parseFloat(preNumArray[0])*parseFloat(preNumArray[1]);
-
-            $('#calCurrentNumber').text(tempValue.toString());
-            multiCount=1;
-        }
-    }else{ //if this Second or higher time
-
-        if(tempValue!==null){ //Check answer null cuz set value for after the clear answer's value
-            tempValue*=parseFloat(typedText);
-            $('#calCurrentNumber').text(tempValue.toString());
-
-        }else{
-            //come to this ,
-            //Added value and multiply values Continuously and After the first clear.comes to this.
-
-            tempValue=typedText; //ignore answer  text and assign typed value.
-            $('#calCurrentNumber').text(tempValue.toString());
-        }
-    }*/
 });
 
 $('#calEqual').click(function (){
@@ -505,19 +366,6 @@ $('#calDot').click(function (){
 function clearCurrNum(){
     $('#calCurrentNumber').text("");
     curNum=null;
-}
-
-function equalLogics(numb1,numb2,operator){
-    if (operator === "+"){
-        tempValue = parseFloat(numb1)  +  parseFloat(numb2);
-        console.log(tempValue);
-    }else if (operator === "-"){
-        tempValue = parseFloat(numb1)  -  parseFloat(numb2);
-    }else if (operator === "/"){
-        tempValue = parseFloat(numb1)  /  parseFloat(numb2);
-    }else if (operator === "*"){
-        tempValue = parseFloat(numb1)  *  parseFloat(numb2);
-    }
 }
 
 let clickCount=0;
@@ -592,24 +440,35 @@ function allCalc() {
                 }
 
             }else if(previousNoArray[i]===" * "){
+                //first time (need to added newAns only one time)
+                if (checkFTime === 0) {
+                    tempNewAns = newAns * parseFloat(previousNoArray[i + 1]);
+                    checkFTime = 1;
 
+                } else { //after that want to loop the answer and array value.
+                    tempNewAns = tempNewAns * parseFloat(previousNoArray[i + 1]);
+                }
             }
         }
-        // console.log("else ekee I="+i+" -> "+previousNoArray[i]);
-
     }
 
     if(checkFTime===1){
-        $('#calCurrentNumber').text(tempNewAns.toString());
+        let va = tempNewAns.toString().split(".");
+
+        if(va.length===2){
+            $('#calCurrentNumber').text(tempNewAns.toFixed(3).toString());
+        }else{
+            $('#calCurrentNumber').text(tempNewAns.toString());
+
+        }
     }else{
-        $('#calCurrentNumber').text(newAns.toString());
+        let va = newAns.toString().split(".");
+        if(va.length===2){
+            $('#calCurrentNumber').text(newAns.toFixed(3).toString());
+        }else{
+            $('#calCurrentNumber').text(newAns.toString());
+        }
+
     }
-
-    console.log("TempNewAns "+tempNewAns);
-    console.log("======================");
-    // newAns=newAns+anotherValues;
-
-    // console.log("temp ans="+newAns);
-    // newAns=tempAns;
 
 }
