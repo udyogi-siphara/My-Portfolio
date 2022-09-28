@@ -128,7 +128,7 @@ $('#calAdd').click(function (){
     countAddBtnClick++;
     let typedText=$('#calCurrentNumber').text();
     if(curNum!==null){
-        previousNoArray.push(curNo);
+        previousNoArray.push(curNum);
         previousNoArray.push(" + ");
         clearCurrNum();
         /*if (previousNum === "0" || previousNum === null) {
@@ -156,7 +156,7 @@ $('#calAdd').click(function (){
         if(addCount===0){ //if is first time
             $('#calPreviousNumber').text(typedText);
             addCount=1;
-            prn=typedText;
+
         }else{ //if isn't first time
             prn='';
             for(let i=0;i<previousNoArray.length;i++){
@@ -292,6 +292,32 @@ $('#calMulti').click(function (){
         }
     }
 
+    let preNumArray = previousNum.split(" * ");
+
+    /*if this is first time*/
+    if(multiCount<1){
+        /*if this is first time*/
+        if(preNumArray.length>2){
+            tempValue=parseFloat(preNumArray[0])*parseFloat(preNumArray[1]);
+
+            $('#calCurrentNumber').text(tempValue.toString());
+            multiCount=1;
+        }
+    }else{ //if this Second or higher time
+
+        if(tempValue!==null){ //Check answer null cuz set value for after the clear answer's value
+            tempValue*=parseFloat(typedText);
+            $('#calCurrentNumber').text(tempValue.toString());
+
+        }else{
+            //come to this ,
+            //Added value and multiply values Continuously and After the first clear.comes to this.
+
+            tempValue=typedText; //ignore answer  text and assign typed value.
+            $('#calCurrentNumber').text(tempValue.toString());
+        }
+    }
+
 });
 
 $('#calEqual').click(function (){
@@ -361,6 +387,80 @@ function equalLogics(numb1,numb2,operator){
     }
 }
 
-function allCalc (){
+let clickCount=0;
+let newAns=null;
+function allCalc() {
+    let tempAns=null;
+    let anotherValues=0;
+
+    if(clickCount===0){ //for first two Number
+        let no1=previousNoArray[0];
+        let no2=previousNoArray[2];
+        let operator=previousNoArray[1];
+
+        // console.log("no 1-"+no1+" no2-"+no2+" operator-"+operator);
+
+        /*========Search Operator=======*/
+        if(operator===" + "){
+            tempAns=parseFloat(no1)+parseFloat(no2);
+        }else if(operator===" - "){
+            tempAns=parseFloat(no1)-parseFloat(no2);
+        }else if(operator===" / "){
+            tempAns=parseFloat(no1)/parseFloat(no2);
+        }else if(operator===" * "){
+            tempAns=parseFloat(no1)*parseFloat(no2);
+        }
+        newAns=tempAns;
+
+        clickCount=1;
+    }
+
+    //iterate and get all values of the array
+
+    console.log("newAns"+newAns);
+    let tempNewAns=0;
+
+    let checkFTime=0;
+    for(let i=3;i<previousNoArray.length;i++){
+        // console.log("Array values "+previousNoArray[i]);
+
+        if(i<previousNoArray.length-2){
+            //Search Operators in the array
+            if(previousNoArray[i]===" + "){
+                // console.log("new Ans->"+newAns+"  want to added =>"+previousNoArray[i+1]);
+
+                //first time (need to added newAns only one time)
+                if(checkFTime===0){
+                    tempNewAns=newAns+parseFloat(previousNoArray[i+1]);
+                    checkFTime=1;
+
+                }else{ //after that want to loop the answer and array value.
+                    tempNewAns=tempNewAns+parseFloat(previousNoArray[i+1]);
+                }
+
+            }else if(previousNoArray[i]===" - "){
+
+            }else if(previousNoArray[i]===" / "){
+
+            }else if(previousNoArray[i]===" * "){
+
+            }
+        }
+        // console.log("else ekee I="+i+" -> "+previousNoArray[i]);
+
+    }
+
+    if(checkFTime===1){
+        $('#calCurrentNumber').text(tempNewAns.toString());
+    }else{
+        $('#calCurrentNumber').text(newAns.toString());
+    }
+
+    console.log("TempNewAns "+tempNewAns);
+    console.log("======================");
+    // newAns=newAns+anotherValues;
+
+    // console.log("temp ans="+newAns);
+    // newAns=tempAns;
 
 }
