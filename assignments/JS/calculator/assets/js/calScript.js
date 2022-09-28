@@ -117,7 +117,15 @@ $('#calClear').click(function (){
     curNum=null;
     $('#calPreviousNumber').text("0");
     previousNoArray=[];
-    /*comment below*/
+    newAns=null;
+    addCount = 0;
+    prn=null;
+
+    countAddBtnClick=0;
+    countMinBtnClick=0;
+    countDivBtnClick=0;
+    countMultiBtnClick=0;
+    clickCount=0;
 });
 
 /*Functions*/
