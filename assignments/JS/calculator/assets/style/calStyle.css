@@ -1,3 +1,10 @@
+main{
+    height: 100vh;
+    width: 100vw;
+    background: url("../image/americana-1512910__340.webp") no-repeat center;
+    background-size: 100% 100%;
+}
+
 #calSection{
     position: absolute;
     top: 0;
