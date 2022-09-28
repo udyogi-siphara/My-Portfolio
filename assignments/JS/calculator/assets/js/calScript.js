@@ -118,6 +118,7 @@ $('#calClear').click(function (){
     $('#calPreviousNumber').text("0");
     previousNum=null;
     tempValue=null;
+    previousNoArray = [];
 });
 
 /*Functions*/
