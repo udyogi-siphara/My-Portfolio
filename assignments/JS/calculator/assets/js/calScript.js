@@ -304,7 +304,7 @@ $('#calMulti').click(function (){
         }
     }
 
-    if (countDivBtnClick > 2) {
+    if (countMultiBtnClick > 2) {
         console.log("Changed all  to *")
         previousNoArray[previousNoArray.length - 1] = " * ";
         prn = '';
