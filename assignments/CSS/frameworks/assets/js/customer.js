@@ -22,6 +22,7 @@ $('#btnSearchCustomer').click(function (){
    let searchIdOrName = $('#searchIdOrName').includes();
    for (searchIdOrName of customerArray[0]){
         console.log(searchIdOrName.id);
+       $('#txtCusId').val(searchIdOrName.id);
        $('#txtCusName').val(searchIdOrName.name);
        console.log(searchIdOrName.name);
        $('#txtCusAddress').val(searchIdOrName.address);
