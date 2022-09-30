@@ -19,15 +19,28 @@ $('#btnItemSave').click(function (){
 });
 
 $('#btnSearchItem').click(function (){
-    let searchItemCode = $('#searchItem').includes();
-    for (searchItemCode of itemArray[0]){
-        console.log(searchItemCode.code);
-        $('#txtItemId').val(searchItemCode.code);
-        $('#txtItemName').val(searchItemCode.name);
-        console.log(searchItemCode.name);
-        $('#txtItemPrice').val(searchItemCode.price);
-        $('#txtItemQty').val(searchItemCode.qty);
+    for (var searchCodeOrName of itemArray) {
+        let searchItem = $('#searchItem').val();
+        let chooseType = $('#chooseItemTyp').val();
+        if (chooseType === "Code") {
 
+            if (searchItem === searchCodeOrName.code) {
+                $('#itemCode').val(searchCodeOrName.code);
+                $('#itemName').val(searchCodeOrName.name);
+                $('#itemPrice').val(searchCodeOrName.price);
+                $('#itemQty').val(searchCodeOrName.qty);
+
+            }
+        } else if(chooseType === "1") {
+
+            if (searchItem === searchCodeOrName.name) {
+                $('#itemCode').val(searchCodeOrName.code);
+                $('#itemName').val(searchCodeOrName.name);
+                $('#itemPrice').val(searchCodeOrName.price);
+                $('#itemQty').val(searchCodeOrName.qty);
+
+            }
+        }
     }
 });
 
