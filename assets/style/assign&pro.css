@@ -2,6 +2,7 @@ body{
     background-color: #701C7D;
 }
 
+/*PROJECTS*/
 #proTopic{
     position: absolute;
     width: 429px;
@@ -30,7 +31,7 @@ main>section{
     border: 2px solid black;
     position: relative;
     top: 159px;
-    height: 100%;
+    height: 868px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -357,4 +358,39 @@ main>section{
     transition-property: all;
     transition-duration: 0.5s;
     cursor: pointer;
+}
+
+
+/*ASSIGNMENTS*/
+
+#assiTopic{
+    position: absolute;
+    width: 429px;
+    height: 126px;
+    left: 36px;
+    top: 956px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 126px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+main>section:nth-child(2){
+    height: 1030px;
+    background-color: darkblue;
+}
+
+#assignmentSect{
+    border: 2px solid black;
+    position: relative;
+    top: 173px;
+    height: 854px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-left: 85px;
 }
