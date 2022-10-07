@@ -23,12 +23,12 @@ body{
 
 main>section{
     height: 1030px;
-    background-color: #00F461;
+    /*background-color: #00F461;*/
 }
 
 /*project section grid*/
 #projectSect{
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     position: relative;
     top: 159px;
     height: 868px;
@@ -42,11 +42,12 @@ main>section{
 /*Ayur Project*/
 /*projects div*/
 #projectSect>div{
-    background: rgba(86, 9, 87, 0.2);
+    /* From https://css.glass */
+    background: rgba(45, 10, 81, 0.58);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(86, 9, 87, 0.3);
+    border: 1px solid rgba(45, 10, 81, 0.32);
     width: 300px;
     height: 380px;
 
@@ -380,11 +381,11 @@ main>section{
 
 main>section:nth-child(2){
     height: 2030px;
-    background-color: darkcyan;
+    /*background-color: darkcyan;*/
 }
 
 #assignmentSect{
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     position: relative;
     top: 173px;
     height: 1854px;
@@ -395,11 +396,12 @@ main>section:nth-child(2){
     padding-left: 85px;
 }
 #assignmentSect>div{
-    background: rgba(86, 9, 87, 0.2);
+    /* From https://css.glass */
+    background: rgba(45, 10, 81, 0.58);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(86, 9, 87, 0.3);
+    border: 1px solid rgba(45, 10, 81, 0.32);
     width: 300px;
     height: 380px;
 }
