@@ -380,7 +380,7 @@ main>section{
 
 main>section:nth-child(2){
     height: 1030px;
-    background-color: darkblue;
+    background-color: darkcyan;
 }
 
 #assignmentSect{
@@ -393,4 +393,74 @@ main>section:nth-child(2){
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 50px;
     padding-left: 85px;
+}
+#assignmentSect>div{
+    background: rgba(86, 9, 87, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(86, 9, 87, 0.3);
+    width: 300px;
+    height: 380px;
+}
+
+/*basics 01*/
+#basic01-div{
+    position: absolute;
+    width: 283px;
+    height: 343px;
+    top: 22px;
+    left: 9px;
+    background-color: #1E17175E;
+    opacity: 0;
+}
+
+#basic01-img{
+    position: relative;
+    width: 283px;
+    height: 342px;
+    top: 23px;
+    left: 9px;
+}
+
+#basic01-view{
+    position: relative;
+    top: 77px;
+    left: 96px;
+    width: 88px;
+    height: 33px;
+    opacity: 100%;
+    border-radius: 15px;
+    font-family: Arial;
+}
+
+#basic01-p{
+    position: relative;
+    top: 24px;
+    left: 41px;
+    width: 207px;
+    font-size: 15px;
+    font-family: Arial;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 510;
+}
+
+#basic01-view:hover{
+    background-color: #701C7D;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 1px 8px 3px white;
+    border: 3px solid #701C7D;
+    opacity: 100%;
+}
+
+#basic01-div:hover{
+    opacity: 100%;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
