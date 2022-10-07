@@ -379,7 +379,7 @@ main>section{
 }
 
 main>section:nth-child(2){
-    height: 1030px;
+    height: 1511px;
     background-color: darkcyan;
 }
 
@@ -387,7 +387,7 @@ main>section:nth-child(2){
     border: 2px solid black;
     position: relative;
     top: 173px;
-    height: 854px;
+    height: 1332px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
