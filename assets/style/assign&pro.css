@@ -894,3 +894,65 @@ main>section:nth-child(2){
     transition-duration: 0.5s;
     cursor: pointer;
 }
+
+
+/*Transitions 02*/
+#tran02-div{
+    position: absolute;
+    width: 283px;
+    height: 343px;
+    top: 22px;
+    left: 9px;
+    background-color: #1E17175E;
+    opacity: 0;
+}
+
+#tran02-img{
+    position: relative;
+    width: 283px;
+    height: 342px;
+    top: 23px;
+    left: 9px;
+}
+
+#tran02-view{
+    position: relative;
+    top: 77px;
+    left: 96px;
+    width: 88px;
+    height: 33px;
+    opacity: 100%;
+    border-radius: 15px;
+    font-family: Arial;
+}
+
+#tran02-p{
+    position: relative;
+    top: 24px;
+    left: 41px;
+    width: 207px;
+    font-size: 15px;
+    font-family: Arial;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 510;
+}
+
+#tran02-view:hover{
+    background-color: #701C7D;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 1px 8px 3px white;
+    border: 3px solid #701C7D;
+    opacity: 100%;
+}
+
+#tran02-div:hover{
+    opacity: 100%;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
