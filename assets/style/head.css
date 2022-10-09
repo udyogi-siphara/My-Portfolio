@@ -38,6 +38,11 @@ body>header>nav>ul{
     right: 05%;
 }
 
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 /*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px){
     header{
@@ -171,6 +176,7 @@ body>header>nav>ul{
         display: none;
 
     }
+
 }
 
 /*================================== 425->Mobile -L ================================== */
