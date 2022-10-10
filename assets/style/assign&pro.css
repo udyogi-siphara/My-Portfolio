@@ -1330,14 +1330,1279 @@ main>section:nth-child(2){
 }
 
 /*================================== 320 ->Mobile -S ==================================*/
-@media all and (width: 320px){}
+@media all and (width: 320px){
+    /*PROJECTS*/
+    #proTopic{
+        display: inline-block;
+        position: absolute;
+        width: 96px;
+        height: 126px;
+        left: 17px;
+        top: 9px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 126px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    main>section{
+        height: 1950px;
+        /*background-color: #00F461;*/
+    }
+
+    /*project section grid*/
+    #projectSect{
+        /*border: 2px solid black;*/
+        position: relative;
+        top: 235px;
+        height: 1715px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 50px;
+        padding-left: 45px;
+    }
+
+    /*Ayur Project*/
+    /*projects div*/
+    #projectSect>div{
+        background: rgba(45, 10, 81, 0.58);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(45, 10, 81, 0.32);
+        width: 229px;
+        height: 380px;
+    }
+
+    /*ayur topic*/
+    #ayur{
+        position: relative;
+        width: 236px;
+        height: 126px;
+        left: 14px;
+        top: -60px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 126px;
+        color: #FFFFFF;
+    }
+
+    #ayur-img{
+        position: relative;
+        width: 212px;
+        height: 280px;
+        top: -94px;
+        left: 9px;
+    }
+
+
+    #ayur-div{
+        position: absolute;
+        width: 212px;
+        height: 282px;
+        top: 89px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+
+    #ayur-p{
+        position: relative;
+        top: 41px;
+        left: 18px;
+        width: 175px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #ayur-view{
+        position: relative;
+        top: 51px;
+        left: 64px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #ayur-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #ayur-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /*Hostel System*/
+
+    /*hostel topic*/
+    #hostel{
+        position: relative;
+        width: 249px;
+        height: 128px;
+        left: -9px;
+        top: -17px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    #hostel-img{
+        position: relative;
+        width: 212px;
+        height: 280px;
+        top: -94px;
+        left: 9px;
+    }
+
+    #hostel-div{
+        position: absolute;
+        width: 212px;
+        height: 281px;
+        top: 70px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #hostel-p{
+        position: relative;
+        top: 41px;
+        left: 18px;
+        width: 175px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #hostel-view{
+        position: relative;
+        top: 51px;
+        left: 64px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #hostel-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #hostel-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /*Para System*/
+
+    /*para topic*/
+    #para{
+        position: relative;
+        width: 287px;
+        height: 126px;
+        left: -27px;
+        top: -16px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    #para-img{
+        position: relative;
+        width: 212px;
+        height: 280px;
+        top: -94px;
+        left: 9px;
+    }
+
+    #para-div{
+        position: absolute;
+        width: 212px;
+        height: 281px;
+        top: 70px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #para-p{
+        position: relative;
+        top: 41px;
+        left: 18px;
+        width: 175px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #para-view{
+        position: relative;
+        top: 51px;
+        left: 64px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #para-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #para-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /*Car Parking System*/
+
+    /*car topic*/
+    #car{
+        position: relative;
+        width: 271px;
+        height: 126px;
+        left: -20px;
+        top: -16px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    #car-img{
+        position: relative;
+        width: 212px;
+        height: 280px;
+        top: -94px;
+        left: 9px;
+    }
+
+    #car-div{
+        position: absolute;
+        width: 212px;
+        height: 281px;
+        top: 69px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #car-p{
+        position: relative;
+        top: 41px;
+        left: 18px;
+        width: 175px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #car-view{
+        position: relative;
+        top: 51px;
+        left: 64px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #car-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #car-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*ASSIGNMENTS*/
+
+    #assiTopic{
+        display: inline-block;
+        position: absolute;
+        width: 270px;
+        height: 126px;
+        left: 15px;
+        top: 1961px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 126px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    main>section:nth-child(2){
+        height: 2030px;
+        /*background-color: darkcyan;*/
+    }
+
+    #assignmentSect{
+        /*border: 2px solid black;*/
+        position: relative;
+        top: 227px;
+        height: 1854px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        gap: 50px;
+        padding-left: 45px;
+    }
+    #assignmentSect>div{
+        background: rgba(45, 10, 81, 0.58);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(45, 10, 81, 0.32);
+        width: 229px;
+        height: 380px;
+
+    }
+
+    /*basics 01*/
+    #basic01-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #basic01-img{
+        position: relative;
+        width: 212px;
+        height: 206px;
+        top: 90px;
+        left: 9px;
+    }
+
+    #basic01-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #basic01-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #basic01-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #basic01-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*basics 02*/
+    #basic02-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #basic02-img{
+        position: relative;
+        width: 212px;
+        height: 170px;
+        top: 105px;
+        left: 9px;
+    }
+
+    #basic02-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #basic02-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #basic02-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #basic02-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*basics 03*/
+    #basic03-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #basic03-img{
+        position: relative;
+        width: 212px;
+        height: 151px;
+        top: 113px;
+        left: 9px;
+    }
+
+    #basic03-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #basic03-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #basic03-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #basic03-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*basics 04*/
+    #basic04-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #basic04-img{
+        position: relative;
+        width: 212px;
+        height: 143px;
+        top: 120px;
+        left: 9px;
+    }
+
+    #basic04-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #basic04-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #basic04-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #basic04-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /*basics 05*/
+    #basic05-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #basic05-img{
+        position: relative;
+        width: 212px;
+        height: 174px;
+        top: 105px;
+        left: 9px;
+    }
+
+    #basic05-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #basic05-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #basic05-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #basic05-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*basics 06*/
+    #basic06-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #basic06-img{
+        position: relative;
+        width: 212px;
+        height: 177px;
+        top: 107px;
+        left: 9px;
+    }
+
+    #basic06-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #basic06-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #basic06-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #basic06-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*Transitions 01*/
+    #tran01-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #tran01-img{
+        position: relative;
+        width: 212px;
+        height: 143px;
+        top: 125px;
+        left: 9px;
+    }
+
+    #tran01-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #tran01-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #tran01-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #tran01-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*Transitions 02*/
+    #tran02-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 18px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #tran02-img{
+        position: relative;
+        width: 212px;
+        height: 189px;
+        top: 93px;
+        left: 9px;
+    }
+
+    #tran02-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #tran02-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #tran02-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #tran02-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*Animation 02*/
+    #anim01-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 22px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #anim01-img{
+        position: relative;
+        width: 212px;
+        height: 135px;
+        top: 114px;
+        left: 9px;
+    }
+
+    #anim01-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #anim01-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #anim01-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #anim01-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*Animation 02*/
+    #anim02-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 22px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #anim02-img{
+        position: relative;
+        width: 212px;
+        height: 145px;
+        top: 115px;
+        left: 9px;
+    }
+
+    #anim02-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #anim02-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #anim02-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #anim02-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*Animation 03*/
+    #anim03-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 22px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #anim03-img{
+        position: relative;
+        width: 212px;
+        height: 135px;
+        top: 114px;
+        left: 9px;
+    }
+
+    #anim03-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #anim03-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #anim03-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #anim03-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+
+    /*Animation 04*/
+    #anim04-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 22px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #anim04-img{
+        position: relative;
+        width: 212px;
+        height: 135px;
+        top: 114px;
+        left: 9px;
+    }
+
+    #anim04-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #anim04-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #anim04-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #anim04-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /*JS 01 Cal*/
+    #js01-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 22px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #js01-img{
+        position: relative;
+        width: 212px;
+        height: 135px;
+        top: 114px;
+        left: 9px;
+    }
+
+    #js01-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #js01-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #js01-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #js01-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /*JS 02 SPA*/
+    #js02-div{
+        position: absolute;
+        width: 212px;
+        height: 343px;
+        top: 22px;
+        left: 9px;
+        background-color: #1E17175E;
+        opacity: 0;
+    }
+
+    #js02-img{
+        position: relative;
+        width: 212px;
+        height: 135px;
+        top: 114px;
+        left: 9px;
+    }
+
+    #js02-view{
+        position: relative;
+        top: 77px;
+        left: 67px;
+        width: 88px;
+        height: 33px;
+        opacity: 100%;
+        border-radius: 15px;
+        font-family: Arial;
+    }
+
+    #js02-p{
+        position: relative;
+        top: 24px;
+        left: 7px;
+        width: 207px;
+        font-size: 15px;
+        font-family: Arial;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 510;
+    }
+
+    #js02-view:hover{
+        background-color: #701C7D;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 1px 8px 3px white;
+        border: 3px solid #701C7D;
+        opacity: 100%;
+    }
+
+    #js02-div:hover{
+        opacity: 100%;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+}
 
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px){
     /*PROJECTS*/
     #proTopic{
         position: absolute;
-        width: 429px;
+        width: 68px;
         height: 126px;
         left: 26px;
         top: 9px;
@@ -1352,12 +2617,12 @@ main>section:nth-child(2){
 
     main>section{
         height: 1950px;
-        background-color: #00F461;
+        /*background-color: #00F461;*/
     }
 
     /*project section grid*/
     #projectSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 235px;
         height: 1715px;
@@ -1383,7 +2648,7 @@ main>section:nth-child(2){
     /*ayur topic*/
     #ayur{
         position: relative;
-        width: 430px;
+        width: 243px;
         height: 126px;
         left: 46px;
         top: -60px;
@@ -1708,11 +2973,11 @@ main>section:nth-child(2){
 
     main>section:nth-child(2){
         height: 2030px;
-        background-color: darkcyan;
+       /* background-color: darkcyan;*/
     }
 
     #assignmentSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 227px;
         height: 1854px;
@@ -2603,7 +3868,7 @@ main>section:nth-child(2){
     /*PROJECTS*/
     #proTopic{
         position: absolute;
-        width: 429px;
+        width: 115px;
         height: 126px;
         left: 45px;
         top: 3px;
@@ -2618,12 +3883,12 @@ main>section:nth-child(2){
 
     main>section{
         height: 1950px;
-        background-color: #00F461;
+        /*background-color: #00F461;*/
     }
 
     /*project section grid*/
     #projectSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 235px;
         height: 1715px;
@@ -2649,7 +3914,7 @@ main>section:nth-child(2){
     /*ayur topic*/
     #ayur{
         position: relative;
-        width: 430px;
+        width: 268px;
         height: 126px;
         left: 71px;
         top: -60px;
@@ -2974,11 +4239,11 @@ main>section:nth-child(2){
 
     main>section:nth-child(2){
         height: 2030px;
-        background-color: darkcyan;
+        /*background-color: darkcyan;*/
     }
 
     #assignmentSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 227px;
         height: 1854px;
@@ -3887,12 +5152,12 @@ main>section:nth-child(2){
 
     main>section{
         height: 1030px;
-        background-color: #00F461;
+        /*background-color: #00F461;*/
     }
 
     /*project section grid*/
     #projectSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 235px;
         height: 868px;
@@ -4247,7 +5512,7 @@ main>section:nth-child(2){
     }
 
     #assignmentSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 227px;
         height: 1854px;
@@ -5155,12 +6420,12 @@ main>section:nth-child(2){
 
     main>section{
         height: 1030px;
-        background-color: #00F461;
+        /*background-color: #00F461;*/
     }
 
     /*project section grid*/
     #projectSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 235px;
         height: 868px;
@@ -5516,7 +6781,7 @@ main>section:nth-child(2){
     }
 
     #assignmentSect{
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         position: relative;
         top: 227px;
         height: 1854px;
