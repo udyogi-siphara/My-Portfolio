@@ -48,6 +48,42 @@ $('#btnCustomerSearch').click(function () {
     }
 });
 
+$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('keydown',function (){
+   if (event.key === 'Tab'){
+       event.preventDefault();
+   }
+});
+
+$('#txtCustomerId').on('keyup',function (){
+   if (event.key === 'Enter'){
+       $('#txtCustomerName').focus();
+   }
+});
+
+$('#txtCustomerName').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#txtCustomerAddress').focus();
+    }
+});
+
+$('#txtCustomerAddress').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#txtCustomerSalary').focus();
+    }
+});
+
+$('#txtCustomerSalary').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#btnCusSave').focus();
+    }
+});
+
+$('#btnCusSave').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#tblCustomer').focus();
+    }
+});
+
 
 /*Functions*/
 function saveCustomer() {
