@@ -16,6 +16,7 @@ $('#btnCusSave').click(function () {
     customerArray.push(customer);
     saveCustomer();
     clearCustomer();
+    blindRowClickEvent();
     console.log(customerArray);
 });
 
@@ -61,4 +62,17 @@ function clearCustomer(){
     $('#txtCustomerName').val("");
     $('#txtCustomerAddress').val("");
     $('#txtCustomerSalary').val("");
+}
+
+function blindRowClickEvent(){
+    $('#tblCustomer>tr').click(function (){
+        let id = $(this).children(':eq(0)').text();
+        $('#txtCusID').val(id);
+        let name = $(this).children(':eq(1)').text();
+        $('#txtCusName').val(name);
+        let address = $(this).children(':eq(2)').text();
+        $('#txtCusSalary').val(address);
+        let salary = $(this).children(':eq(3)').text();
+        $('#txtCusAddress').val(salary);
+    });
 }
