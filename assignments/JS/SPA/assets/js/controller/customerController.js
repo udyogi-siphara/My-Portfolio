@@ -91,6 +91,16 @@ $('#btnCusClear').click(function (){
     $('#txtCusSalary').val("");
 });
 
+$('#btnCusDelete').click(function (){
+   let deleteID = $('#txtCusID').val();
+   if(deleteCustomer(deleteID)){
+       alert("Customer Successfully Deleted....");
+       /*setTextfieldValues("", "", "", "");*/
+   }else{
+       alert("No such customer to delete. please check the id");
+   }
+});
+
 
 
 
@@ -100,6 +110,7 @@ function saveCustomer() {
     for (var i of customerArray) {
         $('#tblCustomer').append('<tr><td>' + i.id + '</td>' + '<td>' + i.name + '</td>' + '<td>' + i.address + '</td>' + '<td>' + i.salary + '</td></tr>');
     }
+    blindRowClickEvent();
 }
 
 function clearCustomer(){
@@ -120,4 +131,27 @@ function blindRowClickEvent(){
         let salary = $(this).children(':eq(3)').text();
         $('#txtCusAddress').val(salary);
     });
+}
+
+function searchCustomer(cusId){
+    for(var i of customerArray){
+        if (i.id === cusId){
+            return i;
+        }
+    }
+    return null;
+}
+
+function deleteCustomer(customerId){
+    alert(customerId);
+    let customerObj = searchCustomer(customerId);
+
+    if (customerObj != null){
+        let indexNumber = customerArray.indexOf(customerObj);
+        customerArray.splice(indexNumber,1);
+        saveCustomer();
+        return true;
+    }else {
+        return false;
+    }
 }
