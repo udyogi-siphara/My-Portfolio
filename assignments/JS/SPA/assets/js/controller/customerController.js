@@ -15,6 +15,7 @@ $('#btnCusSave').click(function () {
 
     customerArray.push(customer);
     saveCustomer();
+    clearCustomer();
     console.log(customerArray);
 });
 
@@ -53,4 +54,11 @@ function saveCustomer() {
     for (var i of customerArray) {
         $('#tblCustomer').append('<tr><td>' + i.id + '</td>' + '<td>' + i.name + '</td>' + '<td>' + i.address + '</td>' + '<td>' + i.salary + '</td></tr>');
     }
+}
+
+function clearCustomer(){
+    $('#txtCustomerId').val("");
+    $('#txtCustomerName').val("");
+    $('#txtCustomerAddress').val("");
+    $('#txtCustomerSalary').val("");
 }
