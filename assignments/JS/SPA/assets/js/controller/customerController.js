@@ -95,9 +95,20 @@ $('#btnCusDelete').click(function (){
    let deleteID = $('#txtCusID').val();
    if(deleteCustomer(deleteID)){
        alert("Customer Successfully Deleted....");
-       /*setTextfieldValues("", "", "", "");*/
+       setTextfieldValues("", "", "", "");
    }else{
        alert("No such customer to delete. please check the id");
+   }
+});
+
+$('#btnCusUpdate').click(function (){
+   let updateID = $('#txtCusID').val();
+   let response = updateCustomer(updateID);
+   if (response){
+       alert("Customer Successfully Updated....");
+       setTextfieldValues("", "", "", "");
+   }else{
+       alert("Update Failed");
    }
 });
 
@@ -143,7 +154,6 @@ function searchCustomer(cusId){
 }
 
 function deleteCustomer(customerId){
-    alert(customerId);
     let customerObj = searchCustomer(customerId);
 
     if (customerObj != null){
@@ -154,4 +164,26 @@ function deleteCustomer(customerId){
     }else {
         return false;
     }
+}
+
+function updateCustomer(customerId){
+    let customerObj = searchCustomer(customerId);
+
+    if (customerObj != null){
+       customerObj.id = $('#txtCusID').val();
+       customerObj.name = $('#txtCusName').val();
+       customerObj.address = $('#txtCusAddress').val();
+       customerObj.salary = $('#txtCusSalary').val();
+        saveCustomer();
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function setTextfieldValues(id,name,address,salary){
+    $('#txtCustomerId').val(id);
+    $('#txtCustomerName').val(name);
+    $('#txtCustomerAddress').val(address);
+    $('#txtCustomerSalary').val(salary);
 }
