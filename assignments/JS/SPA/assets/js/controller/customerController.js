@@ -84,6 +84,15 @@ $('#btnCusSave').on('keyup',function (){
     }
 });
 
+$('#btnCusClear').click(function (){
+    $('#txtCusID').val("");
+    $('#txtCusName').val("");
+    $('#txtCusAddress').val("");
+    $('#txtCusSalary').val("");
+});
+
+
+
 
 /*Functions*/
 function saveCustomer() {
