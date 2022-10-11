@@ -57,15 +57,15 @@
     <section>
         <div class="row">
             <div class="col-5 col-xl-2 col-sm-3 col-md-2 col-lg-2">
-                <select id="chooseCusTyp" aria-label="form-select-lg example" class="form-select form-select-ls mt-4">
+                <select id="chooseTyp" aria-label="form-select-lg example" class="form-select form-select-ls mt-4">
                     <option selected>ID</option>
                     <option value="1">Name</option>
                 </select>
             </div>
             <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
                 <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
-                    <input id="searchIdOrName" aria-label="Search" class="form-control me-2" placeholder="Search Customer" type="search">
-                    <button id="btnSearchCustomer" class="btn btn-outline-success" type="button">Search</button>
+                    <input id="searchCustomer" aria-label="Search" class="form-control me-2" placeholder="Search Customer" type="search">
+                    <button id="btnSearch" class="btn btn-outline-success" type="button">Search</button>
                 </form>
             </div>
 
@@ -84,25 +84,25 @@
                                 <form>
                                     <div>
                                         <label for="customerId" class="col-form-label">Customer ID:</label>
-                                        <input id="txtCustomerId" type="text" class="form-control" id="customerId">
+                                        <input id="cTxtCustomerId" type="text" class="form-control" id="customerId">
                                     </div>
                                     <div >
                                         <label for="customerName" class="col-form-label">Customer Name:</label>
-                                        <input id="txtCustomerName" type="text" class="form-control" id="customerName">
+                                        <input id="cTxtCustomerName" type="text" class="form-control" id="customerName">
                                     </div>
                                     <div >
                                         <label for="customerAddress" class="col-form-label">Address:</label>
-                                        <input id="txtCustomerAddress" type="text" class="form-control" id="customerAddress">
+                                        <input id="cTxtCustomerAddress" type="text" class="form-control" id="customerAddress">
                                     </div>
                                     <div >
                                         <label for="customerSalary" class="col-form-label">Salary:</label>
-                                        <input id="txtCustomerSalary" type="text" class="form-control" id="customerSalary">
+                                        <input id="cTxtCustomerSalary" type="text" class="form-control" id="customerSalary">
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button id="btnCusSave" type="button" class="btn btn-primary">Save</button>
+                                <button id="btnSave" type="button" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
@@ -117,21 +117,21 @@
                 <div class="col-5 col-sm-5 col-lg">
                     <div class="mb-4">
                         <label for="Id" class="form-label">Customer ID</label>
-                        <input id="txtCusId" type="text" class="form-control" id="Id" placeholder="C001" disabled>
+                        <input id="cTxtCusId" type="text" class="form-control" id="Id" placeholder="C001" disabled>
                     </div>
                 </div>
 
                 <div class="col-7 col-sm-7 col-lg">
                     <div class="mb-4">
                         <label for="name" class="form-label">Name</label>
-                        <input id="txtCusName" type="text" class="form-control" id="name" placeholder="Siphara" disabled>
+                        <input id="cTxtCusName" type="text" class="form-control" id="name" placeholder="Siphara" disabled>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="mb-4">
                         <label for="salary" class="form-label">Salary(Rs)</label>
-                        <input id="txtCusSalary" type="text" class="form-control" id="salary" placeholder="0000.00" disabled>
+                        <input id="cTxtCusSalary" type="text" class="form-control" id="salary" placeholder="0000.00" disabled>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                 <div class="col">
                     <div class="mb-2">
                         <label for="address" class="form-label">Address</label>
-                        <input id="txtCusAddress" type="text" class="form-control" id="address" placeholder="Bibile" disabled>
+                        <input id="cTxtCusAddress" type="text" class="form-control" id="address" placeholder="Bibile" disabled>
                     </div>
                 </div>
             </div>
@@ -172,37 +172,8 @@
                     <th scope="col">Salary(Rs)</th>
                 </tr>
                 </thead>
-                <tbody id="tblCustomer">
-                <tr>
-                    <td>C001</td>
-                    <td>Siphara</td>
-                    <td>bibile</td>
-                    <td>80000.00</td>
-                </tr>
-                <tr>
-                    <td>C002</td>
-                    <td>Udyogi</td>
-                    <td>Badulla</td>
-                    <td>90000.00</td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>Baji</td>
-                    <td>Monaragale</td>
-                    <td>70000.00</td>
-                </tr>
-                <tr>
-                    <td>C004</td>
-                    <td>Sashee</td>
-                    <td>Ampara</td>
-                    <td>20000.00</td>
-                </tr>
-                <tr>
-                    <td>C005</td>
-                    <td>Usra</td>
-                    <td>Kandy</td>
-                    <td>50000.00</td>
-                </tr>
+                <tbody id="cTblCustomer">
+                <tr></tr>
                 </tbody>
             </table>
         </div>

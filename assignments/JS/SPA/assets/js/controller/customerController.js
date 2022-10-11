@@ -25,7 +25,7 @@ $('#btnCustomerSearch').click(function () {
         if (chooseType === "ID") {
 
             if (searchCustomer === searchIdOrName.id) {
-                $('#txtCusId').val(searchIdOrName.id);
+                $('#txtCusID').val(searchIdOrName.id);
                 $('#txtCusName').val(searchIdOrName.name);
                 console.log(searchIdOrName.name);
                 $('#txtCusAddress').val(searchIdOrName.address);
@@ -35,7 +35,7 @@ $('#btnCustomerSearch').click(function () {
         } else if(chooseType === "1") {
 
             if (searchCustomer === searchIdOrName.name) {
-                $('#txtCusId').val(searchIdOrName.id);
+                $('#txtCusID').val(searchIdOrName.id);
                 $('#txtCusName').val(searchIdOrName.name);
                 console.log(searchIdOrName.name);
                 $('#txtCusAddress').val(searchIdOrName.address);
@@ -49,8 +49,8 @@ $('#btnCustomerSearch').click(function () {
 
 /*Functions*/
 function saveCustomer() {
+    $("#tblCustomer> tr").detach();
     for (var i of customerArray) {
         $('#tblCustomer').append('<tr><td>' + i.id + '</td>' + '<td>' + i.name + '</td>' + '<td>' + i.address + '</td>' + '<td>' + i.salary + '</td></tr>');
     }
 }
-
