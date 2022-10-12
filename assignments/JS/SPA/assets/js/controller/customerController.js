@@ -104,12 +104,81 @@ $('#btnCusDelete').click(function (){
 $('#btnCusUpdate').click(function (){
    let updateID = $('#txtCusID').val();
    let response = updateCustomer(updateID);
+
    if (response){
        alert("Customer Successfully Updated....");
        setTextfieldValues("", "", "", "");
    }else{
        alert("Update Failed");
    }
+});
+
+/*$("#txtCustomerId").focus();*/
+const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
+const cusNameRegEx = /^[A-z ]{5,20}$/;
+const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+
+let customerValidation = [];
+customerValidation.push({reg: cusIDRegEx, field: $('#txtCustomerId'), error: 'Customer ID Pattern is Wrong : C00-001'});
+customerValidation.push({reg: cusNameRegEx, field: $('#txtCustomerName'), error: 'Customer Name Pattern is Wrong : A-z 5-20'});
+customerValidation.push({reg: cusAddressRegEx, field: $('#txtCustomerAddress'), error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
+customerValidation.push({reg: cusSalaryRegEx, field: $('#txtCustomerSalary'), error: 'Customer Salary Pattern is Wrong : 100 or 100.00'});
+
+$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('keydown',function (){
+   if (event.key === 'Tab'){
+       event.preventDefault();
+   }
+});
+
+$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('keyup',function (){
+    checkValidation();
+});
+
+$('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('blur',function (){
+    checkValidation();
+});
+
+$('#txtCustomerId').on('keydown',function (event){
+   if (event.key === 'Enter' && check(cusIDRegEx,$('#txtCustomerId'))) {
+       $('#txtCustomerName').focus();
+   }
+});
+
+$('#txtCustomerName').on('keydown',function (event){
+    if (event.key === 'Enter' && check(cusNameRegEx,$('#txtCustomerName'))){
+        focusText($('#txtCustomerAddress'));
+    }
+});
+
+$('#txtCustomerAddress').on('keydown',function (event){
+    if (event.key === 'Enter' && check(cusAddressRegEx,$('#txtCustomerAddress'))){
+        focusText($('#txtCustomerSalary'));
+    }
+});
+
+$("#txtCustomerSalary").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusSalaryRegEx, $("#txtCustomerSalary"))) {
+        let response = confirm("Do you want to add this customer.?");
+        if (response) {
+            let customerId = $('#txtCustomerId').val();
+            let customerName = $('#txtCustomerName').val();
+            let customerAddress = $('#txtCustomerAddress').val();
+            let customerSalary = $('#txtCustomerSalary').val();
+
+            var customer = {
+                id: customerId,
+                name: customerName,
+                address: customerAddress,
+                salary: customerSalary
+            }
+
+            customerArray.push(customer);
+            saveCustomer();
+            clearAllText();
+
+        }
+    }
 });
 
 
@@ -186,4 +255,65 @@ function setTextfieldValues(id,name,address,salary){
     $('#txtCustomerName').val(name);
     $('#txtCustomerAddress').val(address);
     $('#txtCustomerSalary').val(salary);
+}
+
+/*Validations functions*/
+
+function checkValidation(){
+    let errorCount=0;
+    for (validation of customerValidation){
+        if (check(validation.reg, validation.field)){
+            setTextSuccess(validation.field,"");
+        }else{
+            errorCount=errorCount+1;
+            setTextError(validation.field,validation.error);
+        }
+    }
+    setButtonState(errorCount);
+}
+
+function check(regex,textField){
+    let inputValue = textField.val();
+    return regex.test(inputValue)? true : false ;
+}
+
+function defaultText(txtField,error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('span').text(error);
+}
+
+function setTextError(textField,error){
+    if (textField.val().length <= 0){
+        defaultText(textField,"");
+    }else{
+        textField.css("border", "1px solid red");
+        textField.parent().children('span').text(error);
+    }
+}
+
+function setTextSuccess(textField,error){
+    if (textField.val().length <= 0){
+        defaultText(textField,"");
+    }else{
+        textField.css("border", "1px solid green");
+        textField.parent().children('span').text(error);
+    }
+}
+
+function focusText(textField){
+    textField.focus();
+}
+
+function setButtonState(value){
+    if (value>0){
+        $('#btnCusSave').attr('disabled',true);
+    }else{
+        $('#btnCusSave').attr('disabled',false);
+    }
+}
+
+function clearAllText(){
+    $("#txtCustomerID").focus();
+    $('#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').val("");
+    checkValidation();
 }
