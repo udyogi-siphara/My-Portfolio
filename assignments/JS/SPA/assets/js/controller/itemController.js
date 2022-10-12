@@ -46,6 +46,43 @@ $('#btnSearchItem').click(function (){
     }
 });
 
+/*for focus*/
+$('#txtItemId,#txtItemName,#txtItemPrice,#txtItemQty').on('keydown',function (){
+   if (event.key === 'Tab'){
+       event.preventDefault();
+   }
+});
+
+$('#txtItemId').on('keyup',function (){
+   if (event.key === 'Enter'){
+       $('#txtItemName').focus();
+   }
+});
+
+$('#txtItemName').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#txtItemPrice').focus();
+    }
+});
+
+$('#txtItemPrice').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#txtItemQty').focus();
+    }
+});
+
+$('#txtItemQty').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#btnItemSave').focus();
+    }
+});
+
+$('#btnItemSave').on('keyup',function (){
+    if (event.key === 'Enter'){
+        $('#tblItem').focus();
+    }
+});
+
 /*Functions*/
 function saveItem(){
     $("#tblItem> tr").detach();
