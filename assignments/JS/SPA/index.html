@@ -333,7 +333,7 @@
     <section>
         <div class="row">
             <div class="col-5 col-xl-2 col-sm-3 col-lg-2">
-                <select class="form-select form-select-ls  mt-4" aria-label=".form-select-lg example">
+                <select id="chooseItemTyp" class="form-select form-select-ls  mt-4" aria-label=".form-select-lg example">
                     <option selected>ID</option>
                     <option value="1">Code</option>
                 </select>
@@ -341,8 +341,8 @@
 
             <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
                 <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
-                    <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="searchItem" class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
+                    <button id="btnSearchItem" class="btn btn-outline-success" type="button">Search</button>
                 </form>
             </div>
 
@@ -362,25 +362,25 @@
                                 <form>
                                     <div>
                                         <label for="item-id" class="col-form-label">Item Code:</label>
-                                        <input type="text" class="form-control" id="item-id">
+                                        <input id="txtItemId" type="text" class="form-control" id="item-id">
                                     </div>
                                     <div >
                                         <label for="item-name" class="col-form-label">Item Name:</label>
-                                        <input type="text" class="form-control" id="item-name">
+                                        <input id="txtItemName" type="text" class="form-control" id="item-name">
                                     </div>
                                     <div >
                                         <label for="item-address" class="col-form-label">Item Price:</label>
-                                        <input type="text" class="form-control" id="item-address">
+                                        <input id="txtItemPrice" type="text" class="form-control" id="item-address">
                                     </div>
                                     <div >
                                         <label for="item-salary" class="col-form-label">Item Quantity:</label>
-                                        <input type="number" class="form-control" id="item-salary">
+                                        <input id="txtItemQty" type="number" class="form-control" id="item-salary">
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save</button>
+                                <button id="btnItemSave" type="button" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
@@ -395,37 +395,37 @@
                 <div class="col-5 col-sm-5 col-lg">
                     <div class="mb-4">
                         <label for="itemId" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="itemId" placeholder="P001" disabled>
+                        <input id="itemCode" type="text" class="form-control" id="itemId" placeholder="P001" disabled>
                     </div>
                 </div>
 
                 <div class="col-7 col-sm-7 col-lg">
                     <div class="mb-4">
                         <label for="itemName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="itemName" placeholder="Soap" disabled>
+                        <input id="itemName" type="text" class="form-control" id="itemName" placeholder="Soap" disabled>
                     </div>
                 </div>
 
                 <div class="col col-lg">
                     <div class="mb-2">
                         <label for="qtyOnHand" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="qtyOnHand" placeholder="00" disabled>
+                        <input id="itemQty" type="text" class="form-control" id="qtyOnHand" placeholder="00" disabled>
                     </div>
                 </div>
 
                 <div class="col col-lg">
                     <div class="mb-2">
                         <label for="price" class="form-label">Unit Price</label>
-                        <input type="text" class="form-control" id="price" placeholder="0000.00" disabled>
+                        <input id="itemPrice" type="text" class="form-control" id="price" placeholder="0000.00" disabled>
                     </div>
                 </div>
             </div>
 
             <div class="row gx-3">
                 <div class="gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4 mt-lg-2">
-                    <button type="button" class="btn btn-secondary">Clear</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                    <button type="button" class="btn btn-primary">Update</button>
+                    <button id="btnItemClear" type="button" class="btn btn-secondary">Clear</button>
+                    <button id="btnItemDelete" type="button" class="btn btn-danger">Delete</button>
+                    <button id="btnItemUpdate" type="button" class="btn btn-primary">Update</button>
                 </div>
             </div>
         </div>
@@ -448,37 +448,8 @@
                     <th scope="col">Unit Price(Rs)</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>P001</td>
-                    <td>Lux Body wash</td>
-                    <td>150</td>
-                    <td>800.00</td>
-                </tr>
-                <tr>
-                    <td>P002</td>
-                    <td>Keeri sambha (10kg)</td>
-                    <td>10</td>
-                    <td>230.00</td>
-                </tr>
-                <tr>
-                    <td>P003</td>
-                    <td>White suger(20kg)</td>
-                    <td>20</td>
-                    <td>280.00</td>
-                </tr>
-                <tr>
-                    <td>P004</td>
-                    <td>Cucumber</td>
-                    <td>50</td>
-                    <td>150.00</td>
-                </tr>
-                <tr>
-                    <td>P005</td>
-                    <td>Dhal (300kg)</td>
-                    <td>5</td>
-                    <td>360.00</td>
-                </tr>
+                <tbody id="tblItem">
+                <tr></tr>
                 </tbody>
             </table>
         </div>

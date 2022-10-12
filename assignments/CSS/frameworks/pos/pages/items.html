@@ -56,7 +56,7 @@
     <section>
         <div class="row">
             <div class="col-5 col-xl-2 col-sm-3 col-lg-2">
-                <select id="chooseItemTyp" class="form-select form-select-ls  mt-4" aria-label=".form-select-lg example">
+                <select id="chooseTyp" class="form-select form-select-ls  mt-4" aria-label=".form-select-lg example">
                     <option selected>Code</option>
                     <option value="1">Name</option>
                 </select>
@@ -64,8 +64,8 @@
 
             <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
                 <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
-                    <input id="searchItem" class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
-                    <button id="btnSearchItem" class="btn btn-outline-success" type="button">Search</button>
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
+                    <button id="btnSearch" class="btn btn-outline-success" type="button">Search</button>
                 </form>
             </div>
 
@@ -83,25 +83,25 @@
                                 <form>
                                     <div>
                                         <label for="item-id" class="col-form-label">Item Code:</label>
-                                        <input id="txtItemId" type="text" class="form-control" id="item-id">
+                                        <input id="ITxtItemId" type="text" class="form-control" id="item-id">
                                     </div>
                                     <div >
                                         <label for="item-name" class="col-form-label">Item Name:</label>
-                                        <input id="txtItemName" type="text" class="form-control" id="item-name">
+                                        <input id="ITxtItemName" type="text" class="form-control" id="item-name">
                                     </div>
                                     <div >
                                         <label for="item-address" class="col-form-label">Item Price:</label>
-                                        <input id="txtItemPrice" type="text" class="form-control" id="item-address">
+                                        <input id="ITxtItemPrice" type="text" class="form-control" id="item-address">
                                     </div>
                                     <div >
                                         <label for="item-salary" class="col-form-label">Item Quantity:</label>
-                                        <input id="txtItemQty" type="number" class="form-control" id="item-salary">
+                                        <input id="ITxtItemQty" type="number" class="form-control" id="item-salary">
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button id="btnItemSave" type="button" class="btn btn-primary">Save</button>
+                                <button id="cBtnItemSave" type="button" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
@@ -116,14 +116,14 @@
                 <div class="col-5 col-sm-5 col-lg">
                     <div class="mb-4">
                         <label for="itemId" class="form-label">Item Code</label>
-                        <input id="itemCode" type="text" class="form-control" id="itemId" placeholder="P001" disabled>
+                        <input id="IItemCode" type="text" class="form-control" id="itemId" placeholder="P001" disabled>
                     </div>
                 </div>
 
                 <div class="col-7 col-sm-7 col-lg">
                     <div class="mb-4">
                         <label for="itemName" class="form-label">Name</label>
-                        <input id="itemName" type="text" class="form-control" id="itemName" placeholder="Soap" disabled>
+                        <input id="IItemName" type="text" class="form-control" id="itemName" placeholder="Soap" disabled>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
                 <div class="col col-lg">
                     <div class="mb-2">
                         <label for="price" class="form-label">Unit Price</label>
-                        <input id="itemPrice" type="text" class="form-control" id="price" placeholder="0000.00" disabled>
+                        <input id="IItemPrice" type="text" class="form-control" id="price" placeholder="0000.00" disabled>
                     </div>
                 </div>
             </div>
