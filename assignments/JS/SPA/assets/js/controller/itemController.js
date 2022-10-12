@@ -16,6 +16,8 @@ $('#btnItemSave').click(function (){
     itemArray.push(item);
     console.log(itemArray);
     saveItem();
+    clearItem();
+    blindRowClickEvent();
 });
 
 $('#btnSearchItem').click(function (){
@@ -50,4 +52,24 @@ function saveItem(){
     for (var i of itemArray){
         $('#tblItem').append('<tr><td>'+i.code+'</td>'+'<td>'+i.name+'</td>'+'<td>'+i.price+'</td>'+'<td>'+i.qty+'</td></tr>')
     }
+}
+
+function clearItem(){
+    $('#txtItemId').val("");
+    $('#txtItemName').val("");
+    $('#txtItemPrice').val("");
+    $('#txtItemQty').val("");
+}
+
+function blindRowClickEvent(){
+    $('#tblItem>tr').click(function (){
+        let id = $(this).children(':eq(0)').text();
+        $('#itemCode').val(id);
+        let name = $(this).children(':eq(1)').text();
+        $('#itemName').val(name);
+        let address = $(this).children(':eq(2)').text();
+        $('#itemPrice').val(address);
+        let salary = $(this).children(':eq(3)').text();
+        $('#itemQty').val(salary);
+    });
 }
