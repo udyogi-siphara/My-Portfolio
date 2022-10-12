@@ -9,8 +9,8 @@ $('#btnItemSave').click(function (){
     var item = {
         code : itemCode,
         name : itemName,
-        price : itemPrice,
-        qty   : itemQty
+        qty   : itemQty,
+        price : itemPrice
     }
 
     itemArray.push(item);
@@ -43,6 +43,36 @@ $('#btnSearchItem').click(function (){
 
             }
         }
+    }
+});
+
+$('#btnItemClear').click(function (){
+    $('#itemCode').val("");
+    $('#itemName').val("");
+    $('#itemPrice').val("");
+    $('#itemQty').val("");
+});
+
+$('#btnItemDelete').click(function (){
+   let deleteCode = $('#itemCode').val();
+
+   if (deleteItem(deleteCode)){
+       alert("Item Successfully Deleted....");
+       setTextfieldValues("", "", "", "");
+   }else{
+       alert("No such item to delete. please check the id");
+   }
+});
+
+$('#btnItemUpdate').click(function (){
+    let updateCode = $('#itemCode').val();
+    let response = updateItem(updateCode);
+
+    if (response){
+        alert("Item Successfully Updated....");
+        setTextfieldValues("", "", "", "");
+    }else{
+        alert("Update Failed");
     }
 });
 
@@ -87,7 +117,7 @@ $('#btnItemSave').on('keyup',function (){
 function saveItem(){
     $("#tblItem> tr").detach();
     for (var i of itemArray){
-        $('#tblItem').append('<tr><td>'+i.code+'</td>'+'<td>'+i.name+'</td>'+'<td>'+i.price+'</td>'+'<td>'+i.qty+'</td></tr>')
+        $('#tblItem').append('<tr><td>'+i.code+'</td>'+'<td>'+i.name+'</td>'+'<td>'+i.qty+'</td>'+'<td>'+i.price+'</td></tr>')
     }
 }
 
@@ -104,9 +134,53 @@ function blindRowClickEvent(){
         $('#itemCode').val(id);
         let name = $(this).children(':eq(1)').text();
         $('#itemName').val(name);
-        let address = $(this).children(':eq(2)').text();
-        $('#itemPrice').val(address);
-        let salary = $(this).children(':eq(3)').text();
-        $('#itemQty').val(salary);
+        let qty = $(this).children(':eq(2)').text();
+        $('#itemQty').val(qty);
+        let price = $(this).children(':eq(3)').text();
+        $('#itemPrice').val(price);
     });
+}
+
+function searchItem(itmCode){
+    for(var i of itemArray){
+        if (i.code === itmCode){
+            return i;
+        }
+    }
+    return null;
+}
+
+function deleteItem(itemCode){
+    let itemObj = searchItem(itemCode);
+
+    if (itemObj != null){
+        let indexNumber = itemArray.indexOf(itemObj);
+        itemArray.splice(indexNumber,1);
+        saveItem();
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function updateItem(itemCode){
+    let itemObj = searchItem(itemCode);
+
+    if (itemObj != null){
+        itemObj.code = $('#itemCode').val();
+        itemObj.name = $('#itemName').val();
+        itemObj.price = $('#itemPrice').val();
+        itemObj.qty = $('#itemQty').val();
+        saveItem();
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function setTextfieldValues(code,name,price,qty){
+    $('#itemCode').val(id);
+    $('#itemName').val(name);
+    $('#itemPrice').val(price);
+    $('#itemQty').val(qty);
 }
