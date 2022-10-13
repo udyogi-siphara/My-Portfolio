@@ -16,7 +16,7 @@ $('#btnCusSave').click(function () {
     customerArray.push(customer);
     saveCustomer();
     clearCustomer();
-    blindRowClickEvent();
+    blindRowCustomerClickEvent();
     console.log(customerArray);
 });
 
@@ -95,7 +95,7 @@ $('#btnCusDelete').click(function (){
    let deleteID = $('#txtCusID').val();
    if(deleteCustomer(deleteID)){
        alert("Customer Successfully Deleted....");
-       setTextfieldValues("", "", "", "");
+       setTextfieldValuesCustomer("", "", "", "");
    }else{
        alert("No such customer to delete. please check the id");
    }
@@ -107,7 +107,7 @@ $('#btnCusUpdate').click(function (){
 
    if (response){
        alert("Customer Successfully Updated....");
-       setTextfieldValues("", "", "", "");
+       setTextfieldValuesCustomer("", "", "", "");
    }else{
        alert("Update Failed");
    }
@@ -132,33 +132,33 @@ $('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('
 });
 
 $('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('keyup',function (){
-    checkValidation();
+    checkValidationCustomer();
 });
 
 $('#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').on('blur',function (){
-    checkValidation();
+    checkValidationCustomer();
 });
 
 $('#txtCustomerId').on('keydown',function (event){
-   if (event.key === 'Enter' && check(cusIDRegEx,$('#txtCustomerId'))) {
+   if (event.key === 'Enter' && checkCustomer(cusIDRegEx,$('#txtCustomerId'))) {
        $('#txtCustomerName').focus();
    }
 });
 
 $('#txtCustomerName').on('keydown',function (event){
-    if (event.key === 'Enter' && check(cusNameRegEx,$('#txtCustomerName'))){
-        focusText($('#txtCustomerAddress'));
+    if (event.key === 'Enter' && checkCustomer(cusNameRegEx,$('#txtCustomerName'))){
+        focusTextCustomer($('#txtCustomerAddress'));
     }
 });
 
 $('#txtCustomerAddress').on('keydown',function (event){
-    if (event.key === 'Enter' && check(cusAddressRegEx,$('#txtCustomerAddress'))){
-        focusText($('#txtCustomerSalary'));
+    if (event.key === 'Enter' && checkCustomer(cusAddressRegEx,$('#txtCustomerAddress'))){
+        focusTextCustomer($('#txtCustomerSalary'));
     }
 });
 
 $("#txtCustomerSalary").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusSalaryRegEx, $("#txtCustomerSalary"))) {
+    if (event.key == "Enter" && checkCustomer(cusSalaryRegEx, $("#txtCustomerSalary"))) {
         let response = confirm("Do you want to add this customer.?");
         if (response) {
             let customerId = $('#txtCustomerId').val();
@@ -175,7 +175,7 @@ $("#txtCustomerSalary").on('keydown', function (event) {
 
             customerArray.push(customer);
             saveCustomer();
-            clearAllText();
+            clearAllTextCustomer();
 
         }
     }
@@ -190,7 +190,7 @@ function saveCustomer() {
     for (var i of customerArray) {
         $('#tblCustomer').append('<tr><td>' + i.id + '</td>' + '<td>' + i.name + '</td>' + '<td>' + i.address + '</td>' + '<td>' + i.salary + '</td></tr>');
     }
-    blindRowClickEvent();
+    blindRowCustomerClickEvent();
 }
 
 function clearCustomer(){
@@ -200,7 +200,7 @@ function clearCustomer(){
     $('#txtCustomerSalary').val("");
 }
 
-function blindRowClickEvent(){
+function blindRowCustomerClickEvent(){
     $('#tblCustomer>tr').click(function (){
         let id = $(this).children(':eq(0)').text();
         $('#txtCusID').val(id);
@@ -250,7 +250,7 @@ function updateCustomer(customerId){
     }
 }
 
-function setTextfieldValues(id,name,address,salary){
+function setTextfieldValuesCustomer(id,name,address,salary){
     $('#txtCustomerId').val(id);
     $('#txtCustomerName').val(name);
     $('#txtCustomerAddress').val(address);
@@ -259,52 +259,52 @@ function setTextfieldValues(id,name,address,salary){
 
 /*Validations functions*/
 
-function checkValidation(){
+function checkValidationCustomer(){
     let errorCount=0;
     for (validation of customerValidation){
-        if (check(validation.reg, validation.field)){
-            setTextSuccess(validation.field,"");
+        if (checkCustomer(validation.reg, validation.field)){
+            setTextSuccessCustomer(validation.field,"");
         }else{
             errorCount=errorCount+1;
-            setTextError(validation.field,validation.error);
+            setTextErrorCustomer(validation.field,validation.error);
         }
     }
-    setButtonState(errorCount);
+    setButtonStateCustomer(errorCount);
 }
 
-function check(regex,textField){
+function checkCustomer(regex,textField){
     let inputValue = textField.val();
     return regex.test(inputValue)? true : false ;
 }
 
-function defaultText(txtField,error) {
+function defaultTextCustomer(txtField,error) {
     txtField.css("border", "1px solid #ced4da");
     txtField.parent().children('span').text(error);
 }
 
-function setTextError(textField,error){
+function setTextErrorCustomer(textField,error){
     if (textField.val().length <= 0){
-        defaultText(textField,"");
+        defaultTextCustomer(textField,"");
     }else{
         textField.css("border", "1px solid red");
         textField.parent().children('span').text(error);
     }
 }
 
-function setTextSuccess(textField,error){
+function setTextSuccessCustomer(textField,error){
     if (textField.val().length <= 0){
-        defaultText(textField,"");
+        defaultTextCustomer(textField,"");
     }else{
         textField.css("border", "1px solid green");
         textField.parent().children('span').text(error);
     }
 }
 
-function focusText(textField){
+function focusTextCustomer(textField){
     textField.focus();
 }
 
-function setButtonState(value){
+function setButtonStateCustomer(value){
     if (value>0){
         $('#btnCusSave').attr('disabled',true);
     }else{
@@ -312,8 +312,8 @@ function setButtonState(value){
     }
 }
 
-function clearAllText(){
+function clearAllTextCustomer(){
     $("#txtCustomerID").focus();
     $('#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary').val("");
-    checkValidation();
+    checkValidationCustomer();
 }
