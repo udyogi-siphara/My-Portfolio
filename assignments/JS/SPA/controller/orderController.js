@@ -44,9 +44,23 @@ $('#btnAddToCart').click(function (){
    }
 
    tempAddToCart.push(orderItm);
-   addToCart();
+    addToCart();
+    displayTotal();
    console.log(tempAddToCart);
 });
+
+$('#txtDiscount').on('keydown',function (){
+   let discount =  parseInt($('#txtDiscount').val());
+   console.log("discount "+discount);
+   let total = $('#total').val();
+
+   let subTotal = parseInt((total/100)*discount);
+
+   parseInt($('#txtSubTotal').val(subTotal));
+   console.log("subtotal "+subTotal);
+});
+
+
 
 /*FUNCTION*/
 function addToCart(){
@@ -55,3 +69,12 @@ function addToCart(){
         $('#tblAddToCart').append('<tr><td>'+i.ordItmId+'</td>'+'<td>'+i.orItmName+'</td>'+'<td>'+i.orItmPrice+'</td>'+'<td>'+i.ordQty+'</td>'+'<td>'+i.ordTotal+'</td></tr>');
     }
 }
+
+function displayTotal(){
+    var tempTotal = 0;
+    for (var i of tempAddToCart){
+        tempTotal = tempTotal + i.ordTotal;
+    }
+    $('#total').val(tempTotal);
+}
+

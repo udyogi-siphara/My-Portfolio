@@ -256,7 +256,7 @@ function updateItem(itemCode){
 }
 
 function setTextfieldValues(code,name,price,qty){
-    $('#itemCode').val(id);
+    $('#itemCode').val(code);
     $('#itemName').val(name);
     $('#itemPrice').val(price);
     $('#itemQty').val(qty);
