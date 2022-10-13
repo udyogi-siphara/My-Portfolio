@@ -1,4 +1,4 @@
-let itemArray = [];
+/*let itemArray = [];*/
 
 $('#btnItemSave').click(function (){
     let itemCode = $('#txtItemId').val();
@@ -16,6 +16,7 @@ $('#btnItemSave').click(function (){
     itemArray.push(item);
     console.log(itemArray);
     saveItem();
+    loadAllItemCode();
     clearItem();
     blindRowClickEvent();
 });

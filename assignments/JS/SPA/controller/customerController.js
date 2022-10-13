@@ -1,4 +1,4 @@
-let customerArray = [];
+/*let customerArray = [];*/
 
 $('#btnCusSave').click(function () {
     let customerId = $('#txtCustomerId').val();
@@ -15,6 +15,7 @@ $('#btnCusSave').click(function () {
 
     customerArray.push(customer);
     saveCustomer();
+    loadAllCustomerId();
     clearCustomer();
     blindRowCustomerClickEvent();
     console.log(customerArray);

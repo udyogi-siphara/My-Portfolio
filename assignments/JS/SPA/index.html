@@ -495,7 +495,7 @@
                             <div class="col">
                                 <div class="mb-lg-4 mb-sm-3 mb-3">
                                     <label for="cusId" class="form-label">Customer ID</label>
-                                    <select class="form-select form-select-ls" id="cusId" aria-label=".form-select-lg example">
+                                    <select id="customerIdOrd" class="form-select form-select-ls" id="cusId" aria-label=".form-select-lg example">
                                         <option selected>C001</option>
                                     </select>
                                 </div>
@@ -503,7 +503,7 @@
                             <div class="col">
                                 <div class="mb-lg-4 mb-sm-3 mb-3">
                                     <label for="customerName" class="form-label">Customer</label>
-                                    <input type="text" class="form-control" id="CustmrName" placeholder="Siphara">
+                                    <input id="customerNameOrd" type="text" class="form-control" id="CustmrName" placeholder="Siphara">
                                 </div>
                             </div>
                         </div>
@@ -511,11 +511,11 @@
                         <div class="row gx-3">
                             <div class="mb-lg-4 mb-sm-3 mb-3">
                                 <label for="salary" class="form-label">Salary</label>
-                                <input type="text" class="form-control" id="slry" placeholder="0000.00">
+                                <input id="customerSalaryOrd" type="text" class="form-control" id="slry" placeholder="0000.00">
                             </div>
                             <div class="mb-lg-4 mb-md-5 ">
                                 <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="addrss" placeholder="Galle">
+                                <input id="customerAddressOrd" type="text" class="form-control" id="addrss" placeholder="Galle">
                             </div>
                         </div>
                     </div>
@@ -528,7 +528,7 @@
                             <div class="col">
                                 <div class="mb-4">
                                     <label for="itemId" class="form-label">Item ID</label>
-                                    <select class="form-select form-select-ls" id="itmId" aria-label=".form-select-lg example">
+                                    <select id="itemCodeOrd" class="form-select form-select-ls" id="itmId" aria-label=".form-select-lg example">
                                         <option selected>P001</option>
                                     </select>
                                 </div>
@@ -536,7 +536,7 @@
                             <div class="col">
                                 <div class="mb-4">
                                     <label for="item" class="form-label">Item</label>
-                                    <input type="text" class="form-control" id="item" placeholder="Soap">
+                                    <input id="itemNameOrd" type="text" class="form-control" id="item" placeholder="Soap">
                                 </div>
                             </div>
                         </div>
@@ -545,13 +545,13 @@
                             <div class="col">
                                 <div class="mb-4">
                                     <label for="price" class="form-label">Price</label>
-                                    <input type="text" class="form-control" id="priz" placeholder="0000.00">
+                                    <input id="itemPriceOrd" type="text" class="form-control" id="priz" placeholder="0000.00">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-5">
                                     <label for="qtyOnHand" class="form-label">QyOnHand</label>
-                                    <input type="number" class="form-control" id="qty" placeholder="10">
+                                    <input id="itemQtyOrd" type="number" class="form-control" id="qty" placeholder="10">
                                 </div>
                             </div>
                         </div>
@@ -559,10 +559,10 @@
                         <div class="row">
                             <div class="mb-lg-2 mb-md-2 mb-sm-5">
                                 <label for="orderQty" class="form-label">Order Quantity</label>
-                                <input type="number" class="form-control" id="orderQty" placeholder="00">
+                                <input id="orderQty" type="number" class="form-control" id="orderQty" placeholder="00">
                             </div>
                             <div class="mt-5 d-grid  col-6 mx-auto">
-                                <button type="button" class="btn btn-success">Add Item</button>
+                                <button id="btnAddItem" type="button" class="btn btn-success">Add Item</button>
                             </div>
                         </div>
                     </div>
@@ -658,6 +658,8 @@
 <script src="../../../assets/boostrap/js/bootstrap.min.js"></script>
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
+<script src="controller/orderController.js"></script>
+<script src="db/DB.js"></script>
 <script>
     $('#dashboardList').click(function (){
         $('#dashboard').css('display','block');

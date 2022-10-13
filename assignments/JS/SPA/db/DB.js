@@ -1,2 +1,2 @@
-var customerAr=[];
-var itemAr=[];
+var customerArray=[];
+var itemArray=[];
