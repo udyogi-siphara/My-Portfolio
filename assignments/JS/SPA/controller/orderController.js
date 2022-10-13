@@ -27,3 +27,31 @@ $('#itemCodeOrd').on('change',function (){
     $('#itemPriceOrd').val(itemCode.price);
     $('#itemQtyOrd').val(itemCode.qty);
 });
+
+$('#btnAddToCart').click(function (){
+   let itmCode = $('#itemCodeOrd').val();
+   let itmName = $('#itemNameOrd').val();
+   let itmPrice = $('#itemPriceOrd').val();
+   let orderQty = $('#orderQty').val();
+   let total = itmPrice * orderQty;
+
+   var orderItm = {
+       ordItmId : itmCode,
+       orItmName : itmName,
+       orItmPrice : itmPrice,
+       ordQty : orderQty,
+       ordTotal : total
+   }
+
+   tempAddToCart.push(orderItm);
+   addToCart();
+   console.log(tempAddToCart);
+});
+
+/*FUNCTION*/
+function addToCart(){
+    $("#tblAddToCart> tr").detach();
+    for (var i of tempAddToCart){
+        $('#tblAddToCart').append('<tr><td>'+i.ordItmId+'</td>'+'<td>'+i.orItmName+'</td>'+'<td>'+i.orItmPrice+'</td>'+'<td>'+i.ordQty+'</td>'+'<td>'+i.ordTotal+'</td></tr>');
+    }
+}
