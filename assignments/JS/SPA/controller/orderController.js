@@ -35,30 +35,51 @@ $('#btnAddToCart').click(function (){
    let orderQty = $('#orderQty').val();
    let total = itmPrice * orderQty;
 
-   var orderItm = {
-       ordItmId : itmCode,
-       orItmName : itmName,
-       orItmPrice : itmPrice,
-       ordQty : orderQty,
-       ordTotal : total
-   }
+    let rowExists = searchRowExists(itmCode);
+    if(rowExists!=null) {
+        let newQty = ((parseInt(rowExists.ordQty)) + (parseInt(orderQty)));
 
-   tempAddToCart.push(orderItm);
-    addToCart();
-    displayTotal();
-   console.log(tempAddToCart);
+        rowExists.ordQty = newQty;
+        rowExists.ordTotal = parseFloat(itmPrice) * newQty;
+
+    }else {
+
+        var orderItm = {
+            ordItmId: itmCode,
+            orItmName: itmName,
+            orItmPrice: itmPrice,
+            ordQty: orderQty,
+            ordTotal: total
+        }
+        tempAddToCart.push(orderItm);
+        addToCart();
+        displayTotal();
+        console.log(tempAddToCart);
+    }
 });
 
-$('#txtDiscount').on('keydown',function (){
-   let discount =  parseInt($('#txtDiscount').val());
-   console.log("discount "+discount);
+$('#txtDiscount').on('keyup',function (){
+   let discount =  $('#txtDiscount').val();
    let total = $('#total').val();
+   let totMin = 0;
+   let subTotal = 0;
 
-   let subTotal = parseInt((total/100)*discount);
+    console.log(discount+"=="+total);
 
-   parseInt($('#txtSubTotal').val(subTotal));
+   totMin = parseFloat(total)*(discount/100);
+
+   subTotal = total - totMin ;
+   $('#txtSubTotal').val(subTotal);
    console.log("subtotal "+subTotal);
 });
+
+$('#txtCash').on('keyup',function (){
+   let cash = $('#txtCash').val();
+   let subTotal = $('#txtSubTotal').val();
+
+   $('#txtBalance').val(parseFloat(cash) - parseFloat(subTotal));
+});
+
 
 
 
@@ -78,3 +99,13 @@ function displayTotal(){
     $('#total').val(tempTotal);
 }
 
+/*Remove Duplicate Row*/
+function searchRowExists(itemCode) {
+    for (let tempAdd of tempAddToCart) {
+        console.log(tempAdd.ordItmId+"-----"+itemCode);
+        if(tempAdd.ordItmId === itemCode){
+            return tempAdd
+        }
+    }
+    return null;
+}
