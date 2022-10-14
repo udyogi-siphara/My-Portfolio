@@ -188,7 +188,7 @@ function saveCustomer() {
 }
 
 function clearCustomer(){
-    $('#txtCustomerId').val("");
+    /*$('#txtCustomerId').val("");*/
     $('#txtCustomerName').val("");
     $('#txtCustomerAddress').val("");
     $('#txtCustomerSalary').val("");

@@ -2,7 +2,7 @@ $('#btnSearchOrder').click(function (){
     for (var search of orderArray) {
         let searchOrder = $('#searchOrder').val();
         let chooseOrderType = $('#chooseOrderType').val();
-        if (chooseOrderType === "Code") {
+        if (chooseOrderType === "ID") {
 
             if (searchOrder === search.ordId) {
                 $('#txtOrdId').val(search.ordId);
@@ -34,9 +34,24 @@ $('#btnSearchOrder').click(function (){
     }
 });
 
+$('#btnClearOrd').click(function (){
+    $('#txtOrdId').val("");
+    $('#txtOrdDate').val("");
+    $('#txtOrdName').val("");
+    $('#txtOrdDis').val("");
+    $('#txtOrdCost').val("");
+});
 
+$('#btnDeleteOrd').click(function (){
+    let deleteOrderId = $('#txtOrdId').val();
 
-
+    if (deleteOrder(deleteOrderId)){
+        alert("Order Successfully Deleted....");
+        setOrderTextfieldValues("", "", "", "","");
+    }else{
+        alert("No such Order to delete. please check the id");
+    }
+});
 
 
 
@@ -57,4 +72,34 @@ function blindOrderRowClickEvent(){
         let ordCost = $(this).children(':eq(3)').text();
         $('#txtOrdCost').val(ordCost);
     });
+}
+
+function searchOrder(orderId){
+    for(var i of orderArray){
+        if (i.ordId === orderId){
+            return i;
+        }
+    }
+    return null;
+}
+
+function deleteOrder(orderId){
+    let ordObj = searchOrder(orderId);
+
+    if (ordObj != null){
+        let indexNumber = orderArray.indexOf(ordObj);
+        orderArray.splice(indexNumber,1);
+        loadAllOrder();
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function setOrderTextfieldValues(orderId,date,name,dis,cost){
+    $('#txtOrdId').val(orderId);
+    $('#txtOrdDate').val(date);
+    $('#txtOrdName').val(name);
+    $('#txtOrdDis').val(dis);
+    $('#txtOrdCost').val(cost);
 }

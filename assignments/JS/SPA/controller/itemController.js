@@ -187,7 +187,7 @@ function saveItem(){
 }
 
 function clearItem(){
-    $('#txtItemId').val("");
+    /*$('#txtItemId').val("");*/
     $('#txtItemName').val("");
     $('#txtItemPrice').val("");
     $('#txtItemQty').val("");
