@@ -4,13 +4,6 @@ $('#btnItemSave').click(function (){
     let itemPrice = $('#txtItemPrice').val();
     let itemQty =  $('#txtItemQty').val();
 
-  /*  var item = {
-        code : itemCode,
-        name : itemName,
-        qty   : itemQty,
-        price : itemPrice
-    }*/
-
     var item = itemObject(itemCode,itemName,itemPrice,itemQty);
 
     itemArray.push(item);
@@ -165,13 +158,6 @@ $("#txtItemQty").on('keydown', function (event) {
             let itemName = $('#txtItemName').val();
             let itemPrice = $('#txtItemPrice').val();
             let itemQty =  $('#txtItemQty').val();
-
-           /* var item = {
-                code : itemCode,
-                name : itemName,
-                qty   : itemQty,
-                price : itemPrice
-            }*/
 
             var item = itemObject(itemCode,itemName,itemPrice,itemQty);
 
