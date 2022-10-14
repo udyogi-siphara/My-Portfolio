@@ -85,23 +85,31 @@ $('#btnPay').click(function (){
 
     var order = orderObject(orderId,orderDate,customerName,discount,subTotal);
 
+
     orderArray.push(order);
     loadAllOrder();
     blindOrderRowClickEvent();
     clearOrderTexts();
+
+    for (var tempOrder of tempAddToCart){
+        tempAddToCart.pop();
+    }
+    tempAddToCart.pop();
+    addToCart();
+
     console.log(orderArray);
 
 
 });
 
-const orderIdRegEx = /^(O00-)[0-9]{1,3}$/;
+/*const orderIdRegEx = /^(O00-)[0-9]{1,3}$/;
 const ordQtyOnHandRegEx = /^[0-9]{1,}$/;
 const ordDisRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
 let orderValidation = [];
 orderValidation.push({reg: orderIdRegEx, field: $('#ordId'), error: 'Order ID Pattern is Wrong : O00-001'});
 orderValidation.push({reg: ordQtyOnHandRegEx, field: $('#orderQty'), error: 'Order Quantity Pattern is Wrong : 0-9'});
-orderValidation.push({reg: ordDisRegEx, field: $('#txtDiscount'), error: 'Discount Pattern is Wrong : 100 or 100.00'});
+orderValidation.push({reg: ordDisRegEx, field: $('#txtDiscount'), error: 'Discount Pattern is Wrong : 100 or 100.00'});*/
 
 /*FUNCTION*/
 function addToCart(){
@@ -116,6 +124,7 @@ function loadAllOrder(){
     for (var i of orderArray){
         $('#tblOrder').append('<tr><td>'+i.ordId+'</td>'+'<td>'+i.ordDate+'</td>'+'<td>'+i.cusName+'</td>'+'<td>'+i.dis+'</td>'+'<td>'+i.cost+'</td></tr>');
     }
+    blindOrderRowClickEvent();
 }
 
 function displayTotal(){
@@ -165,9 +174,11 @@ function clearOrderTexts(){
     $('#itemNameOrd').val("Soap");
     $('#itemPriceOrd').val("0000.00");
     $('#itemQtyOrd').val("10");
-    $('#orderQty').val("00");
+    $('#orderQty').val("");
 
-    $('#txtCash').val("0000.00");
-    $('#txtDiscount').val("10");
+    $('#txtCash').val("");
+    $('#txtDiscount').val("");
     $('#txtBalance').val("0000.00");
+    $('#txtSubTotal').val("0000.00");
+    $('#total').val("0000.00");
 }

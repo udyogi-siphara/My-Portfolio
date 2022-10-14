@@ -10,6 +10,7 @@ $('#btnSearchOrder').click(function (){
                 $('#txtOrdName').val(search.cusName);
                 $('#txtOrdDis').val(search.dis);
                 $('#txtOrdCost').val(search.cost);
+                console.log("id"+search.dis+"=="+search.cost);
 
             }
         } else if(chooseOrderType === "1") {
@@ -20,6 +21,8 @@ $('#btnSearchOrder').click(function (){
                 $('#txtOrdName').val(search.cusName);
                 $('#txtOrdDis').val(search.dis);
                 $('#txtOrdCost').val(search.cost);
+
+                console.log("name"+search.dis+"=="+search.cost);
             }
         }else if (chooseOrderType === "2"){
 
@@ -29,6 +32,8 @@ $('#btnSearchOrder').click(function (){
                 $('#txtOrdName').val(search.cusName);
                 $('#txtOrdDis').val(search.dis);
                 $('#txtOrdCost').val(search.cost);
+
+                console.log("date"+search.dis+"=="+search.cost);
             }
         }
     }
@@ -69,7 +74,7 @@ function blindOrderRowClickEvent(){
         $('#txtOrdName').val(ordName);
         let ordDis = $(this).children(':eq(3)').text();
         $('#txtOrdDis').val(ordDis);
-        let ordCost = $(this).children(':eq(3)').text();
+        let ordCost = $(this).children(':eq(4)').text();
         $('#txtOrdCost').val(ordCost);
     });
 }
