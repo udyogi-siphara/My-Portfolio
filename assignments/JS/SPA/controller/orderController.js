@@ -41,7 +41,7 @@ $('#btnAddToCart').click(function (){
 
         rowExists.ordQty = newQty;
         rowExists.ordTotal = parseFloat(itmPrice) * newQty;
-
+        addToCart();
     }else {
 
         var orderItm = {
@@ -56,6 +56,7 @@ $('#btnAddToCart').click(function (){
         displayTotal();
         console.log(tempAddToCart);
     }
+    lessQtyOnHand();
 });
 
 $('#txtDiscount').on('keyup',function (){
@@ -80,6 +81,18 @@ $('#txtCash').on('keyup',function (){
    $('#txtBalance').val(parseFloat(cash) - parseFloat(subTotal));
 });
 
+$('#btnPay').click(function (){
+    let orderId = $('#ordId').val();
+    let orderDate = $('#ordDate').val();
+    let customerName = $('#customerNameOrd').val();
+    let discount = $('#txtDiscount').val();
+    let subTotal = $('#txtSubTotal').val();
+
+    var order = {
+
+    }
+
+});
 
 
 
@@ -89,6 +102,7 @@ function addToCart(){
     for (var i of tempAddToCart){
         $('#tblAddToCart').append('<tr><td>'+i.ordItmId+'</td>'+'<td>'+i.orItmName+'</td>'+'<td>'+i.orItmPrice+'</td>'+'<td>'+i.ordQty+'</td>'+'<td>'+i.ordTotal+'</td></tr>');
     }
+    /*lessQtyOnHand();*/
 }
 
 function displayTotal(){
@@ -108,4 +122,22 @@ function searchRowExists(itemCode) {
         }
     }
     return null;
+}
+
+function lessQtyOnHand(){
+    let ordQty = $('#orderQty').val();
+    let qtyOnHand = $('#itemQtyOrd').val();
+    let itemCode = $('#itemCodeOrd').val();
+    let lessQty = 0;
+
+    for (var minQty of itemArray){
+        if (minQty.code === itemCode){
+           lessQty = qtyOnHand - ordQty;
+           console.log("Less Qty "+lessQty);
+            $('#itemQtyOrd').val(lessQty);
+            minQty.qty = lessQty;
+        }
+
+    }
+    saveItem();
 }

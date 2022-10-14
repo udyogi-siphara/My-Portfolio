@@ -1,17 +1,10 @@
-/*let customerArray = [];*/
-
 $('#btnCusSave').click(function () {
     let customerId = $('#txtCustomerId').val();
     let customerName = $('#txtCustomerName').val();
     let customerAddress = $('#txtCustomerAddress').val();
     let customerSalary = $('#txtCustomerSalary').val();
 
-    var customer = {
-        id: customerId,
-        name: customerName,
-        address: customerAddress,
-        salary: customerSalary
-    }
+    var customer = customerObject(customerId,customerName,customerAddress,customerSalary);
 
     customerArray.push(customer);
     saveCustomer();

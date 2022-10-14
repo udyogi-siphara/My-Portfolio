@@ -57,7 +57,7 @@
     <section>
         <div class="row">
             <div class="col-5 col-sm-3 col-lg-2">
-                <select class="form-select form-select-ls mt-4" aria-label=".form-select-lg example">
+                <select id="chooseOrderType" class="form-select form-select-ls mt-4" aria-label=".form-select-lg example">
                     <option selected>ID</option>
                     <option value="1">Name</option>
                     <option value="2">Date</option>
@@ -65,8 +65,8 @@
             </div>
             <div class="col-12 col-sm-9 col-lg-10">
                 <form class="d-flex mt-3 mt-sm-4">
-                    <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search
+                    <input id="searchOrder" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btnSearchOrder" class="btn btn-outline-success" type="button">Search
                     </button>
                 </form>
             </div>
@@ -79,19 +79,19 @@
                 <div class="col-5 col-lg col-sm-6">
                     <div class="mb-4">
                         <label for="orderId" class="form-label">Order ID</label>
-                        <input type="text" class="form-control" id="orderId" placeholder="O001" disabled>
+                        <input id="txtOrdId" type="text" class="form-control" id="orderId" placeholder="O001" disabled>
                     </div>
                 </div>
                 <div class="col-7 col-lg col-sm-6">
                     <div class="mb-4">
                         <label for="OrderDate" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="OrderDate"disabled>
+                        <input id="txtOrdDate" type="date" class="form-control" id="OrderDate"disabled>
                     </div>
                 </div>
                 <div class="col-8 col-lg col-sm-12">
                     <div class="mb-4">
                         <label for="CusName" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" id="CusName" placeholder="Siphara" disabled>
+                        <input id="txtOrdName" type="text" class="form-control" id="CusName" placeholder="Siphara" disabled>
                     </div>
                 </div>
             </div>
@@ -100,20 +100,20 @@
                 <div class="col">
                     <div class="mb-2">
                         <label for="discount" class="form-label">Discount</label>
-                        <input type="text" class="form-control" id="discount" placeholder="00.00" disabled>
+                        <input id="txtOrdDis" type="text" class="form-control" id="discount" placeholder="00.00" disabled>
                     </div>
                 </div>
                 <div class="col">
                     <div class="mb-2">
                         <label for="cost" class="form-label">Cost</label>
-                        <input type="text" class="form-control" id="cost" placeholder="0000.00" disabled>
+                        <input id="txtOrdCost" type="text" class="form-control" id="cost" placeholder="0000.00" disabled>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-2">
-                    <button type="button" class="btn btn-secondary">Clear</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button id="btnClearOrd" type="button" class="btn btn-secondary">Clear</button>
+                    <button id="btnDeleteOrd" type="button" class="btn btn-danger">Delete</button>
                 </div>
             </div>
         </div>
@@ -137,42 +137,9 @@
                     <th scope="col">Cost(Rs)</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>O001</td>
-                    <td>16/09/2022</td>
-                    <td>Siphara</td>
-                    <td>0.00</td>
-                    <td>3000</td>
-                </tr>
-                <tr>
-                    <td>O002</td>
-                    <td>16/09/2022</td>
-                    <td>Udyogi</td>
-                    <td>0.00</td>
-                    <td>3000</td>
-                </tr>
-                <tr>
-                    <td>O003</td>
-                    <td>16/09/2022</td>
-                    <td>Baji</td>
-                    <td>0.00</td>
-                    <td>3000</td>
-                </tr>
-                <tr>
-                    <td>O004</td>
-                    <td>16/09/2022</td>
-                    <td>Sashee</td>
-                    <td>0.00</td>
-                    <td>3000</td>
-                </tr>
-                <tr>
-                    <td>O005</td>
-                    <td>16/09/2022</td>
-                    <td>Usra</td>
-                    <td>0.00</td>
-                    <td>3000</td>
-                </tr>
+                <tbody id="tblOrder">
+                <tr></tr>
+
                 </tbody>
             </table>
         </div>
@@ -480,13 +447,13 @@
                             <div class="col">
                                 <div class="mb-lg-4 mb-sm-3 mb-3">
                                     <label for="orderId" class="form-label">Order ID</label>
-                                    <input type="text" class="form-control" id="ordrId" placeholder="O001">
+                                    <input id="ordId" type="text" class="form-control" id="ordrId" placeholder="O001">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-lg-4 mb-sm-3 mb-3">
                                     <label for="OrderDate" class="form-label">Date</label>
-                                    <input type="date" class="form-control" id="OrdrDate">
+                                    <input id="ordDate" type="date" class="form-control" id="OrdrDate">
                                 </div>
                             </div>
                         </div>
@@ -620,7 +587,7 @@
                                 <input id="txtBalance" type="text" class="form-control" id="balance" placeholder="0000.00">
                             </div>
                             <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
-                                <button type="button" class="btn btn-warning text-black">Pay</button>
+                                <button id="btnPay" type="button" class="btn btn-warning text-black">Pay</button>
                             </div>
                         </div>
                     </div>
@@ -653,6 +620,7 @@
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
 <script src="controller/orderController.js"></script>
+<script src="model/customerModel.js"></script>
 <script src="db/DB.js"></script>
 <script>
     $('#dashboardList').click(function (){
