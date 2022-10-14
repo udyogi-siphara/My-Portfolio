@@ -1,17 +1,17 @@
-/*let itemArray = [];*/
-
 $('#btnItemSave').click(function (){
     let itemCode = $('#txtItemId').val();
     let itemName = $('#txtItemName').val();
     let itemPrice = $('#txtItemPrice').val();
     let itemQty =  $('#txtItemQty').val();
 
-    var item = {
+  /*  var item = {
         code : itemCode,
         name : itemName,
         qty   : itemQty,
         price : itemPrice
-    }
+    }*/
+
+    var item = itemObject(itemCode,itemName,itemPrice,itemQty);
 
     itemArray.push(item);
     console.log(itemArray);
@@ -166,12 +166,14 @@ $("#txtItemQty").on('keydown', function (event) {
             let itemPrice = $('#txtItemPrice').val();
             let itemQty =  $('#txtItemQty').val();
 
-            var item = {
+           /* var item = {
                 code : itemCode,
                 name : itemName,
                 qty   : itemQty,
                 price : itemPrice
-            }
+            }*/
+
+            var item = itemObject(itemCode,itemName,itemPrice,itemQty);
 
             itemArray.push(item);
             console.log(itemArray);

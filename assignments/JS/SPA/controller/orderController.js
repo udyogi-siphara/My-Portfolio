@@ -44,13 +44,8 @@ $('#btnAddToCart').click(function (){
         addToCart();
     }else {
 
-        var orderItm = {
-            ordItmId: itmCode,
-            orItmName: itmName,
-            orItmPrice: itmPrice,
-            ordQty: orderQty,
-            ordTotal: total
-        }
+        var orderItm = placeOrderObject(itmCode,itmName,itmPrice,orderQty,total);
+
         tempAddToCart.push(orderItm);
         addToCart();
         displayTotal();
@@ -88,9 +83,12 @@ $('#btnPay').click(function (){
     let discount = $('#txtDiscount').val();
     let subTotal = $('#txtSubTotal').val();
 
-    var order = {
+    var order = orderObject(orderId,orderDate,customerName,discount,subTotal);
 
-    }
+    orderArray.push(order);
+    loadAllOrder();
+    console.log(orderArray);
+
 
 });
 
@@ -102,7 +100,13 @@ function addToCart(){
     for (var i of tempAddToCart){
         $('#tblAddToCart').append('<tr><td>'+i.ordItmId+'</td>'+'<td>'+i.orItmName+'</td>'+'<td>'+i.orItmPrice+'</td>'+'<td>'+i.ordQty+'</td>'+'<td>'+i.ordTotal+'</td></tr>');
     }
-    /*lessQtyOnHand();*/
+}
+
+function loadAllOrder(){
+    $("#tblOrder> tr").detach();
+    for (var i of orderArray){
+        $('#tblOrder').append('<tr><td>'+i.ordId+'</td>'+'<td>'+i.ordDate+'</td>'+'<td>'+i.cusName+'</td>'+'<td>'+i.dis+'</td>'+'<td>'+i.cost+'</td></tr>');
+    }
 }
 
 function displayTotal(){
