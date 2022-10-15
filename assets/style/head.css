@@ -1,3 +1,31 @@
+/*====Redesign ScrollBar=====*/
+::-webkit-scrollbar {
+    background: #192F35;
+    width: 18px;
+    height: 0.5em;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #192F35;
+
+
+    /*scrollbar up and down margin*/
+    /*margin-block: 2em;*/
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(white, rebeccapurple);
+}
+
+
 header{
     position: fixed;
     z-index: 15;
@@ -42,6 +70,23 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+header>nav>ul>li>a {
+    color: white;
+    padding-bottom: 0;
+    border-bottom: none;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+header>nav>ul>li>a:hover {
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 3px solid white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
 
 /*================================== 320 ->Mobile -S ==================================*/
 @media all and (width: 320px){

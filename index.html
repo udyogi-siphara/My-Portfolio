@@ -27,6 +27,9 @@
     <link href="assets/style/contact_page.css" rel="stylesheet" rel="stylesheet">
     <link href="assets/style/footer_page.css" rel="stylesheet" rel="stylesheet">
     <link href="assets/style/animation/css/btnGetStarted.css" rel="stylesheet" rel="stylesheet">
+    <link href="assets/style/animation/css/curser.css" rel="stylesheet" rel="stylesheet">
+    <link href="assets/style/animation/css/circleRotate.css" rel="stylesheet" rel="stylesheet">
+    <link href="assets/style/animation/css/textShine.css" rel="stylesheet" rel="stylesheet">
     <link href="assets/style/normalize.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -62,6 +65,11 @@
         </ul>
     </nav>
 </header>
+
+<div id="mainCircle">
+    <div id="subCircle"></div>
+</div>
+
 <!--main side-->
 <main>
     <!--first page-->
@@ -86,7 +94,7 @@
                      src="assets/image/B612_20200413_112516_239-removebg-preview.png" width="375">
             </aside>
             <div></div>
-            <div></div>
+            <div id="profileCircle"></div>
         </section>
         <!--my contact-->
         <address>
@@ -120,7 +128,7 @@
         <!--image-->
         <aside>
             <div>
-                <img alt="about image" class="aboutImage" height="538" src="assets/image/aboutImage.png" width="595">
+                <img data-aos="zoom-in" alt="about image" class="aboutImage" height="538" src="assets/image/aboutImage.png" width="595">
             </div>
         </aside>
         <!--my self-->
@@ -389,7 +397,7 @@
         </section>
     </section>
 </main>
-<footer>
+<footer id="footer">
     <section>
         <!--For circle-->
         <section>
@@ -407,6 +415,8 @@
                         alt="linkedIn" height="35" src="assets/image/icons8-linkedin-48.png" width="35"></a></pre>
             </address>
         </section>
+        <section id="footerNextCircle"></section>
+
         <!--line and all reserved-->
         <section>
             <br>
@@ -419,5 +429,12 @@
 </footer>
 
 <script src="assets/style/animation/js/btnGetStarted.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/style/animation/js/curser.js"></script>
 </body>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>

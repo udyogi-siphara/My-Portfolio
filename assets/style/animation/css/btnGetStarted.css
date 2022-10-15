@@ -38,7 +38,7 @@
     height: 100%;
     left: -20%;
     z-index: -1000;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 20s;
     background-repeat: no-repeat;
 
 }

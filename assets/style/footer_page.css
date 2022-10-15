@@ -26,6 +26,18 @@ body>footer>section>section:first-child{
     margin: auto;
     bottom: 110px;
     background: #470852;
+}
+
+#footerNextCircle{
+    border-radius: 100%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 110px;
+    background: #470852;
     border: 2px dashed #FFFFFF;
 }
 
@@ -56,6 +68,7 @@ body>footer>section>section:first-child{
     font-size: 15px;
     line-height: 29px;
     color: #FFFFFF;
+    z-index: 3;
 }
 
 #email2{
@@ -73,9 +86,10 @@ a {
     height: 45px;
     right: 141px;
     bottom: 35px;
+    z-index: 3;
 }
 
-body>footer>section>section:nth-child(2)>hr{
+body>footer>section>section:nth-child(3)>hr{
     position: absolute;
     width: 98.6vw;
     height: 0px;
@@ -84,7 +98,7 @@ body>footer>section>section:nth-child(2)>hr{
     border: 1px solid #FFFFFF;
 }
 
-body>footer>section>section:nth-child(2)>p{
+body>footer>section>section:nth-child(3)>p{
     position: absolute;
     width: 260px;
     height: 14px;
@@ -126,6 +140,18 @@ body>footer>section>section:nth-child(2)>p{
         margin: auto;
         bottom: 95px;
         background: #470852;
+    }
+
+    #footerNextCircle{
+        border-radius: 100%;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 95px;
+        background: #470852;
         border: 2px dashed #FFFFFF;
     }
 
@@ -156,6 +182,7 @@ body>footer>section>section:nth-child(2)>p{
         font-size: 11px;
         line-height: 29px;
         color: #FFFFFF;
+        z-index: 3;
 
     }
 
@@ -174,6 +201,7 @@ body>footer>section>section:nth-child(2)>p{
         height: 25px;
         right: 109px;
         bottom: 20px;
+        z-index: 3;
 
     }
 
@@ -186,7 +214,7 @@ body>footer>section>section:nth-child(2)>p{
         height: 30px;
     }
 
-    body>footer>section>section:nth-child(2)>hr{
+    body>footer>section>section:nth-child(3)>hr{
         position: absolute;
         width: 99.8vw;
         height: 0px;
@@ -195,7 +223,7 @@ body>footer>section>section:nth-child(2)>p{
         border: 1px solid #FFFFFF;
     }
 
-    body>footer>section>section:nth-child(2)>p{
+    body>footer>section>section:nth-child(3)>p{
         position: absolute;
         width: 260px;
         height: 14px;
@@ -245,6 +273,18 @@ body>footer>section>section:nth-child(2)>p{
         margin: auto;
         bottom: 84px;
         background: #470852;
+    }
+
+    #footerNextCircle{
+        border-radius: 100%;
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 84px;
+        background: #470852;
         border: 2px dashed #FFFFFF;
     }
 
@@ -275,6 +315,7 @@ body>footer>section>section:nth-child(2)>p{
         font-size: 12px;
         line-height: 29px;
         color: #FFFFFF;
+        z-index: 3;
     }
 
     #email2{
@@ -292,9 +333,10 @@ body>footer>section>section:nth-child(2)>p{
         height: 25px;
         right: 123px;
         bottom: 35px;
+        z-index: 3;
     }
 
-    body>footer>section>section:nth-child(2)>hr{
+    body>footer>section>section:nth-child(3)>hr{
         position: absolute;
         width: 99.5vw;
         height: 0px;
@@ -303,7 +345,7 @@ body>footer>section>section:nth-child(2)>p{
         border: 1px solid #FFFFFF;
     }
 
-    body>footer>section>section:nth-child(2)>p{
+    body>footer>section>section:nth-child(3)>p{
         position: absolute;
         width: 260px;
         height: 14px;
@@ -348,6 +390,18 @@ body>footer>section>section:nth-child(2)>p{
         margin: auto;
         bottom: 84px;
         background: #470852;
+    }
+
+    #footerNextCircle{
+        border-radius: 100%;
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 84px;
+        background: #470852;
         border: 2px dashed #FFFFFF;
     }
 
@@ -378,6 +432,7 @@ body>footer>section>section:nth-child(2)>p{
         font-size: 12px;
         line-height: 29px;
         color: #FFFFFF;
+        z-index: 3;
     }
 
     #email2{
@@ -395,9 +450,10 @@ body>footer>section>section:nth-child(2)>p{
         height: 25px;
         right: 133px;
         bottom: 35px;
+        z-index: 3;
     }
 
-    body>footer>section>section:nth-child(2)>hr{
+    body>footer>section>section:nth-child(3)>hr{
         position: absolute;
         width: 99.5vw;
         height: 0px;
@@ -406,7 +462,7 @@ body>footer>section>section:nth-child(2)>p{
         border: 1px solid #FFFFFF;
     }
 
-    body>footer>section>section:nth-child(2)>p{
+    body>footer>section>section:nth-child(3)>p{
         position: absolute;
         width: 260px;
         height: 14px;
@@ -452,6 +508,19 @@ body>footer>section>section:nth-child(2)>p{
         margin: auto;
         bottom: 110px;
         background: #470852;
+
+    }
+
+    #footerNextCircle{
+        border-radius: 100%;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 110px;
+        background: #470852;
         border: 2px dashed #FFFFFF;
     }
 
@@ -482,6 +551,7 @@ body>footer>section>section:nth-child(2)>p{
         font-size: 13px;
         line-height: 29px;
         color: #FFFFFF;
+        z-index: 3;
     }
 
     #email2{
@@ -499,9 +569,10 @@ body>footer>section>section:nth-child(2)>p{
         height: 25px;
         right: 141px;
         bottom: 35px;
+        z-index: 3;
     }
 
-    body>footer>section>section:nth-child(2)>hr{
+    body>footer>section>section:nth-child(3)>hr{
         position: absolute;
         width: 100vw;
         height: 0px;
@@ -510,7 +581,7 @@ body>footer>section>section:nth-child(2)>p{
         border: 1px solid #FFFFFF;
     }
 
-    body>footer>section>section:nth-child(2)>p{
+    body>footer>section>section:nth-child(3)>p{
         position: absolute;
         width: 260px;
         height: 14px;
@@ -556,6 +627,19 @@ body>footer>section>section:nth-child(2)>p{
         margin: auto;
         bottom: 110px;
         background: #470852;
+
+    }
+
+    #footerNextCircle{
+        border-radius: 100%;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 110px;
+        background: #470852;
         border: 2px dashed #FFFFFF;
     }
 
@@ -586,6 +670,7 @@ body>footer>section>section:nth-child(2)>p{
         font-size: 15px;
         line-height: 29px;
         color: #FFFFFF;
+        z-index: 3;
     }
 
     #email2{
@@ -603,9 +688,10 @@ body>footer>section>section:nth-child(2)>p{
         height: 45px;
         right: 141px;
         bottom: 35px;
+        z-index: 3;
     }
 
-    body>footer>section>section:nth-child(2)>hr{
+    body>footer>section>section:nth-child(3)>hr{
         position: absolute;
         width: 100vw;
         height: 0px;
@@ -614,7 +700,7 @@ body>footer>section>section:nth-child(2)>p{
         border: 1px solid #FFFFFF;
     }
 
-    body>footer>section>section:nth-child(2)>p{
+    body>footer>section>section:nth-child(3)>p{
         position: absolute;
         width: 260px;
         height: 14px;
