@@ -9,6 +9,13 @@
     background-size: cover;
 }
 
+#banner{
+    margin-top: 10px;
+    position: absolute;
+    padding-top: 14px;
+    margin-left: 528px;
+}
+
 .boy{
     height: 200px;
     margin-top: 350px;
