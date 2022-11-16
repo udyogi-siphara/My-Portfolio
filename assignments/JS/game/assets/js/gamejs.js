@@ -2,6 +2,7 @@ var boy = document.getElementById('boy');
 let  idelImageNum = 0;
 let idelanimationNum = 0;
 
+/*BREATHING boy*/
 function idelAnimation(){
 
     idelImageNum = idelImageNum + 1;
@@ -32,6 +33,7 @@ function runanimation(){
 
 }
 
+/*RUN boy*/
 function runAnimationstart(){
     runAimatioNumber = setInterval(runanimation,100);
     clearInterval(idelanimationNum);
@@ -43,4 +45,21 @@ function keyChek(event){
             runAnimationstart();
         }
     }
+
+    if (moveBackgrdAniId === 0){
+        moveBackgrdAniId = setInterval(moveBackground,100);
+    }
 }
+
+/*MOVE boy*/
+let backgrounImagePostionX = 0;
+let moveBackgrdAniId = 0;
+
+function moveBackground(){
+
+    backgrounImagePostionX = backgrounImagePostionX - 20;
+
+    document.getElementById('background').style.backgroundPositionX = backgrounImagePostionX + "px";
+}
+
+
