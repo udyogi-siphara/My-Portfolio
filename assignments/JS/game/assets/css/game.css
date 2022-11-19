@@ -4,7 +4,7 @@
 
 .background{
     height: 100vh;
-    background: url(../image/hztl_zs2i_180829.jpg);
+    background: url(../image/vecteezy_forest-game-background_8330403.jpg);
     background-size: cover;
     background-repeat: repeat-x;
     width: 100%;
@@ -19,6 +19,6 @@
 
 .boy{
     height: 200px;
-    margin-top: 350px;
+    margin-top: 408px;
     position: absolute;
 }
