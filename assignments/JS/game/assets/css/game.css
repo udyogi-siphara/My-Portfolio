@@ -8,6 +8,8 @@
     background-size: cover;
     background-repeat: repeat-x;
     width: 100%;
+    overflow-x: hidden;
+    position: absolute;
 }
 
 #banner{
@@ -21,4 +23,13 @@
     height: 200px;
     margin-top: 408px;
     position: absolute;
+}
+
+.barr{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 50px;
+    margin-top: 545px;
 }

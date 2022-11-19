@@ -113,6 +113,30 @@ let boyMarginTop = 408;
      jumpAnimNum=setInterval(jumpAnimation,100);
  }
 
+ /*BARRIERS*/
+
+let barrMarginLeft = 500;
+
+function createBarriers(){
+
+    for (var i=0; i<=10; i++){
+        var barr = document.createElement('div');
+        barr.className = 'barr';
+        document.getElementById("background").appendChild(barr);
+        barr.style.marginLeft = barrMarginLeft + "px";
+
+        /*barrMarginLeft = barrMarginLeft + 500;*/
+
+        if (i<5){
+            barrMarginLeft = barrMarginLeft + 500;
+        }
+
+        if (i>=5){
+            barrMarginLeft = barrMarginLeft + 250;
+        }
+
+    }
+}
 
 
 
