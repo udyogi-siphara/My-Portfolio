@@ -4,32 +4,247 @@
 
 .background{
     height: 100vh;
-    background: url(../image/vecteezy_forest-game-background_8330403.jpg);
+    background: url(../image/vecteezy_creepy-halloween-background-with-ghost-and-zombie-in-dark_11187534.jpg);
     background-size: cover;
     background-repeat: repeat-x;
+    background-position: center;
     width: 100%;
     overflow-x: hidden;
     position: absolute;
+    overflow-y: hidden;
+    z-index: 10;
 }
 
 #banner{
     margin-top: 10px;
     position: absolute;
-    padding-top: 14px;
+    padding-top: -9px;
     margin-left: 528px;
+    z-index: 10;
 }
 
 .boy{
-    height: 200px;
-    margin-top: 408px;
+    height: 212px;
+    margin-top: 390px;
     position: absolute;
+    z-index: 10;
 }
 
 .barr{
-    width: 80px;
-    height: 80px;
+    width: 197px;
+    height: 254px;
     background-color: yellow;
     position: absolute;
     border-radius: 50px;
-    margin-top: 545px;
+    margin-top: 465px;
+    background: url("../image/giphy.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.score{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 96px;
+    margin-top: 15px;
+    position: absolute;
+    font-family: 'Doppio One', sans-serif;
+    z-index: 10;
+}
+
+#scoreTopic{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+    width: 100px;
+    font-family: 'Doppio One', sans-serif;
+    z-index: 10;
+}
+
+#topBar{
+    width: 100%;
+    position: absolute;
+    background-color: #f1f1f1;
+    height: 103px;
+    margin-top: 0;
+    z-index: 10;
+
+}
+
+.level{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 233px;
+    margin-top: 15px;
+    position: absolute;
+    font-family: 'Doppio One', sans-serif;
+    z-index: 10;
+}
+
+#levelTopic{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 164px;
+    margin-top: 20px;
+    position: absolute;
+    width: 100px;
+    font-family: 'Doppio One', sans-serif;
+    z-index: 10;
+}
+
+/*Game Over bar*/
+.modal {
+    display: none;
+}
+
+.modal-content {
+    /* background-color: #fefefe; */
+    margin: 10% auto;
+    padding: 20px;
+    /* border: 1px solid #888;
+    width: 60%; */
+    width: 50%;
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
+    box-shadow: inset 0 0 28px #a77f4b;
+    border: 3px solid #6f431a;
+    border-radius: 20px;
+    background-color: #f4e1a7;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#gameOverText {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.gameOverLabel {
+    width: 267px;
+    height: 74px;
+    display: block;
+    margin: auto;
+}
+
+.gameOverDesc {
+    text-align: center;
+    font-size: 20px;
+    color: #54300e;
+}
+
+.restartButton{
+    margin: auto;
+    width: 477px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 308px;
+}
+
+.restartButton:hover{
+    /* IE 11 and lower don't support filter */
+    -webkit-filter: saturate(1.6);
+    filter: saturate(1.6);
+}
+
+/*Level over*/
+.modal1 {
+    display: none;
+}
+
+.modal-content1 {
+    /* background-color: #fefefe; */
+    margin: 10% auto;
+    padding: 20px;
+    /* border: 1px solid #888;
+    width: 60%; */
+    width: 50%;
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
+    box-shadow: inset 0 0 28px #a77f4b;
+    border: 3px solid #6f431a;
+    border-radius: 20px;
+    background-color: #f4e1a7;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#gameOverText {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.gameOverLabel1{
+    width: 267px;
+    height: 74px;
+    display: block;
+    margin: auto;
+}
+
+.gameOverDesc1{
+    text-align: center;
+    font-size: 20px;
+    color: #54300e;
+}
+
+.resumeButton{
+    margin: auto;
+    width: 335px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 304px;
+}
+
+.resumeButton:hover{
+    /* IE 11 and lower don't support filter */
+    -webkit-filter: saturate(1.6);
+    filter: saturate(1.6);
+}
+
+.levelTransitionMessage {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Complete Game*/
+.restartButton1{
+    margin: auto;
+    width: 477px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 308px;
+}
+
+.restartButton1:hover{
+    /* IE 11 and lower don't support filter */
+    -webkit-filter: saturate(1.6);
+    filter: saturate(1.6);
 }

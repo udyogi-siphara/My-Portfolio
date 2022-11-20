@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>2D Game | The Jumping Dead</title>
-  <link rel="stylesheet" href="assets/css/game.css">
+    <link rel="stylesheet" href="assets/css/game.css">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Roboto:ital,wght@1,100&family=Rubik+Burned&display=swap"
+          rel="stylesheet">
 </head>
-<body class="body" onload="idelAnimationstart(); createBarriers();" onkeydown="keyChek(event);" >
+<body id="body" class="body" onload="idelAnimationstart(); createBarriers();" onkeydown="keyChek(event);" >
   <div class="background" id="background">
-      <img id="banner" src="assets/image/banner.png">
       <img id="boy" class="boy" src="assets/image/Idle(1).png" alt="">
+      <div id="topBar">
+          <img id="banner" src="assets/image/banner.png">
+          <h3 id="scoreTopic">Score : </h3>
+          <div id="score" class="score">0</div>
+          <h3 id="levelTopic">Level : </h3>
+          <div id="level" class="level">1</div>
+      </div>
+
+      <div id="gameOverModal" class="modal">
+          <div class="modal-content">
+
+              <img class="gameOverLabel" src="assets/image/game_over.png" alt="GAME OVER">
+              <p class="gameOverDesc">Press RESTART button or Space to restart the game.</p>
+
+              <div class="restartButton">
+                  <img id="restartbutton" class="buttonImages" src="assets/image/restart.png" width="20%" alt="RestartButton" />
+              </div>
+          </div>
+      </div>
+
+      <div id="levelTransitionModal" class="modal1">
+          <div id="levelTransitionModalContent" class="modal-content1">
+              <img class="gameOverLabel1" src="assets/image/victory.png" alt="VICTORY">
+              <p class="levelTransitionMessage">Level complete!</p>
+              <p class="levelTransitionMessage">Press this button to continue</p>
+              <div class="resumeButton">
+                  <img id="levelGo" class="button" src="assets/image/resume.png" width="20%" alt="ResumeGame" />
+              </div>
+          </div>
+      </div>
+
+      <div id="gameCompleteModal1" class="modal1">
+          <div class="modal-content1">
+              <img class="gameOverLabel1" src="assets/image/victory.png" alt="VICTORY">
+              <p class="gameOverDesc1">You completed the game! Awesome Work!</p>
+              <div class="restartButton1">
+                  <img id="restartButton1" src="assets/image/restart.png" width="20%" alt="RestartButton" />
+              </div>
+          </div>
+      </div>
+
   </div>
+
+
 
 
 
