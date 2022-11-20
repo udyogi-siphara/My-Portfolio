@@ -224,7 +224,7 @@ $('#restartbutton').click(function (){
 /*LEVEL 2*/
 
 function level2(){
-    if (score === 10){
+    if (score === 50){
         /*var modal2 = document.getElementById('gameCompleteModal');
         modal2.style.display = 'block';*/
         level = level + 1 ;
@@ -237,7 +237,7 @@ function level2(){
 
         }
     }
-    if (score === 20){
+    if (score === 150){
         level = level + 1 ;
         document.getElementById('level').innerHTML = level;
         if (level === 3){
@@ -249,7 +249,7 @@ function level2(){
         }
     }
 
-    if (score === 30){
+    if (score === 250){
         level = level + 1 ;
         document.getElementById('level').innerHTML = level;
         if (level === 4){
